@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Office temp files
+~$*.pptx
+~$*.docx
+~$*.xlsx
+.~lock.*
+
+# Editor / OS
+*.swp
+*.tmp
+Thumbs.db
+
+# Local notes (not for public release)
+*.local.md
