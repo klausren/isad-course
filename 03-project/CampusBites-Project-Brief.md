@@ -1,6 +1,6 @@
 # CampusBites — Team Project Brief
 
-> Running project for *Information Systems Analysis and Design* · 16 weeks · teams of 5–6 · full English deliverables
+> Running project for *Information Systems Analysis and Design* · 16 weeks · small teams of ~3 · full English deliverables
 
 ## 1. The Case
 
@@ -39,9 +39,9 @@ Every technique in this course maps naturally onto CampusBites:
 
 ## 2. Team Setup
 
-- Teams of **5–6** students, formed in Week 2 (lab).
-- Roles rotate: analyst, modeler (2), implementer/refactorer, reviewer, presenter. Every member must be able to explain every model at the defense.
-- Two-track requirement model (see `项目分组与评审机制-Grouping-and-Review.md`): Track A teams receive requirements from the **client** (domain expert, co-reviewed with instructor); Track B teams receive requirements from the **instructor** (instructor sole reviewer).
+- Small cohort: **two teams of ~3 students**, formed in Week 2 (lab).
+- Roles rotate: analyst, modeler, implementer/refactorer, reviewer, presenter — in a 3-person team each member holds several roles across the semester. Every member must be able to explain every model at the defense.
+- Requirements come from the **instructor's standard requirements pack**, including three planned "requirement changes" during the semester (simulating a real client). In Week 5 the two teams act as each other's **client** in a cross-team requirements review (see `项目分组与评审机制-Grouping-and-Review.md`).
 
 ## 3. Milestones
 
