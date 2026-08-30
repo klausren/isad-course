@@ -71,14 +71,16 @@ Every design pattern you learn in class maps onto a natural CampusBites feature:
 
 Every deliverable is **in English**. Every diagram needs a **source file** (.drawio or .puml) committed to your repo, not just an exported image.
 
+> **Hard deadlines with exact dates** are maintained in a companion sheet: `CampusBites-Deadline-Schedule-and-Submission-Guide.md`. The table below tells you *what*; that sheet tells you *when, exactly*.
+
 | Milestone | Due (lab of) | Deliverables checklist | Checked |
 |---|---|---|---|
-| **M0 Kickoff** | W2 | ① Team charter (template: Appendix A) ② Stakeholder list ③ One-paragraph project vision ④ Git repository created & shared with instructor | pass/fail |
-| **M1 Requirements** | W5 | ① Vision & requirements list (mapped from the requirements pack + your elaboration) ② Use case diagram (all actors) ③ **2 detailed use case specifications** (template: Appendix B) — choose *Place Order* and one more | W05 cross-team client review |
-| **M2 Analysis models** | W8 | ① Domain model: conceptual classes, attributes, associations with multiplicities (10+ classes) ② **2+ sequence diagrams** (system operations, e.g. `placeOrder`, `pay`) ③ **Order state machine** complete with guards/actions/events ④ 1 activity diagram (e.g. order fulfillment) | W09 mid-term review |
-| **M3 Design models** | W12 | ① Design class diagram: traceable to sequence messages, visibility & navigability shown ② GRASP/SOLID application notes: for **every** major responsibility decision, name the principle and argue the alternative ③ Interaction diagram updated to DCD level | in-class, W10–12 |
-| **M4 Patterns** | W15 | ① Pattern catalog: **5+ GoF patterns** applied to CampusBites (template: Appendix C) ② Before/after refactoring narrative for at least one design smell ③ Updated DCD reflecting pattern applications | in-class, W13–15 |
-| **M5 Defense** | W16 | ① Final report (structure: Appendix D) ② Individual contribution logs (template: Appendix E) ③ All diagram source files ④ Pattern catalog cards | final defense |
+| **M0 Kickoff** | W2 — **Fri Sep 11** | ① Team charter (template: Appendix A) ② Stakeholder list ③ One-paragraph project vision ④ Git repository created & shared with instructor | pass/fail |
+| **M1 Requirements** | W5 — **Sun Oct 4** | ① Vision & requirements list (mapped from the requirements pack + your elaboration) ② Use case diagram (all actors) ③ **2 detailed use case specifications** (template: Appendix B) — choose *Place Order* and one more | W05 cross-team client review |
+| **M2 Analysis models** | W8 — **Sun Oct 25** | ① Domain model: conceptual classes, attributes, associations with multiplicities (10+ classes) ② **2+ sequence diagrams** (system operations, e.g. `placeOrder`, `pay`) ③ **Order state machine** complete with guards/actions/events ④ 1 activity diagram (e.g. order fulfillment) | W09 mid-term review |
+| **M3 Design models** | W12 — **Sun Nov 22** | ① Design class diagram: traceable to sequence messages, visibility & navigability shown ② GRASP/SOLID application notes: for **every** major responsibility decision, name the principle and argue the alternative ③ Interaction diagram updated to DCD level | in-class, W10–12 |
+| **M4 Patterns** | W14 — **Sun Dec 6** | ① Pattern catalog: **5+ GoF patterns** applied to CampusBites (template: Appendix C) ② Before/after refactoring narrative for at least one design smell ③ Updated DCD reflecting pattern applications | in-class, W13–15 |
+| **M5 Defense** | W16 — **defense in class Dec 14–18; final package Sun Dec 20** | ① Final report (structure: Appendix D) ② Individual contribution logs (template: Appendix E) ③ All diagram source files ④ Pattern catalog cards | final defense |
 
 **Late policy:** −10% per calendar day on that milestone, max 3 days, then 0 for the milestone. Plan ahead; OneDrive sync failure is not an excuse — push early, push often.
 
@@ -86,8 +88,9 @@ Every deliverable is **in English**. Every diagram needs a **source file** (.dra
 
 ## 6. Submission Rules — Your Git Repository
 
-1. **One repository per team**, created in Week 2, named `campusbites-team-<A|B>`, shared with the instructor (read access).
-2. **Repository layout** (keep it clean — this itself is graded under documentation quality):
+1. **One repository per team**, created in Week 2, named `campusbites-team-<A|B>`, shared with the instructor (read access). The instructor's GitHub account is **`klausren`**.
+2. **A milestone submission = a pushed tag.** At every deadline, create an annotated tag (`m0` … `m5`) and push it: `git tag -a m1 -m "M1 submission" && git push origin m1`. The tag — not your branch head — is the graded snapshot, and the README.md milestone status table must be updated with it. Full protocol, one-time registration email, and the GitHub-unreachable fallback: `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4.
+3. **Repository layout** (keep it clean — this itself is graded under documentation quality):
 
 ```
 campusbites-team-a/
@@ -100,9 +103,9 @@ campusbites-team-a/
 └── changes/               # instructor's requirement-change injections + your responses
 ```
 
-3. **Commit discipline**: small, meaningful commits with clear messages (`Add state machine guards for cancel-before-pay`). Commit history is teamwork evidence — it feeds your Individual Contribution grade (§8). One giant "final commit" is a red flag.
-4. **File formats**: Markdown for documents, .drawio or .puml for diagram sources, exported PNG/SVG alongside each diagram. No .docx/.pdf-only submissions.
-5. **Language**: everything in English. A non-English deliverable is returned once for translation (−20% on that item); a second time it is not accepted.
+4. **Commit discipline**: small, meaningful commits with clear messages (`Add state machine guards for cancel-before-pay`). Commit history is teamwork evidence — it feeds your Individual Contribution grade (§8). One giant "final commit" is a red flag.
+5. **File formats**: Markdown for documents, .drawio or .puml for diagram sources, exported PNG/SVG alongside each diagram. No .docx/.pdf-only submissions.
+6. **Language**: everything in English. A non-English deliverable is returned once for translation (−20% on that item); a second time it is not accepted.
 
 ---
 
