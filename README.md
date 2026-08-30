@@ -83,7 +83,7 @@ Students work in **small teams (2–3)** throughout the semester on **CampusBite
 | Decorator | Meal customization: toppings, portions, add-ons |
 | Facade / Factory / Builder / Command | Notification stack / payment creation / order assembly / undoable operations |
 
-Milestones: kickoff (W2) → requirements (W5) → analysis models (W9 mid-term review) → design models (W12) → pattern catalog (W15) → final defense (W16). Assessment is **project + oral defense** (no written exam): group deliverables plus an individual defense where every team member must be able to explain any part of the work. See [03-project/CampusBites-Project-Brief.md](03-project/CampusBites-Project-Brief.md).
+Milestones: kickoff (W2) → requirements (W5) → analysis models (W9 mid-term review) → design models (W12) → pattern catalog (W15) → final defense (W16). Assessment is **project + oral defense** (no written exam): group deliverables plus an individual defense where every team member must be able to explain any part of the work. See the [Project Guidebook](03-project/CampusBites-Project-Guidebook.md) (handed to students in Week 1 — milestones, submission rules, grading, and templates) and the [Project Brief](03-project/CampusBites-Project-Brief.md).
 
 ## 📂 Repository Structure 目录结构
 
