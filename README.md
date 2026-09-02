@@ -8,7 +8,7 @@
 [![Course](https://img.shields.io/badge/course-16%20weeks%20%7C%2064%20hours-4E29FF)]()
 [![Language](https://img.shields.io/badge/language-English%20only-2EA043)]()
 [![Focus](https://img.shields.io/badge/focus-OOAD%20%7C%20GRASP%20%7C%20SOLID%20%7C%20GoF-8957E5)]()
-[![Progress](https://img.shields.io/badge/slides%20released-0%2F16-blue)]()
+[![Progress](https://img.shields.io/badge/slides%20released-1%2F16-blue)]()
 [![Update](https://img.shields.io/badge/update-weekly-FF6905?labelColor=555)]()
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-8957E5.svg)](https://github.com/klausren/isad-course/pulls)
@@ -53,7 +53,7 @@ A complete, **English-only** open course for **Information Systems Analysis and 
 
 | Week 周 | Topic 主题 | Slides 课件 |
 |:---:|---|---|
-| 01 | Introduction: Systems, Analysts & the OOAD Roadmap 导论 | 🚧 in production 制作中 |
+| 01 | Introduction: Systems, Analysts & the OOAD Roadmap 导论 | ✅ released 已发布 |
 | 02 | Object-Oriented Foundations 面向对象基础 | 🚧 in production 制作中 |
 | 03 | UML Essentials & Modeling Workflow UML 精要 | 🚧 in production 制作中 |
 | 04 | Requirements & Use Case Modeling 用例建模 | 🚧 in production 制作中 |
@@ -83,7 +83,7 @@ Students work in **small teams (2–3)** throughout the semester on **CampusBite
 | Decorator | Meal customization: toppings, portions, add-ons |
 | Facade / Factory / Builder / Command | Notification stack / payment creation / order assembly / undoable operations |
 
-Milestones: kickoff (W2) → requirements (W5) → analysis models (W9 mid-term review) → design models (W12) → pattern catalog (W15) → final defense (W16). Assessment is **project + oral defense** (no written exam): group deliverables plus an individual defense where every team member must be able to explain any part of the work. See the [Project Guidebook](03-project/CampusBites-Project-Guidebook.md) (handed to students in Week 1 — milestones, submission rules, grading, and templates), the [Deadline Schedule & Submission Guide](03-project/CampusBites-Deadline-Schedule-and-Submission-Guide.md) (exact hard deadlines, tag-based submission protocol, and a fallback channel), and the [Project Brief](03-project/CampusBites-Project-Brief.md).
+Milestones: kickoff (W2) → requirements (W5) → analysis models (W9 mid-term review) → design models (W12) → pattern catalog (W15) → final defense (W16). Assessment is **project + oral defense** (no written exam): group deliverables plus an individual defense where every team member must be able to explain any part of the work. See the [Project Guidebook](03-project/CampusBites-Project-Guidebook.md) (handed to students in Week 1 — milestones, submission rules, grading, and templates), the [Lab Guide](03-project/CampusBites-Lab-Guide.md) (week-by-week hands-on lab tasks tied to each milestone), the [Deadline Schedule & Submission Guide](03-project/CampusBites-Deadline-Schedule-and-Submission-Guide.md) (exact hard deadlines, tag-based submission protocol, and a fallback channel), and the [Project Brief](03-project/CampusBites-Project-Brief.md).
 
 ## 📂 Repository Structure 目录结构
 
