@@ -166,7 +166,7 @@ Weekly in-class exercises are **formative** — checked and discussed in class, 
 ## 9. Policies
 
 - **Academic integrity**: plagiarized models = 0 for the milestone + academic misconduct procedure. **AI tools**: you MAY use AI for polishing English and brainstorming, if you disclose what and how in the report; undisclosed AI-generated bulk content is treated as plagiarism. Disclosure = no penalty — we care that you understand what you submit.
-- **Attendance**: lab sessions (the 4th hour each week) build your milestone deliverables step by step; participation is part of the defense assessment.
+- **Attendance**: lab sessions (the last 2 hours of each weekly block) build your milestone deliverables step by step; participation is part of the defense assessment.
 - **Grade disputes**: in writing within 3 working days of grade publication.
 
 ---

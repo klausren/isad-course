@@ -34,8 +34,8 @@ A complete, **English-only** open course for **Information Systems Analysis and 
 | Item 项目 | Detail 内容 |
 |---|---|
 | Course 课程 | Information Systems Analysis and Design 信息系统分析与设计 |
-| Credits / Hours 学分 / 学时 | 4 credits / 64 hours (Lecture 48 + Practice 16) |
-| Duration 周期 | 16 weeks, 4 hours per week (2 sessions) |
+| Credits / Hours 学分 / 学时 | 4 credits / 64 hours (Lecture 32 + Lab 32) |
+| Duration 周期 | 16 weeks, 4 consecutive hours per week (2h lecture + 2h lab) |
 | Language 语言 | **English only 全英文**（for international students 面向国际学生） |
 | Focus 定位 | OOAD: UML analysis models → GRASP & SOLID principles → GoF patterns → architecture |
 | Reference 参考教材 | C. Larman, *Applying UML and Patterns* (3rd ed.); GoF; Head First Design Patterns; R. C. Martin (SOLID) |
