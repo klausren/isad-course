@@ -6,7 +6,7 @@ Weekly lecture slides for **Information Systems Analysis and Design** (English o
 
 | Week | Topic | Status |
 |---|---|---|
-| W01 | Introduction: Systems, Analysts & the OOAD Roadmap | 🚧 |
+| W01 | Introduction: Systems, Analysts & the OOAD Roadmap | ✅ |
 | W02 | Object-Oriented Foundations | 🚧 |
 | W03 | UML Essentials & Modeling Workflow | 🚧 |
 | W04 | Requirements & Use Case Modeling | 🚧 |
