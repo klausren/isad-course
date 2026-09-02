@@ -8,7 +8,7 @@
 [![Course](https://img.shields.io/badge/course-16%20weeks%20%7C%2064%20hours-4E29FF)]()
 [![Language](https://img.shields.io/badge/language-English%20only-2EA043)]()
 [![Focus](https://img.shields.io/badge/focus-OOAD%20%7C%20GRASP%20%7C%20SOLID%20%7C%20GoF-8957E5)]()
-[![Progress](https://img.shields.io/badge/slides%20released-1%2F16-blue)]()
+[![Progress](https://img.shields.io/badge/slides%20released-2%2F16-blue)]()
 [![Update](https://img.shields.io/badge/update-weekly-FF6905?labelColor=555)]()
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-8957E5.svg)](https://github.com/klausren/isad-course/pulls)
@@ -54,7 +54,7 @@ A complete, **English-only** open course for **Information Systems Analysis and 
 | Week 周 | Topic 主题 | Slides 课件 |
 |:---:|---|---|
 | 01 | Introduction: Systems, Analysts & the OOAD Roadmap 导论 | ✅ released 已发布 |
-| 02 | Object-Oriented Foundations 面向对象基础 | 🚧 in production 制作中 |
+| 02 | Object-Oriented Foundations 面向对象基础 | ✅ released 已发布 |
 | 03 | UML Essentials & Modeling Workflow UML 精要 | 🚧 in production 制作中 |
 | 04 | Requirements & Use Case Modeling 用例建模 | 🚧 in production 制作中 |
 | 05 | Use Case Specification & Scenarios 用例规约 | 🚧 in production 制作中 |
