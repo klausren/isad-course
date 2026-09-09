@@ -1,33 +1,39 @@
-# Homework W02 — Refactoring Worksheet: Extract an Interface
+# Homework W02 — Refactoring Worksheet: Extract an Interface (on paper)
 
-<!-- Individual homework, due before the Week 3 lab. ~40 lines of code is plenty. Bring it to the lab — working or broken. -->
+<!-- Individual homework, due before the Week 3 lab. **No programming required** — you do this
+with pseudocode and a small class diagram. Bring it to the lab, finished or half-finished. -->
 
 > **How to use this template.** Do the work in your team repository under `03-design/`, then fill this worksheet. Delete this block when you commit.
 >
-> **The task.** Take the messy `Order` from Exercise 2.1 and extract **one interface and two implementations** — e.g. `PaymentMethod` with `CardPayment` and `CampusCardPayment`. Small is fine.
+> **The task.** Take the messy `Order` from Exercise 2.1 and extract **one interface and two implementations** — e.g. `PaymentMethod` with `CardPayment` and `CampusCardPayment`. Express it as **pseudocode plus a class diagram**. Writing runnable code is optional (Bonus C2) and never expected.
+>
+> **Pseudocode refresher:** `Class Order` · `− lines : OrderLine[0..*]` (private, zero or more) · `+ pay() : Receipt` (public operation) · `PaymentMethod (interface)` · `Class X implements Y` · `Class B extends A`. Full conventions: `01-slides/Pseudocode-Conventions.md`.
 
 ---
 
 ## 1. Before — what you started from
 
-> Paste the original method(s) you are replacing. Keep it honest: an `if`/`else` or `switch` on a type string is expected, and is exactly the point.
+> Write out the operation you are replacing. Keep it honest: a list of `if` / `switch` branches on a type is expected, and is exactly the point.
 
-```java
-// BEFORE
+```text
+# BEFORE
+
++ checkout(order)
+    if type = CARD    -> chargeCard(order)
+    ...
 ```
 
 | Question | Answer |
 |---|---|
-| Which method did you change? |  |
+| Which operation did you change? |  |
 | What did it branch on? |  |
-| How many lines did you delete? |  |
+| How many branches did you delete? |  |
 
 ## 2. The interface
 
-```java
-public interface ______________ {
-    ______________ ______________(______________);
-}
+```text
+______________ (interface)
+    + ______________(______________) : ______________
 ```
 
 | Question | Answer |
@@ -38,29 +44,26 @@ public interface ______________ {
 
 ## 3. Two implementations
 
-```java
-public class ______________ implements ______________ {
-    @Override public ______________ ______________(______________) {
-        // ...
-    }
-}
+```text
+Class ______________ implements ______________
+    + ______________(______________) : ______________
+        ...
 
-public class ______________ implements ______________ {
-    @Override public ______________ ______________(______________) {
-        // ...
-    }
-}
+Class ______________ implements ______________
+    + ______________(______________) : ______________
+        ...
 ```
 
 | Implementation | How it honours the contract | What it needs from outside |
 |---|---|---|
 |  |  |  |
-|  |  |  |
 
 ## 4. The call site — the one line that matters
 
-```java
-// AFTER
+```text
+# AFTER
+
+r = method.pay(order.total())
 ```
 
 > The goal: **no `if` and no `switch`** left in `Order`. If your call site still asks "which type?", you are not finished.
@@ -75,35 +78,16 @@ public class ______________ implements ______________ {
 
 | Question | Answer |
 |---|---|
-| Which files change? |  |
-| Which files do **not** change? |  |
-| Is that acceptable? Why? |  |
+| Which of your boxes do you touch? |  |
+| Which files would NOT change? |  |
+| One sentence: why is this "open for extension, closed for modification"? |  |
 
-If `Order` appears in the first list, the refactor did not work. Go back to §2.
+## 6. The diagram (sketch)
 
-## 6. Reflection (three sentences — this is what gets read)
+> Draw the interface, the two implementations, and `Order` pointing at the interface — not at the implementations. Photo or PlantUML, either is fine; save it as `03-design/payment-extract.png` / `.puml`.
 
-1. What got easier? `______________________________________________`
-2. What got harder? `______________________________________________`
-3. One thing I still do not understand: `______________________________________________`
+## 7. Optional — code sketch (Bonus C2 only)
 
-> Bring question 3 to the lab. *"I did not understand this"* is a better contribution than silence.
-
----
-
-## Done when
-
-- [ ] One interface, two implementations, committed under `03-design/`.
-- [ ] The code compiles — or, if it does not, the broken version is committed with a note on the error.
-- [ ] `Order` has no type-based branching left.
-- [ ] §5 answers the "ApplePay" question with file names.
-- [ ] Committed with a meaningful message (`Extract PaymentMethod interface from Order`), pushed to the team repository.
-
-## Stuck?
-
-| Symptom | Fix |
-|---|---|
-| The interface ends up with 5 methods | It is too big. One behaviour, one method. Split later. |
-| Both implementations share code | Fine — put the shared part in an abstract class, but keep the interface as the type the caller sees (slide 26). |
-| `Order` still needs to know which class to `new` | Correct, and that is next week's problem (creation is a separate responsibility — W11 GRASP). For now, pass it in from outside. |
-| Nothing compiles and I am stuck | Commit the broken version with the error message in the commit body. Bring it Friday. |
+> Only if you want to. Any language. If you do, add a short paragraph: what surprised you when you actually wrote it. Push it under `03-design/` and say so in your contribution log.
+>
+> **Not writing a single line of code costs you nothing in this course.**

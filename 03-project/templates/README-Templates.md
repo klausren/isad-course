@@ -36,3 +36,7 @@
 | W11–W12 | GRASP & SOLID application notes |
 | W13–W15 | Pattern catalog card (Appendix C) |
 | W16 | Individual contribution log (Appendix E) |
+
+---
+
+**No programming required.** Every example in these templates is language-neutral pseudocode — students read it, never write it. Conventions: `01-slides/Pseudocode-Conventions.md`. A code sketch is optional Bonus (C2) and never expected.

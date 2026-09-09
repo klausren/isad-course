@@ -7,7 +7,7 @@
 
 ## 1. What This Course Asks of You
 
-There is **no written exam** in this course. Your grade comes from one thing you build across the whole semester: a complete analysis & design portfolio for **CampusBites**, a campus food ordering and delivery platform — reviewed at milestones and defended orally in Week 16.
+There is **no written exam** in this course — and **no programming required**. Your grade comes from one thing you build across the whole semester: a complete analysis & design portfolio for **CampusBites**, a campus food ordering and delivery platform — reviewed at milestones and defended orally in Week 16. Every example in the slides is **language-neutral pseudocode**: you only need to read it, never to write it (see `01-slides/Pseudocode-Conventions.md`).
 
 **In one sentence:** you will play the role of a systems analyst team, taking CampusBites from raw requirements to a well-argued object-oriented design, applying GRASP/SOLID principles and GoF design patterns, and defending every decision you make.
 
@@ -245,7 +245,7 @@ Repository: (URL, all members + instructor have access)
 - **Problem**: Order status transitions were one `status` field + a giant switch; adding "Refunding" state touched 6 files (violated OCP).
 - **Solution**: State pattern — `OrderState` interface, concrete states (CreatedState, PaidState, ...), `Order` delegates status behavior.
 - **Consequences**: adding a state = one new class (+ OCP); more classes overall; state transitions explicit and testable.
-- **Where**: DCD p.3, sequence diagram "pay order", classes `order/OrderState.java` (sketch)
+- **Where**: DCD p.3, sequence diagram "pay order", classes `OrderState` (pseudocode sketch)
 - **Why not Strategy?**: states have *ordering constraints* (legal transitions), strategies don't.
 ```
 

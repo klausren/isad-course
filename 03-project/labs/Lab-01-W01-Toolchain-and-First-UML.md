@@ -230,7 +230,9 @@ What changed between the analysis model and the design model:
 
    > `docs/diagrams/` is where every diagram lives from here on — the convention is formalised as a team rule in Week 3 (see `Lab-03-W03-UML-Essentials-Practice.md`, Task D). Start using the path now so you never have to move files later.
    >
-   > If you have no repo yet: create one now — `campusbites-team-01`, or `isad-scratch-<yourname>` if the team is not final. Creating it today removes 80% of the Week 2 M0 panic.
+   > If you have no repo yet: create one now — `campusbites-team-01`, or `isad-scratch-<yourname>` if the team is not final.
+
+> **No programming background? You are in the right place.** This course has no coding prerequisite: every example is pseudocode you only have to read. Skim `01-slides/Pseudocode-Conventions.md` (10 minutes) before Week 2 — it is the only syntax you will ever need here. Creating it today removes 80% of the Week 2 M0 panic.
 
 ### Done when
 

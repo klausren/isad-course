@@ -429,7 +429,7 @@ it <the one thing that makes it better>.
 
 ## 10. Homework (before Week 3)
 
-1. **Refactor the Order class.** Extract **one interface and two implementations** from the messy version in Task A (e.g. `PaymentMethod` with `CardPayment` / `CampusCardPayment`). Small is fine — 40 lines is plenty.
+1. **Refactor the Order class — on paper.** Extract **one interface and two implementations** from the messy version in Task A (e.g. `PaymentMethod` with `CardPayment` / `CampusCardPayment`). Use template `Template-W02-07-Refactoring-Worksheet.md`: pseudocode + a small class diagram. **No programming required** — a code sketch is optional Bonus (C2).
 2. **Push it to your team repo.** A commit history is your contribution evidence. Start it now.
 3. **Read Larman on OO basics** — chapters as assigned. Skim for vocabulary, not for mastery.
 4. **Draft your vision paragraph** if it did not survive Task D.

@@ -57,6 +57,7 @@ Every technique in this course maps naturally onto CampusBites:
 ## 4. Deliverable Format Requirements
 
 1. **Language**: all English (quality of English is graded — see rubric).
+2. **No programming required**: this is an analysis & design course. Examples in class are language-neutral pseudocode — you read them, you never write them. Small code sketches are optional Bonus (C2).
 2. **Diagrams**: source files (.drawio or .puml) must be committed alongside exported images.
 3. **Pattern cards**: one card per pattern application, fixed template provided in W13.
 4. **Traceability**: each DCD operation must trace to at least one sequence-diagram message; each sequence diagram to a use case step. A traceability matrix is required in the final report.

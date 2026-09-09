@@ -23,4 +23,8 @@ Weekly lecture slides for **Information Systems Analysis and Design** (English o
 | W15 | Design Patterns III: Behavioral | 🚧 |
 | W16 | Architectural Patterns & Final Defense | 🚧 |
 
-Naming convention: `WNN-Topic-Name.pptx`. Each deck is self-contained: learning objectives → concepts with original diagrams → Java code examples → in-class exercises with answers → weekly project task.
+Naming convention: `WNN-Topic-Name.pptx`. Each deck is self-contained: learning objectives → concepts with original diagrams → **pseudocode examples** → in-class exercises with answers → weekly project task.
+
+## No programming required 无需编程基础
+
+This course assumes **no programming background**. Every code-looking box in the decks is **language-neutral pseudocode** — students read it, they never write it. The five conventions used (`Class X`, `− field : Type`, `+ operation()`, `extends`, `implements`) are explained in **[`Pseudocode-Conventions.md`](Pseudocode-Conventions.md)** (10-minute read; hand it out in Week 1).

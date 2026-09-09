@@ -8,17 +8,18 @@
 
 ## The class (slide 30)
 
-```java
-public class Order {
-    void placeOrder()      { ... }
-    void chargeCustomer()  { ... }
-    void notifyRider()     { ... }
-    void printReceipt()    { ... }
-    void updateInventory() { ... }
-    void sendSms()         { ... }
-    void applyDiscount()   { ... }
-}
+```text
+Class Order
+    + placeOrder()
+    + chargeCustomer()
+    + notifyRider()
+    + printReceipt()
+    + updateInventory()
+    + sendSms()
+    + applyDiscount()
 ```
+
+*(Pseudocode — you only need to read it. Conventions: `01-课件/Pseudocode-Conventions-伪代码约定.md`.)*
 
 **Your task: list the distinct responsibilities — not the methods.**
 If your answer has seven rows, you copied the slide.
