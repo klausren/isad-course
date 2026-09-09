@@ -159,7 +159,7 @@ The one method I could NOT place confidently, and why:
 - [ ] Every person holds a different role in at least two of the five milestones.
 - [ ] Nobody holds "Presenter" for all five. (Tempting. Forbidden.)
 
-> **Golden rule — you present it, you own it, you all know it.** At the final defense any member can be asked about **any** part of the team's work. Individual Q&A is 25% of your grade.
+> **Golden rule — you present it, you own it, you all know it.** At the final defense any member can be asked about **any** part of the team's work. Individual Q&A carries 55 of the 100 summative points, and the defense is 60% of your course grade.
 
 ---
 

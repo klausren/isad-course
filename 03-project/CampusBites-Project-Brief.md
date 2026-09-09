@@ -67,4 +67,4 @@ Every technique in this course maps naturally onto CampusBites:
 - Models must be **your own** — no copying from last year's projects or online repositories (checked at defense).
 - AI tools may be used for English polishing or syntax checking **if disclosed** in the final report; models and design decisions must be human-made.
 - Late milestone submission: −10% per day, max 3 days, then not accepted without prior approval.
-- Bonus (up to 10%): extra patterns beyond 5, exceptional refactoring narratives, outstanding documentation quality.
+- Bonus (up to +5 points, course total capped at 100): extra patterns beyond 5, exceptional refactoring narratives, outstanding documentation quality.

@@ -56,7 +56,7 @@ Every design pattern you learn in class maps onto a natural CampusBites feature:
 - Each team appoints a **Team Lead**: runs stand-ups, owns the submission calendar, interfaces with the instructor in reviews. Being Team Lead gives **no extra points**, but you must report on team management at the defense.
 - **Four standing roles, one each:** Team Lead (calendar & instructor contact) · Recorder (notes, README, decision log) · Reviewer (quality gate before every submission) · **Release Manager** (repository, tags — the person who actually submits). Swap them at mid-term if you want everyone to try the job.
 - **Roles rotate** across milestones so everyone touches every activity: analyst (requirements, use cases), modeler (domain/sequence/state diagrams), designer (DCD, patterns), reviewer (quality gate before submission), presenter (milestone reviews). With **four people and five roles**, in most milestones one of you holds two hats — plan the rotation in your team charter so nobody is stuck with the same hat twice.
-- **Golden rule — "you present it, you own it, you all know it":** at the final defense, **any member can be asked about any part** of the team's work. Individual Q&A is 25% of your grade. A team where only one person understands the domain model will fail that member — and it will show.
+- **Golden rule — "you present it, you own it, you all know it":** at the final defense, **any member can be asked about any part** of the team's work. Individual Q&A carries **55 of the 100 summative points**, and the defense is **60% of your course grade**. A team where only one person understands the domain model will fail that member — and it will show.
 
 ---
 
@@ -129,45 +129,46 @@ With four students in the room, there is no back row. Everyone speaks, everyone 
 
 ---
 
-## 8. Grading
+## 8. Grading — official university formula
 
-### Group Project Deliverables — 50% (shared by the team)
+> **Course grade = Formative assessment (40 points × 100%) + Summative assessment (100 points × 60%)**
 
-| # | Criterion | Weight |
+### Formative assessment — 40 points
+
+| # | Item | Points | What is graded |
+|---|---|---|---|
+| F1 | Attendance | 0 | Recorded every session, not scored; absences handled per school regulations |
+| F2 | Class participation | 10 | Weekly in-class exercises (4) · client-review questions in W05 (2) · peer critique & discussion (2) · engagement & English (2) |
+| F3 | **Level-3 project — CampusBites** | 20 | Milestone deliverables **14** (M0 setup 1 · M1 requirements 3 · M2 analysis 4 · M3 design 3 · M4 patterns 3) + **individual contribution & Git 6** |
+| F4 | Assignments | 10 | 5 homework sets × 2 points: W02 refactoring · W04 use case specification · W07 behavior modeling · W11 design class diagram · W13 pattern card |
+
+Milestone points (the 14) are shared by the team; English documentation quality is graded inside every milestone item. The 6 individual points are yours alone: substantive commits across all milestones (3) · accurate contribution log (2) · useful reviews of teammates' work (1).
+
+Mid-term review (W9) is formative feedback — not scored; it tells you what to fix before M3.
+
+### Summative assessment — final defense, W16 (100 points × 60%)
+
+| # | Component | Points |
 |---|---|---|
-| A1 | Requirements & use case model | 15% |
-| A2 | Analysis models (domain, sequence, state) | 25% |
-| A3 | Design class diagram | 20% |
-| A4 | Principle application (GRASP/SOLID) | 15% |
-| A5 | Pattern catalog (5+) | 20% |
-| A6 | English documentation quality | 5% |
+| S1 | Design portfolio walkthrough (team) | 30 |
+| S2 | Individual Q&A — every member questioned on **any part** of the work (5 min each) | 55 |
+| S3 | English communication | 10 |
+| S4 | Individual reflection & contribution report (submitted with M5) | 5 |
 
-*(weights within the 50% group component)*
-
-### Individual Defense & Contribution — 40% (yours alone)
-
-| # | Criterion | Weight |
-|---|---|---|
-| B1 | Final defense individual Q&A (W16) | 25% |
-| B2 | Contribution log & Git history | 15% |
-
-### Bonus — up to 10%
+### Bonus — up to +5 (course total capped at 100)
 
 | # | Bonus item | Cap |
 |---|---|---|
-| C1 | Extra patterns beyond 5, correctly applied | +3% each, up to +6% |
-| C2 | Exceptional refactoring narrative (before/after with clear argument or metrics) | +4% |
-| C3 | Outstanding documentation | +2% |
-| C4 | High-quality client-review questions in W05 / peer sessions | +2% |
+| C1 | Extra patterns beyond 5, correctly applied | +2 |
+| C2 | Exceptional refactoring narrative (before/after with clear argument or metrics) | +2 |
+| C3 | Outstanding documentation (instructor's judgment) | +1 |
 
-Weekly in-class exercises are **formative** — checked and discussed in class, not graded. They exist to feed your milestones.
-
----
+Sharp client-review questions are graded in F2 (class participation), not as bonus — that work counts every week.
 
 ## 9. Policies
 
 - **Academic integrity**: plagiarized models = 0 for the milestone + academic misconduct procedure. **AI tools**: you MAY use AI for polishing English and brainstorming, if you disclose what and how in the report; undisclosed AI-generated bulk content is treated as plagiarism. Disclosure = no penalty — we care that you understand what you submit.
-- **Attendance**: lab sessions (the last 2 hours of each weekly block) build your milestone deliverables step by step; participation is part of the defense assessment.
+- **Attendance**: attendance itself carries **0 points** (F1) but is recorded every session; absences are handled per school regulations. Lab sessions (the last 2 hours of each weekly block) build your milestone deliverables step by step — missing them costs you F2 participation points and milestone quality, not attendance points.
 - **Grade disputes**: in writing within 3 working days of grade publication.
 
 ---
