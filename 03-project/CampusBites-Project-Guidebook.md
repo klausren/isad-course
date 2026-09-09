@@ -202,6 +202,8 @@ A: Either. draw.io is friendlier for exploration; PlantUML is better for version
 
 ## Appendix A — Team Charter Template
 
+> **Use the full template instead:** [`templates/Template-W02-01-Team-Charter.md`](templates/Template-W02-01-Team-Charter.md) — it adds role rotation, communication rules, a conflict rule, a definition of done, and a signature block. The skeleton below is the minimum acceptable shape.
+
 ```markdown
 # Team Charter — CampusBites Team A
 Members: (name, student ID, email)

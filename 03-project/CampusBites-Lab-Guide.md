@@ -16,6 +16,15 @@ Every week you have **4 consecutive hours**, split into two blocks:
 
 The lab is **not** a separate course. It is where you turn the lecture into your own models, week by week. Everything you build in labs feeds a milestone deliverable; nothing in the lab is throwaway.
 
+### Two documents, two jobs
+
+| Document | Answers | You use it… |
+|---|---|---|
+| **This guide** (16-week plan) | *What* the lab covers each week, and what it feeds | To plan the term, and to see how the labs build on each other |
+| **`labs/Lab-NN-WNN-*.md`** (lab sheet) | *How* to do this week's work, step by step | **In the lab, open on your laptop** — steps, commands, done-when checklists, and what to do when you are stuck |
+
+Each weekly entry below links to its lab sheet. **The lab sheet is the one you work from**; this guide is the map.
+
 ---
 
 ## 1. Lab Tools & Environment (set up in W1–W2)
@@ -59,17 +68,28 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 ### Module A — Foundations (W1–W3)
 
 #### Lab 1 · W1 (Aug 31–Sep 06) — Course setup & first look at UML
+
+📄 **Lab sheet**: [`labs/Lab-01-W01-Toolchain-and-First-UML.md`](labs/Lab-01-W01-Toolchain-and-First-UML.md) — toolchain setup, reading your first UML models, first committed diagram.
+
 - **Setup**: install draw.io (or PlantUML), create GitHub account, open VS Code.
 - **Demo**: the instructor opens a finished vending-machine model (use case + domain + sequence) and reads it with you.
 - **Hands-on**: reproduce a tiny domain model (3–4 classes) in draw.io, export PNG + `.drawio`.
 - **Deliverable (none graded)**: your first committed diagram. **Homework**: read the Project Guidebook fully before W2.
 
 #### Lab 2 · W2 (Sep 07–Sep 13) — Team formation & M0 kickoff
+
+📄 **Lab sheet**: [`labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md`](labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md) — Exercise 2.1 (responsibilities), team charter, stakeholders & vision, repo + `m0` tag. **M0 due Fri Sep 11.**
+
+🧩 **Templates** (fill these in — they *are* the deliverables): [`Team Charter`](templates/Template-W02-01-Team-Charter.md) · [`Stakeholder List`](templates/Template-W02-02-Stakeholder-List.md) · [`Vision Statement`](templates/Template-W02-03-Vision-Statement.md) · [`Repository README`](templates/Template-W02-04-Repository-README.md) · [`M0 Submission Checklist`](templates/Template-W02-05-M0-Submission-Checklist.md). Classwork: [`Responsibility Worksheet`](templates/Template-W02-06-Responsibility-Worksheet.md) · [`Refactoring Worksheet`](templates/Template-W02-07-Refactoring-Worksheet.md).
+
 - **Form teams**: 2 teams × ~3 students; appoint Team Lead; agree role rotation.
 - **Hands-on**: ① write the team charter (Guidebook Appendix A) ② list stakeholders ③ write the one-paragraph vision ④ create the repo and invite the instructor (`klausren`).
 - **Milestone**: **M0 due Fri Sep 11** (pass/fail) — charter, stakeholder list, vision, repo registered.
 
 #### Lab 3 · W3 (Sep 14–Sep 20) — UML essentials practice
+
+📄 **Lab sheet**: [`labs/Lab-03-W03-UML-Essentials-Practice.md`](labs/Lab-03-W03-UML-Essentials-Practice.md) — Exercise 3.1 (name that diagram), toolchain proof, Exercise 3.2 (library model in PlantUML), the six team diagram conventions. **No milestone this week.**
+
 - **Hands-on**: classify a set of descriptions into structure vs. behaviour vs. interaction views; draw one of each for a small familiar system (e.g., the campus library).
 - **Purpose**: get fluent with draw.io/PlantUML *before* the graded models arrive. No milestone this week — use the breathing room.
 
@@ -145,6 +165,7 @@ Finish a lab by checking all three boxes. If any is empty, it is homework.
 ## 5. Reference
 
 - **Project Guidebook** (`CampusBites-项目指导书-Project-Guidebook.md`) — what to build, teams, submission rules, templates (Appendices A–E).
+- **Template library** (`templates/README-Templates.md`) — every fill-in document, which week it belongs to, and where to save it in your repository.
 - **Deadline Schedule** (`CampusBites-Deadline-Schedule-and-Submission-Guide.md`) — exact dates, tag protocol, fallback channel.
 - **Grading Rubric** (`Course-Project-Grading-Rubric.md`) — how each milestone and the defense are scored.
 - **Course Standard** (`00-课程文件/Course-Syllabus-课程标准.md`) — full syllabus and weekly schedule.
