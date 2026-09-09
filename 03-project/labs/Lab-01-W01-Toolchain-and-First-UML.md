@@ -230,7 +230,7 @@ What changed between the analysis model and the design model:
 
    > `docs/diagrams/` is where every diagram lives from here on — the convention is formalised as a team rule in Week 3 (see `Lab-03-W03-UML-Essentials-Practice.md`, Task D). Start using the path now so you never have to move files later.
    >
-   > If you have no repo yet: create one now — `campusbites-team-a` or `campusbites-team-b`, or `isad-scratch-<yourname>` if teams are not final. Creating it today removes 80% of the Week 2 M0 panic.
+   > If you have no repo yet: create one now — `campusbites-team-01`, or `isad-scratch-<yourname>` if the team is not final. Creating it today removes 80% of the Week 2 M0 panic.
 
 ### Done when
 
@@ -258,7 +258,7 @@ Three boxes. If any is empty, it is homework — and milestones do not wait for 
 - [ ] **One diagram committed** — source file *and* PNG are in a repository you can show me.
 - [ ] **You can explain every element you drew** in one English sentence each. If you cannot, you decorated, not designed — fix it now, not at the defense.
 
-**Also, today:** form your team of ~3 and agree who is Team Lead. Teams are formalised in the Week 2 lab, but arriving with a plan halves the argument.
+**Also, today:** agree the team of four and who is Team Lead. Teams are formalised in the Week 2 lab, but arriving with a plan halves the argument.
 
 ---
 

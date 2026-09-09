@@ -21,14 +21,14 @@
 |---|---|---|---|
 | **M0 Kickoff** | Team charter (Appendix A), stakeholder list, project vision, **Git repo created & instructor invited** | **Fri Sep 11** (W2) | W2 lab — pass/fail |
 | — Requirements pack issued | Instructor publishes the standard CampusBites requirements | in class, **W4 (Sep 21–25)** | — |
-| **M1 Requirements** | Requirements list, use-case diagram, 2 detailed use-case specifications | **Sun Oct 4** (W5) | Cross-team client review — first class session on/after Oct 4 (see §5 note) |
+| **M1 Requirements** | Requirements list, use-case diagram, 2 detailed use-case specifications | **Sun Oct 4** (W5) | Client review (instructor as client) — first class session on/after Oct 4 (see §5 note) |
 | **ΔC1 Change injection #1** | New requirement lands in your repo's `changes/` folder; your response is folded into M2 | announced **W6 (Oct 5–11)**, online | — |
 | **M2 Analysis models** | Domain model, 2+ sequence diagrams, Order state machine, activity diagram | **Sun Oct 25** (W8) | **W9 mid-term review (Oct 26–30)** — formative, every member questioned |
 | **ΔC2 Change injection #2** | Second requirement change; response folded into M3 | announced **W10 (Nov 2–6)** | — |
 | **M3 Design models** | Design class diagram, GRASP/SOLID application notes, DCD-level interaction diagrams | **Sun Nov 22** (W12) | In-class design walkthroughs, W10–W13 |
 | **ΔC3 Change injection #3** | Third requirement change; response folded into M4 | announced **W13 (Nov 23–27)** | — |
 | **M4 Patterns** | Pattern catalog (5+ GoF patterns, Appendix C), refactoring narrative, updated DCD | **Sun Dec 6** (W14) | Pattern catalog walkthrough, W15 (Dec 7–11) |
-| **M5 Defense** | Final defense — you present, you answer questions | **in class, W16 (Dec 14–18)** | Final defense, ~30 min per team |
+| **M5 Defense** | Final defense — you present, you answer questions | **in class, W16 (Dec 14–18)** | Final defense, ~35 min (one team of four) |
 | **M5 Final package** | Final report (Appendix D), individual contribution logs (Appendix E), all diagram sources, tag `m5` | **Sun Dec 20, 23:59** | Graded |
 
 **Why the week numbers and dates pair up this way:**
@@ -48,7 +48,7 @@ W03   Sep 14–Sep 20   OO foundations — no deliverable (breathing room)
 W04   Sep 21–Sep 27   Requirements pack issued in class
 W05   Sep 28–Oct 04   Requirements & use cases              → M1 due SUN OCT 04
 W06   Oct 05–Oct 11   (National Day week) ΔC1 announced online
-W07   Oct 12–Oct 18   M1 cross-team client review (first class back)
+W07   Oct 12–Oct 18   M1 client review — instructor as client (first class back)
 W08   Oct 19–Oct 25   Analysis modeling                     → M2 due SUN OCT 25
 W09   Oct 26–Nov 01   MID-TERM REVIEW (M1+M2, formative)
 W10   Nov 02–Nov 08   Design begins; ΔC2 announced
@@ -69,8 +69,7 @@ W16   Dec 14–Dec 20   FINAL DEFENSE in class                → M5 package due
 **One Git repository per team** (this is the only submission address):
 
 ```
-https://github.com/<your-team-account>/campusbites-team-a     (Team A)
-https://github.com/<your-team-account>/campusbites-team-b     (Team B)
+https://github.com/<your-team-account>/campusbites-team-01
 ```
 
 - Created under **any one member's GitHub account** in Week 2.
@@ -82,11 +81,11 @@ https://github.com/<your-team-account>/campusbites-team-b     (Team B)
 One member sends a **single email** to the instructor (address announced in W1 class):
 
 ```
-Subject: [ISAD] Repo registration — Team A
+Subject: [ISAD] Repo registration — Team 01
 
-Team name:    Team A
+Team name:    Team 01
 Members:      Full Name 1 (leader), Full Name 2, Full Name 3
-Repo URL:     https://github.com/xxx/campusbites-team-a
+Repo URL:     https://github.com/xxx/campusbites-team-01
 Access:       klausren invited as collaborator (done / pending)
 ```
 
@@ -129,8 +128,8 @@ This table is the first thing the instructor reads. Keep it true.
 
 If GitHub is unreachable from your network at deadline time:
 
-1. Create a zip of the **entire repository folder** (including `.git/`): `campusbites-team-a-m1.zip`
-2. Email it to the instructor **before the deadline** with subject `[ISAD] M1 fallback — Team A`.
+1. Create a zip of the **entire repository folder** (including `.git/`): `campusbites-team-01-m1.zip`
+2. Email it to the instructor **before the deadline** with subject `[ISAD] M1 fallback — Team 01`.
 3. Push to GitHub as soon as access returns; the emailed zip's timestamp is your proof of timeliness.
 
 The fallback covers **submission** only — you are still expected to restore the repo state (tags included) within 3 days.
@@ -139,7 +138,7 @@ The fallback covers **submission** only — you are still expected to restore th
 
 ## 5. Schedule Notes & Caveats
 
-- **National Day week (Oct 1–8)** sits inside W5–W6. Hard deadlines are online and **do not move**; only the *in-class* cross-team client review (planned W5) moves to the **first class session of W7 (Oct 12 or 13)**. If the university's calendar gives you class sessions on Sep 28–29, the review may happen there instead — the instructor will confirm in class.
+- **National Day week (Oct 1–8)** sits inside W5–W6. Hard deadlines are online and **do not move**; only the *in-class* client review (planned W5) moves to the **first class session of W7 (Oct 12 or 13)**. If the university's calendar gives you class sessions on Sep 28–29, the review may happen there instead — the instructor will confirm in class.
 - If the university calendar shifts any teaching week (make-up classes, weather, etc.), **hard deadlines stay where they are** unless the instructor explicitly announces a change in class and in the course repo. Silence = no change.
 - All change injections (ΔC) are announced **in the course repository and by email** — check both after every milestone week.
 - **Answer to the question you are about to ask**: yes, the Sunday 23:59 deadline means the *last useful moment* is around 22:00, when you still have time to fix a failed push. Plan accordingly.

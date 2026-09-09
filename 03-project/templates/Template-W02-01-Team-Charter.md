@@ -4,7 +4,7 @@
 
 > **How to use this template.** Copy it into your team repository. Fill every blank. Delete this grey instruction block and every `> Hint:` line before you tag `m0`. Keep the headings — the instructor checks against them.
 >
-> **The one idea behind this document.** A charter is a contract **between the three of you**, not with the instructor. When a milestone slips, this is the document you point at.
+> **The one idea behind this document.** A charter is a contract **between the four of you**, not with the instructor. When a milestone slips, this is the document you point at.
 
 ---
 
@@ -44,7 +44,19 @@ Five milestones, five roles. Rotate so nobody owns one job all term.
 | M4 — Dec 6 |  |  |  |  |  |
 | M5 — Dec 20 |  |  |  |  |  |
 
-> In a team of three some milestones mean one person holds two roles. Say so explicitly and swap next time. **Nobody holds "Presenter" for all five.**
+> Four people, five roles: in most milestones one person holds two hats. Say so explicitly and swap next time. **Nobody holds "Presenter" for all five.**
+
+**Worked example** (members A / B / C / D — copy the shape, put in your own names):
+
+| Milestone | Analyst | Modeler | Designer | Reviewer | Presenter |
+|---|---|---|---|---|---|
+| M1 — Oct 4 | **A** | B | C | D | **A** |
+| M2 — Oct 25 | **B** | C | D | A | **B** |
+| M3 — Nov 22 | **C** | D | A | B | **C** |
+| M4 — Dec 6 | **D** | A | B | C | **D** |
+| M5 — Dec 20 | B | C | D | A | *all four* |
+
+Rule: each person presents exactly once in M1–M4; the "double hat" moves one letter each milestone; M5 is a full-team defense.
 
 ## 5. Communication rules
 
@@ -89,7 +101,7 @@ We add our own rule: `______________________________________________`
 
 | Field | Value |
 |---|---|
-| Repository name | `campusbites-team-___` |
+| Repository name | `campusbites-team-01` |
 | URL | `https://github.com/____________/____________` |
 | Members with write access |  |
 | Instructor `klausren` invited | ☐ pending ☐ done |

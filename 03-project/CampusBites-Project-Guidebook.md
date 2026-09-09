@@ -52,9 +52,10 @@ Every design pattern you learn in class maps onto a natural CampusBites feature:
 
 ## 3. Teams & Roles
 
-- The cohort forms **two teams of ~3 students** in Week 2 (lab session).
+- The cohort of four forms **one team** in Week 2 (lab session). There is no second team: your reviewer is the **instructor acting as the client**, with a guest reviewer where possible.
 - Each team appoints a **Team Lead**: runs stand-ups, owns the submission calendar, interfaces with the instructor in reviews. Being Team Lead gives **no extra points**, but you must report on team management at the defense.
-- **Roles rotate** across milestones so everyone touches every activity: analyst (requirements, use cases), modeler (domain/sequence/state diagrams), designer (DCD, patterns), reviewer (quality gate before submission), presenter (milestone reviews). In a 3-person team each of you will hold several roles during the semester — plan this in your team charter.
+- **Four standing roles, one each:** Team Lead (calendar & instructor contact) · Recorder (notes, README, decision log) · Reviewer (quality gate before every submission) · **Release Manager** (repository, tags — the person who actually submits). Swap them at mid-term if you want everyone to try the job.
+- **Roles rotate** across milestones so everyone touches every activity: analyst (requirements, use cases), modeler (domain/sequence/state diagrams), designer (DCD, patterns), reviewer (quality gate before submission), presenter (milestone reviews). With **four people and five roles**, in most milestones one of you holds two hats — plan the rotation in your team charter so nobody is stuck with the same hat twice.
 - **Golden rule — "you present it, you own it, you all know it":** at the final defense, **any member can be asked about any part** of the team's work. Individual Q&A is 25% of your grade. A team where only one person understands the domain model will fail that member — and it will show.
 
 ---
@@ -63,7 +64,7 @@ Every design pattern you learn in class maps onto a natural CampusBites feature:
 
 1. **The requirements pack** (issued in Week 4): the instructor provides the standard CampusBites requirements — vision, stakeholder list, ~20 functional requirements, non-functional requirements, and constraints.
 2. **Three planned requirement changes** will be injected during the semester (e.g., a new payment method, a new promotion mechanic, a change to courier dispatch rules). This simulates a real client: expect your models to be *changed*, not frozen. How gracefully your models absorb change is part of the design grade — this is exactly what good OO design is for.
-3. **Cross-team client review (Week 5):** the two teams act as each other's **client**. Team A presents its use case model to Team B in English; Team B interrogates it from the client's perspective ("What happens if the courier picks up late? Can I cancel after payment?"). Then roles swap. Asking sharp questions earns Bonus credit (see §8).
+3. **Client review (Week 5):** the team presents its use case model in English; the **instructor plays the client** and interrogates it from the client's perspective ("What happens if the courier picks up late? Can I cancel after payment?"), with a guest reviewer where available. Because there is only one team, you also review each other: every member must be able to answer for the parts they did not author. Sharp, well-argued critique of your own model earns Bonus credit (see §8).
 
 ---
 
@@ -88,12 +89,12 @@ Every deliverable is **in English**. Every diagram needs a **source file** (.dra
 
 ## 6. Submission Rules — Your Git Repository
 
-1. **One repository per team**, created in Week 2, named `campusbites-team-<A|B>`, shared with the instructor (read access). The instructor's GitHub account is **`klausren`**.
+1. **One repository per team**, created in Week 2, named `campusbites-team-01`, shared with the instructor (read access). The instructor's GitHub account is **`klausren`**.
 2. **A milestone submission = a pushed tag.** At every deadline, create an annotated tag (`m0` … `m5`) and push it: `git tag -a m1 -m "M1 submission" && git push origin m1`. The tag — not your branch head — is the graded snapshot, and the README.md milestone status table must be updated with it. Full protocol, one-time registration email, and the GitHub-unreachable fallback: `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4.
 3. **Repository layout** (keep it clean — this itself is graded under documentation quality):
 
 ```
-campusbites-team-a/
+campusbites-team-01/
 ├── README.md              # team, members, milestone status table
 ├── 01-requirements/        # M1 deliverables
 ├── 02-analysis/           # M2: domain, sequence, state, activity
@@ -113,9 +114,9 @@ campusbites-team-a/
 
 | Event | Week | Format |
 |---|---|---|
-| **Cross-team client review** | W5 | Each team 25 min: 10 min present use case model in English, 15 min interrogation by the other team (as client) |
-| **Mid-term review** | W9 | Each team 20 min: 8 min walkthrough of M1+M2, **10 min individual Q&A (every member questioned)**, 2 min feedback. Formative — this is where you find out what to fix |
-| **Final defense** | W16 | Each team 30 min: 10 min design portfolio walkthrough, **15 min individual Q&A — each member questioned on ANY part of the work**, 5 min feedback. Summative |
+| **Client review** | W5 | 30 min: 10 min present the use case model in English, 20 min interrogation by the instructor as client (plus guest questions) |
+| **Mid-term review** | W9 | 30 min: 10 min walkthrough of M1+M2, **16 min individual Q&A (every member questioned, 4 min each)**, 4 min feedback. Formative — this is where you find out what to fix |
+| **Final defense** | W16 | 35 min: 10 min design portfolio walkthrough, **20 min individual Q&A — each member questioned on ANY part of the work (5 min each)**, 5 min feedback. Summative |
 
 **Defense question style** (from the question bank — samples):
 
@@ -124,7 +125,7 @@ campusbites-team-a/
 - *A new payment method "ApplePay" must be added next semester. Which files change, and why is that acceptable (or not)?* (OCP / Factory)
 - *Your teammate designed the domain model you just presented. Walk me through why `Courier` is associated with `Order` and not `OrderLine`.* (individual mastery)
 
-With ~6 students in the room, there is no back row. Everyone speaks, everyone is questioned.
+With four students in the room, there is no back row. Everyone speaks, everyone is questioned.
 
 ---
 
@@ -187,7 +188,7 @@ Weekly in-class exercises are **formative** — checked and discussed in class, 
 A: Models and documents are the deliverables. Small code sketches proving a pattern (e.g. a 40-line State implementation) earn Bonus (C2), but no full implementation is required or expected.
 
 **Q: Can we choose a different domain than CampusBites?**
-A: No. The two teams build the same domain so that cross-review and the client review work; your differentiation comes from design quality, not domain choice.
+A: No. The team builds the CampusBites domain so that the client review and the shared question bank work; your differentiation comes from design quality, not domain choice.
 
 **Q: What if a teammate disappears?**
 A: Report it early — the instructor mediates. Contribution logs + Git history decide the Individual component; a non-contributing member cannot pass the individual Q&A anyway.
@@ -205,7 +206,7 @@ A: Either. draw.io is friendlier for exploration; PlantUML is better for version
 > **Use the full template instead:** [`templates/Template-W02-01-Team-Charter.md`](templates/Template-W02-01-Team-Charter.md) — it adds role rotation, communication rules, a conflict rule, a definition of done, and a signature block. The skeleton below is the minimum acceptable shape.
 
 ```markdown
-# Team Charter — CampusBites Team A
+# Team Charter — CampusBites Team 01
 Members: (name, student ID, email)
 Team Lead: (name) — responsibilities: ...
 Project vision: (one paragraph)

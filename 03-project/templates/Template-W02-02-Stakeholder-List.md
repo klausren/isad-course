@@ -41,7 +41,7 @@ Tick every column you cover. An unticked column is a blind spot — and blind sp
 
 ## 3. Three questions we still cannot answer
 
-Write the questions you would ask a real client if you had one. You will carry these into the Week 5 cross-team client review.
+Write the questions you would ask a real client if you had one. You will carry these into the Week 5 client review (the instructor plays the client).
 
 1. `______________________________________________`
 2. `______________________________________________`

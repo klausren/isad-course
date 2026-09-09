@@ -1,4 +1,4 @@
-# README template — campusbites-team-___
+# README template — campusbites-team-01
 
 <!-- M0 deliverable ④ · Due **Fri Sep 11** · pass / fail · Save as `README.md` in the repository root -->
 
@@ -20,6 +20,7 @@
 |  |  |  | Team Lead |
 |  |  |  | Recorder |
 |  |  |  | Reviewer |
+|  |  |  | Release Manager |
 
 Team charter: [`TEAM-CHARTER.md`](./TEAM-CHARTER.md)
 
@@ -43,7 +44,7 @@ _(paste from `01-requirements/vision.md` — keep them identical)_
 ## 4. Repository layout
 
 ```
-campusbites-team-___/
+campusbites-team-01/
 ├── README.md               # this file — team, vision, milestone status
 ├── TEAM-CHARTER.md         # M0 ①
 ├── 01-requirements/        # M1: vision, stakeholder list, requirements, use cases
@@ -104,7 +105,7 @@ Full protocol (registration email, GitHub-unreachable fallback, late policy):
 
 ## Done when (repository, M0)
 
-- [ ] Repository name is `campusbites-team-___` and it is **not** private to one member.
+- [ ] Repository name is `campusbites-team-01` and it is **not** private to one member.
 - [ ] All three members can push; instructor `klausren` has access.
 - [ ] `README.md` follows the layout above and the milestone table is filled.
 - [ ] `TEAM-CHARTER.md` and `01-requirements/` exist.

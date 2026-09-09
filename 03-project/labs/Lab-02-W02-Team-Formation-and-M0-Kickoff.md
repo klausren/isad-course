@@ -125,13 +125,13 @@ The one method I could NOT place confidently, and why:
 
 ## 4. Task B — Form the Team & Assign Roles (~8 min)
 
-**Goal.** Two teams of ~3, with a named Lead and a role rotation plan covering M1–M5.
+**Goal.** One team of four, with the four standing roles named and a role rotation plan covering M1–M5.
 
-**Input.** The six of you in one room.
+**Input.** The four of you in one room.
 
 ### Steps
 
-1. **Form two teams of ~3.** Decide quickly — the instructor breaks ties.
+1. **Confirm the team of four.** The whole cohort is one team. Today you name it, pick the standing roles, and fix the rotation.
 2. **Appoint the Team Lead.** Runs stand-ups, owns the submission calendar, talks to the instructor at reviews.
    > **Being Team Lead earns no extra points** (Guidebook §3). It earns you the job of reporting on team management at the defense.
 3. **Assign the standing roles** (from slide 34):
@@ -141,6 +141,7 @@ The one method I could NOT place confidently, and why:
    | Team Lead | | Calendar, stand-ups, instructor contact |
    | Recorder | | Notes, README, decision lines |
    | Reviewer | | Quality gate before every submission |
+   | Release Manager | | Repository, tags — the person who actually pushes `m0`…`m5` |
 
 4. **Fill the rotation table.** Five milestones, five analysis/design roles — rotate so nobody owns one job all term. Copy this into your charter:
 
@@ -197,7 +198,7 @@ The one method I could NOT place confidently, and why:
 | Symptom | Fix |
 |---|---|
 | "We agree on everything, we don't need a conflict rule." | That is the moment to write it. Teams that never disagree are teams that have not started working. |
-| Rotation table looks impossible for 3 people across 5 roles | Correct — some milestones mean one person holds two roles. Say so explicitly and swap next time. |
+| Rotation table looks impossible for 4 people across 5 roles | Correct — in most milestones one person holds two hats. Say so explicitly and swap next time. |
 | Charter is 3 lines long | You wrote a wish, not a contract. Add the *when* and the *who* to every sentence. |
 
 ---
@@ -277,8 +278,7 @@ it <the one thing that makes it better>.
 1. **Create the repository** under one member's account. Name it exactly:
 
    ```
-   campusbites-team-a        (Team A)
-   campusbites-team-b        (Team B)
+   campusbites-team-01
    ```
 
 2. **Create the folder skeleton** (Guidebook §6). Run in the repo root:
@@ -299,7 +299,7 @@ it <the one thing that makes it better>.
    ```markdown
    # CampusBites — Team <A|B>
    Members: <names>   ·   Team Lead: <name>
-   Repo: https://github.com/<owner>/campusbites-team-<a|b>
+   Repo: https://github.com/<owner>/campusbites-team-01
 
    | Milestone | Due        | Tag | Submitted at | Status         |
    |-----------|------------|-----|--------------|----------------|
@@ -316,11 +316,11 @@ it <the one thing that makes it better>.
 5. **Send the one-time registration email** — one email per team (Deadline Schedule §4.2):
 
    ```
-   Subject: [ISAD] Repo registration — Team A
+   Subject: [ISAD] Repo registration — Team 01
 
-   Team name:    Team A
+   Team name:    Team 01
    Members:      Full Name 1 (leader), Full Name 2, Full Name 3
-   Repo URL:     https://github.com/xxx/campusbites-team-a
+   Repo URL:     https://github.com/xxx/campusbites-team-01
    Access:       klausren invited as collaborator (done / pending)
    ```
 
@@ -450,7 +450,7 @@ it <the one thing that makes it better>.
 | `../../00-课程文件/Course-Syllabus-课程标准.md` | Full syllabus and weekly schedule |
 | `Lab-01-W01-Toolchain-and-First-UML.md` | Toolchain setup, first domain model, Exercise 1.2 stakeholder method |
 
-**Submission address:** `https://github.com/<owner>/campusbites-team-<a|b>` — instructor GitHub account **`klausren`** (read access is enough).
+**Submission address:** `https://github.com/<owner>/campusbites-team-01` — instructor GitHub account **`klausren`** (read access is enough).
 
 *Lab questions go to the instructor in class, or open an issue in the course repository.*
 

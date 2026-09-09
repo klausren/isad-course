@@ -26,7 +26,7 @@
 
 ## 3. Repository gate
 
-- [ ] Repository name: `campusbites-team-___`
+- [ ] Repository name: `campusbites-team-01`
 - [ ] All three members have write access and have each pushed **at least one commit**
 - [ ] Instructor `klausren` invited — access confirmed, not "invitation sent"
 - [ ] One-time registration email sent (template in `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4)

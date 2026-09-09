@@ -80,9 +80,9 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 
 📄 **Lab sheet**: [`labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md`](labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md) — Exercise 2.1 (responsibilities), team charter, stakeholders & vision, repo + `m0` tag. **M0 due Fri Sep 11.**
 
-🧩 **Templates** (fill these in — they *are* the deliverables): [`Team Charter`](templates/Template-W02-01-Team-Charter.md) · [`Stakeholder List`](templates/Template-W02-02-Stakeholder-List.md) · [`Vision Statement`](templates/Template-W02-03-Vision-Statement.md) · [`Repository README`](templates/Template-W02-04-Repository-README.md) · [`M0 Submission Checklist`](templates/Template-W02-05-M0-Submission-Checklist.md). Classwork: [`Responsibility Worksheet`](templates/Template-W02-06-Responsibility-Worksheet.md) · [`Refactoring Worksheet`](templates/Template-W02-07-Refactoring-Worksheet.md).
+🧩 **Templates** (fill these in, they *are* the deliverables): [`Team Charter`](templates/Template-W02-01-Team-Charter.md) · [`Stakeholder List`](templates/Template-W02-02-Stakeholder-List.md) · [`Vision Statement`](templates/Template-W02-03-Vision-Statement.md) · [`Repository README`](templates/Template-W02-04-Repository-README.md) · [`M0 Submission Checklist`](templates/Template-W02-05-M0-Submission-Checklist.md). Classwork: [`Responsibility Worksheet`](templates/Template-W02-06-Responsibility-Worksheet.md) · [`Refactoring Worksheet`](templates/Template-W02-07-Refactoring-Worksheet.md).
 
-- **Form teams**: 2 teams × ~3 students; appoint Team Lead; agree role rotation.
+- **Form the team**: one team of four; name the four standing roles (Lead · Recorder · Reviewer · Release Manager); agree the M1–M5 rotation.
 - **Hands-on**: ① write the team charter (Guidebook Appendix A) ② list stakeholders ③ write the one-paragraph vision ④ create the repo and invite the instructor (`klausren`).
 - **Milestone**: **M0 due Fri Sep 11** (pass/fail) — charter, stakeholder list, vision, repo registered.
 
@@ -99,9 +99,9 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 - **Hands-on**: read the instructor's requirements pack; extract candidate use cases; draw a first use case diagram with all actors.
 - **Feeds**: M1.
 
-#### Lab 5 · W5 (Sep 28–Oct 04) — Use case specifications & cross-team review
+#### Lab 5 · W5 (Sep 28–Oct 04) — Use case specifications & client review
 - **Hands-on**: write 2 detailed use case specifications (template: Appendix B) — *Place Order* plus one more.
-- **Cross-team client review** happens on the first class on/after Oct 4.
+- **Client review** (the instructor plays the client, with a guest reviewer where possible) happens on the first class on/after Oct 4 — 30 min: 10 min present, 20 min interrogation.
 - **Milestone**: **M1 due Sun Oct 4** — requirements list, use case diagram, 2 detailed specs.
 
 #### Lab 6 · W6 (Oct 05–Oct 11) — Domain model v1
@@ -165,7 +165,7 @@ Finish a lab by checking all three boxes. If any is empty, it is homework.
 ## 5. Reference
 
 - **Project Guidebook** (`CampusBites-项目指导书-Project-Guidebook.md`) — what to build, teams, submission rules, templates (Appendices A–E).
-- **Template library** (`templates/README-Templates.md`) — every fill-in document, which week it belongs to, and where to save it in your repository.
+- **Template library** (`templates/README-模板索引-Template-Index.md`) — every fill-in document, which week it belongs to, and where it must be saved in your repository.
 - **Deadline Schedule** (`CampusBites-Deadline-Schedule-and-Submission-Guide.md`) — exact dates, tag protocol, fallback channel.
 - **Grading Rubric** (`Course-Project-Grading-Rubric.md`) — how each milestone and the defense are scored.
 - **Course Standard** (`00-课程文件/Course-Syllabus-课程标准.md`) — full syllabus and weekly schedule.
