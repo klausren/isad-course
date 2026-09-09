@@ -102,7 +102,7 @@ What changed between the analysis model and the design model:
 
 5. **VS Code** — <https://code.visualstudio.com>. We use it for Markdown and (optionally) PlantUML. Install it now even if you prefer another editor; lab instructions assume it.
 
-6. **PlantUML (optional, recommended)** — only if you want text-based diagrams. Requires a Java runtime. Skip it for now if step 1–5 took longer than 25 minutes; you can add it in Week 3.
+6. **PlantUML (optional, recommended)** — only if you want text-based diagrams. (The CLI needs a Java runtime; the VS Code extension and the web renderer do not — and you never write Java in this course.) Skip it for now if step 1–5 took longer than 25 minutes; you can add it in Week 3.
 
 ### Done when
 
@@ -232,7 +232,7 @@ What changed between the analysis model and the design model:
    >
    > If you have no repo yet: create one now — `campusbites-team-01`, or `isad-scratch-<yourname>` if the team is not final.
 
-> **No programming background? You are in the right place.** This course has no coding prerequisite: every example is pseudocode you only have to read. Skim `01-slides/Pseudocode-Conventions.md` (10 minutes) before Week 2 — it is the only syntax you will ever need here. Creating it today removes 80% of the Week 2 M0 panic.
+> **No programming background? You are in the right place.** This course has no coding prerequisite: every example is pseudocode you only have to read. Skim `01-课件/Pseudocode-Conventions-伪代码约定.md` (10 minutes) before Week 2 — it is the only syntax you will ever need here. Creating it today removes 80% of the Week 2 M0 panic.
 
 ### Done when
 

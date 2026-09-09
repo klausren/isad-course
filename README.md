@@ -102,7 +102,7 @@ Milestones: kickoff (W2) → requirements (W5) → analysis models (W9 mid-term 
 
 - **For teachers 教师** — Reuse, adapt, and translate freely for your own classes (non-commercial). 可自由复用、改编、翻译用于教学（非商业）。
 - **For students 学生** — Follow the weekly slides; each deck is self-contained: concepts → diagrams → code → exercises (with answers). 随周学习，课件自成体系，练习含答案。
-- **For self-learners 自学者** — Prerequisites: one OO language (Java recommended) and basic software engineering concepts. Recommended pace: one deck per week. 建议具备一门面向对象语言基础，每周一份。
+- **For self-learners 自学者** — Prerequisites: **none**. No programming is required: all examples are language-neutral pseudocode you only have to read; deliverables are models and documents. concepts. Recommended pace: one deck per week. 建议具备一门面向对象语言基础，每周一份。
 
 ## 🏫 Course Adoption 课程采用登记
 
