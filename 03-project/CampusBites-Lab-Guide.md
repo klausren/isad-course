@@ -96,8 +96,12 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 ### Module B — Analysis (W4–W9)
 
 #### Lab 4 · W4 (Sep 21–Sep 27) — Requirements pack & use case identification
+
+📄 **Lab sheet**: [`labs/Lab-04-W04-Finding-Actors-and-Use-Cases.md`](labs/Lab-04-W04-Finding-Actors-and-Use-Cases.md) — Exercise 4.1 (actors, then nine candidates filtered to goals), Exercise 4.2 (draw the diagram, one `<<include>>`, one `<<extend>>`, one sentence per dashed arrow), then a 15-minute defence to the instructor, who plays the client.
+
 - **Hands-on**: read the instructor's requirements pack; extract candidate use cases; draw a first use case diagram with all actors.
-- **Feeds**: M1.
+- **Deliverable today**: `docs/diagrams/use-case-v1.drawio` + PNG, pushed — **not tagged**.
+- **Feeds**: M1 (tag `m1` by Sun Oct 4).
 
 #### Lab 5 · W5 (Sep 28–Oct 04) — Use case specifications & client review
 - **Hands-on**: write 2 detailed use case specifications (template: Appendix B) — *Place Order* plus one more.
