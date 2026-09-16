@@ -265,7 +265,7 @@ Why "0..*" and not "1..*" on the Book end:
    > The path must be right **before** M1, not during it.
 
 2. **Add the six conventions** to `README.md` under a `## Diagram conventions` heading. Copy them from slide 30 and make them yours.
-3. **Every member pushes one commit.** Not the Lead — *everyone*. If only one person has commits, the other two are invisible in the contribution review (Individual grade B2, 15%).
+3. **Every member pushes one commit.** Not the Lead — *everyone*. If only one person has commits, the other three are invisible in the contribution review (Individual grade B2, 15%).
 
    ```bash
    git add README.md && git commit -m "W03: agree six diagram conventions" && git push
@@ -311,7 +311,7 @@ Why "0..*" and not "1..*" on the Book end:
 
 ## 8. Homework (before Week 4)
 
-1. **PLANTUML — reproduce two diagrams from their text specs.** The specs are on the course site under Week 03: a four-class CampusBites domain model and a sequence diagram. Type them out, render them, commit both `.puml` files.
+1. **PLANTUML — reproduce two diagrams from their text specs.** The specs are on the course site under Week 03 — `03-project/specs/W03-text-specs.md`: a four-class CampusBites domain model and a sequence diagram. Type them out, render them, commit both `.puml` files **with their exported PNGs**.
    > These two files count towards your **individual contribution**. Commit them from your own account, in your own words — even if the pair shared a keyboard in the lab.
 2. **READING — Fowler, *UML Distilled*, class and sequence chapters.** A skim is enough. Come back with **one thing you disagree with**, or one thing that changed your mind.
    > Why this is not filler: Fowler writes in short, opinionated chapters and tells you which 20% of UML is worth your time — exactly the argument this lecture made.

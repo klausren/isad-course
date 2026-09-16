@@ -410,7 +410,7 @@ it <the one thing that makes it better>.
 
 ## 9. Before You Leave (~5 min)
 
-- [ ] **The team exists** — 3 members, a named Lead, and a rotation plan covering M1–M5.
+- [ ] **The team exists** — 4 members, a named Lead, and a rotation plan covering M1–M5.
 - [ ] **The four M0 items are in the repo** — charter, stakeholders, vision, registered repo with `klausren` invited.
 - [ ] **`refs/tags/m0` is on the remote** — verified with `git ls-remote --tags origin`, not assumed.
 

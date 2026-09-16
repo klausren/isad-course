@@ -95,6 +95,9 @@ Milestones: kickoff (W2) → requirements (W5) → analysis models (W9 mid-term 
 │   └── ...                       # W01–W16 coming weekly 每周更新
 ├── 02-teaching-plans/            # Teaching plans & syllabus (sanitized) 教案与课标（脱敏版，陆续补充）
 ├── 03-project/                   # CampusBites team project brief 项目说明
+│   ├── labs/                     # Weekly lab sheets 每周实验任务单
+│   ├── specs/                    # Text specs for hands-on drills 动手练习用文字规格
+│   └── templates/                # Deliverable templates 交付物模板
 └── assets/                       # Images used in README 说明用图片
 ```
 

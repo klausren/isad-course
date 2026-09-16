@@ -90,6 +90,8 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 
 📄 **Lab sheet**: [`labs/Lab-03-W03-UML-Essentials-Practice.md`](labs/Lab-03-W03-UML-Essentials-Practice.md) — Exercise 3.1 (name that diagram), toolchain proof, Exercise 3.2 (library model in PlantUML), the six team diagram conventions. **No milestone this week.**
 
+📄 **Homework text specs**: [`specs/W03-text-specs.md`](specs/W03-text-specs.md) — the two specs students reproduce in PlantUML for the Week 03 homework (a four-class CampusBites domain model, and a `Place an order` sequence diagram).
+
 - **Hands-on**: classify a set of descriptions into structure vs. behaviour vs. interaction views; draw one of each for a small familiar system (e.g., the campus library).
 - **Purpose**: get fluent with draw.io/PlantUML *before* the graded models arrive. No milestone this week — use the breathing room.
 
