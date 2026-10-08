@@ -1,11 +1,37 @@
 # Lab 05 · W05 — Use Case Specification & Peer Review
 
-> **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · Week 05, Sep 28 – Oct 04
-> **Milestone**: **M1 is due today — Sun Oct 4.** Tag `m1`, push the tag, read the output.
-> **Slides**: `W05-Use-Case-Specification-and-Scenarios.pptx`, pages 28–37
+> **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · **Week 05, delivered Thu Oct 08** (National Day holiday pushed it)
+> **Milestone**: ⚠️ **No tag today.** The two exercises below are done in class as practice. **M1 itself is now due Sun Oct 25 (W08)** — that is when you tag `m1`. See the notice below.
+> **Slides**: `W05-Use-Case-Specification-and-Scenarios.pptx`, pages 28–37  
 > **Handout**: `W05-Handout.html`, sections D–G (page 2)
 
 **Purpose of this lab.** The use case diagram is done; M1 is two thirds text. Today you learn what a specification *is* — nine fields, actor–verb–object steps, a postcondition per exit — by dissecting a bad one, then you apply the twelve-question checklist to each other's work. **M1 closes today**: four artefacts, one tag, one verification command, and the tag belongs to the Release Manager, in this room, not on Sunday night.
+
+---
+
+> ⚠️ **READ FIRST — this lab was rescheduled.**
+>
+> W05 was originally delivered Sep 28 – Oct 04, with **M1 due at the end of that week**.
+> The National Day holiday (Oct 1–8) pushed the delivery to **Thu Oct 08**, so the milestone
+> had to move with it. **M1 is now due Sun Oct 25 (W08)**, one week after this class.
+>
+> **What this means for you today:**
+>
+> | | |
+> |---|---|
+> | **Do today** | Exercise 5.1 (find the five planted defects) and Exercise 5.2 (the twelve-question review, both directions). Treat them as **rehearsal for M1**. |
+> | **File today** | `docs/reviews/m1-spec-review.md` — you may still push it, it is useful evidence of individual contribution. Just **do not tag**. |
+> | **Do NOT do today** | Do not tag `m1`. Do not push a tag. M1 is three weeks away and depends on **your own topic**, which is still being chosen. |
+>
+> **Why M1 moved:** the team now selects its **own project** rather than analysing the fixed
+> CampusBites case. You cannot write a use case specification before the topic is approved, so
+> M1 sits after topic selection, not before it.
+>
+> The exercises are unchanged in substance — same slides, same five defects, same checklist.
+> Only the tagging step moves.
+
+---
+
 
 **No programming today.** Prose, tables, and a Markdown review form. The only code you read is the PlantUML homework you commit tonight.
 
@@ -25,14 +51,14 @@
 
 ## 1. What the Lecture Gave You
 
-| From the lecture | The one line you need |
-|---|---|
-| A name is a label; a specification is a contract | M1 is one third diagram, two thirds specification — and the specification is the hard third. |
-| Nine fields, three compulsory | Main scenario, at least one extension, name + primary actor. The other six earn their place by being testable. |
-| One step = one actor–verb–object sentence | *The system authorises the amount with the provider.* If you cannot point at what changed, it is not a step. |
-| Write about the system, not the screen | No page, no button, no dropdown, no modal. The interface arrives in W10 and the spec must not notice. |
-| An extension resumes; an exception ends | *Resume at step 5* or *ends here*. A branch with no destination is a rumour. |
-| A postcondition that covers only success is not a postcondition | It is an outcome. Write the failure end state or the kitchen discovers it by accident. |
+| From the lecture                                                | The one line you need                                                                                          |
+| --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| A name is a label; a specification is a contract                | M1 is one third diagram, two thirds specification — and the specification is the hard third.                   |
+| Nine fields, three compulsory                                   | Main scenario, at least one extension, name + primary actor. The other six earn their place by being testable. |
+| One step = one actor–verb–object sentence                       | *The system authorises the amount with the provider.* If you cannot point at what changed, it is not a step.   |
+| Write about the system, not the screen                          | No page, no button, no dropdown, no modal. The interface arrives in W10 and the spec must not notice.          |
+| An extension resumes; an exception ends                         | *Resume at step 5* or *ends here*. A branch with no destination is a rumour.                                   |
+| A postcondition that covers only success is not a postcondition | It is an outcome. Write the failure end state or the kitchen discovers it by accident.                         |
 
 > **The sentence to remember:** *a postcondition that covers only success is not a postcondition — it is an outcome.* (Slide 37, item 03: if you remember one, make it this.)
 
@@ -44,12 +70,12 @@ The instructor puts a full **Place Order** specification on the board and walks 
 
 Watch for these four branch points (slide 18):
 
-| Branch | Condition | Kind | What the system does | Then |
-|---|---|---|---|---|
-| **4a** | item sold out between browsing and paying | Extension | reports the item, keeps the rest of the cart, offers an update | **resume at 1** |
-| **4b** | no courier assigned and the restaurant closes in under 20 min | Extension | accepts the order, sets *Scheduled Delivery*, shows the later time | **resume at 5** |
-| **4c** | payment provider times out or errors | **Exception** | creates the order in *Pending Payment*, queues one retry, notifies the student | **ends here** |
-| **4d** | the student already has an open order at this restaurant | **Exception** | refuses the second order, displays the existing one | **ends here** |
+| Branch | Condition                                                     | Kind          | What the system does                                                           | Then            |
+| ------ | ------------------------------------------------------------- | ------------- | ------------------------------------------------------------------------------ | --------------- |
+| **4a** | item sold out between browsing and paying                     | Extension     | reports the item, keeps the rest of the cart, offers an update                 | **resume at 1** |
+| **4b** | no courier assigned and the restaurant closes in under 20 min | Extension     | accepts the order, sets *Scheduled Delivery*, shows the later time             | **resume at 5** |
+| **4c** | payment provider times out or errors                          | **Exception** | creates the order in *Pending Payment*, queues one retry, notifies the student | **ends here**   |
+| **4d** | the student already has an open order at this restaurant      | **Exception** | refuses the second order, displays the existing one                            | **ends here**   |
 
 Three of the four **resume** the main line. One does not. That single difference is the whole extension-vs-exception distinction.
 
@@ -110,15 +136,13 @@ Postconditions:
 3. **Merge onto the Recorder's page.** Recorder writes; everyone dictates their own rows.
 4. **Keep the rows you disagreed on.** Do not resolve them — mark them `DISAGREE` and move on. Those rows are the raw material for the client review agenda.
 5. Check your five against the authoritative list (slide 30) **after** you have committed to your own answer:
-
-   | # | Where | Which criterion it breaks |
-   |---|---|---|
-   | 1 | Name + primary actor | name check + one-actor rule |
-   | 2 | Preconditions | checklist C1 — preconditions set up the test |
-   | 3 | Steps 1–2 | observable-response rule |
-   | 4 | Step 4 | actor–verb–object sentence |
-   | 5 | Extensions + postconditions | postcondition must cover every exit |
-
+   | # | Where                       | Which criterion it breaks                    |
+   | - | --------------------------- | -------------------------------------------- |
+   | 1 | Name + primary actor        | name check + one-actor rule                  |
+   | 2 | Preconditions               | checklist C1 — preconditions set up the test |
+   | 3 | Steps 1–2                   | observable-response rule                     |
+   | 4 | Step 4                      | actor–verb–object sentence                   |
+   | 5 | Extensions + postconditions | postcondition must cover every exit          |
 6. Now write the fixes on the Recorder's page, in the shape of slide 31: verb + object name, one primary actor, two real preconditions, 5–9 observable steps, at least one extension with a resume destination, at least one exception that ends, and **one postcondition per exit**.
 
 ### Done when
@@ -131,14 +155,14 @@ Postconditions:
 
 ### Stuck?
 
-| Symptom | Fix |
-|---|---|
-| I found four and I am sure one is missing | The one you skipped is in a **field you skimmed**. Count the fields: is anything absent that should be present? `Extensions: None` is a claim, not an omission — check whether it should hold. |
-| I merged defects 3 and 4 into one "it's badly written" row | They break **different** criteria. Step 1–2 leak the **interface**; step 4 has **no subject and no observable result**. Separate rows, separate criteria. |
-| I only wrote "Extensions: None is wrong" | That is half a finding. The postcondition says "created successfully", so the failure path leaves the system in a state **nobody wrote down**. Say both. |
-| I rewrote the whole spec from scratch | You skipped the exercise. Name the defect location first, then the sentence. Full rewrite is Exercise 5.1's *answer*, not its *method*. |
-| My corrected precondition is longer than the original | Good. *"Student is authenticated for this campus; today's menu is published with at least one item available"* is testable. *"The student is logged in"* is not — logged in since when, with which role, at which restaurant? |
-| We cannot agree on whether "Kitchen Staff" is a defect | It is. Two primary actors means two people must be present, which means it is two use cases. Kitchen Staff becomes **secondary**, or it gets its own use case. |
+| Symptom                                                    | Fix                                                                                                                                                                                                                           |
+| ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| I found four and I am sure one is missing                  | The one you skipped is in a **field you skimmed**. Count the fields: is anything absent that should be present? `Extensions: None` is a claim, not an omission — check whether it should hold.                                |
+| I merged defects 3 and 4 into one "it's badly written" row | They break **different** criteria. Step 1–2 leak the **interface**; step 4 has **no subject and no observable result**. Separate rows, separate criteria.                                                                     |
+| I only wrote "Extensions: None is wrong"                   | That is half a finding. The postcondition says "created successfully", so the failure path leaves the system in a state **nobody wrote down**. Say both.                                                                      |
+| I rewrote the whole spec from scratch                      | You skipped the exercise. Name the defect location first, then the sentence. Full rewrite is Exercise 5.1's *answer*, not its *method*.                                                                                       |
+| My corrected precondition is longer than the original      | Good. *"Student is authenticated for this campus; today's menu is published with at least one item available"* is testable. *"The student is logged in"* is not — logged in since when, with which role, at which restaurant? |
+| We cannot agree on whether "Kitchen Staff" is a defect     | It is. Two primary actors means two people must be present, which means it is two use cases. Kitchen Staff becomes **secondary**, or it gets its own use case.                                                                |
 
 > **Calibration:** five out of five = pass. Four out of five = you found the easy four (slide 29 footer). The criterion each one breaks is the point — a defect without a criterion is an opinion.
 
@@ -152,30 +176,31 @@ Postconditions:
 
 ### The twelve questions
 
-| Group | # | Question |
-|---|---|---|
-| **A · Structure**<br>*can I navigate it in 30 s?* | A1 | Is the name a verb + object? |
-| | A2 | Is there **exactly one** primary actor? |
-| | A3 | Are **scope** and **level** stated? |
-| | A4 | Are all **nine fields** present, in order? |
-| **B · Content**<br>*would a tester know what to run?* | B1 | Is the main scenario 5–9 steps, with no `if`? |
-| | B2 | Is every step an **observable response**? |
-| | B3 | Is there at least one extension? |
-| | B4 | Does **every branch say where it goes**? |
-| **C · Consequences**<br>*does anyone know the end state?* | C1 | Do preconditions **set up the test**? |
-| | C2 | Is there a postcondition **per exit**? |
-| | C3 | Is the exception **end state** written? |
-| | C4 | Can I trace a step to a test? |
+| Group                                                       | #  | Question                                      |
+| ----------------------------------------------------------- | -- | --------------------------------------------- |
+| **A · Structure**<br />*can I navigate it in 30 s?*         | A1 | Is the name a verb + object?                  |
+|                                                             | A2 | Is there **exactly one** primary actor?       |
+|                                                             | A3 | Are **scope** and **level** stated?           |
+|                                                             | A4 | Are all **nine fields** present, in order?    |
+| **B · Content**<br />*would a tester know what to run?*     | B1 | Is the main scenario 5–9 steps, with no `if`? |
+|                                                             | B2 | Is every step an **observable response**?     |
+|                                                             | B3 | Is there at least one extension?              |
+|                                                             | B4 | Does **every branch say where it goes**?      |
+| **C · Consequences**<br />*does anyone know the end state?* | C1 | Do preconditions **set up the test**?         |
+|                                                             | C2 | Is there a postcondition **per exit**?        |
+|                                                             | C3 | Is the exception **end state** written?       |
+|                                                             | C4 | Can I trace a step to a test?                 |
+
 
 Every box takes one of exactly two legal answers: **a tick**, or **the sentence you would run as a test**. *"Looks fine"* is not an answer.
 
 ### The rating scale
 
-| Score | What it looks like | What you write | Next action |
-|---|---|---|---|
-| **3 — sound** | A tester could run it today without asking a question. | "Groups A–C all pass. One note on wording." | Move on. |
-| **2 — fixable** | The goal is clear and the main path works; a group or two is missing. | The **corrected sentences** — two or three, not ten. | Author applies them, then the review is re-run. |
-| **1 — rewrite** | Goal unclear, two goals fused, or no exceptions at all. | Which criterion fails. One sentence. | Author rewrites; **the reviewer does not touch the file**. |
+| Score           | What it looks like                                                    | What you write                                       | Next action                                                |
+| --------------- | --------------------------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
+| **3 — sound**   | A tester could run it today without asking a question.                | "Groups A–C all pass. One note on wording."          | Move on.                                                   |
+| **2 — fixable** | The goal is clear and the main path works; a group or two is missing. | The **corrected sentences** — two or three, not ten. | Author applies them, then the review is re-run.            |
+| **1 — rewrite** | Goal unclear, two goals fused, or no exceptions at all.               | Which criterion fails. One sentence.                 | Author rewrites; **the reviewer does not touch the file**. |
 
 ### Steps
 
@@ -185,11 +210,9 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
 4. **Score it 3 / 2 / 1.** If you scored 2, write the corrected sentences — two or three, not ten. If you scored 1, name the failing criterion and stop; you do not edit the file.
 5. **Whole team, 10 minutes.** Read out the rows where the group disagreed. Record them; do not resolve them.
 6. **Fill all five boxes** of the review form and commit it. Each of you writes **your own section** — the Recorder merges but does not write all four.
-
    ```bash
    mkdir -p docs/reviews docs/use-cases
    ```
-
    ```markdown
    # M1 Specification Review — <your name>
 
@@ -231,9 +254,7 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
    1.
    2.
    ```
-
 7. Commit the form, ideally in the **same commit** as the fix it produced — the diff then shows the spec improving, which is worth more than the review itself.
-
    ```bash
    git add docs/reviews/m1-spec-review.md docs/use-cases/
    git commit -m "W05: Ex 5.2 spec review (both directions) + fixes applied"
@@ -251,19 +272,26 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
 
 ### Stuck?
 
-| Symptom | Fix |
-|---|---|
-| Everything scored 3 | You did not read it. Go back to **group C** and look for the postcondition on the failure path — that is where defects hide. An all-3 review is a review nobody did. |
-| I want to rewrite their spec because it is bad | You may not. Hand over the **sentence you would run**; the author decides the wording. A reviewer who rewrites the spec has taken the author's work and told them nothing. |
-| The goal itself looks wrong | Never a 2. Ask a question, record it in Box 5. **Only the client may change what the system is for** — and the client is the instructor, in W07. |
-| I cannot decide whether "the system notifies the student" is observable | Ask *what would I look at afterwards?* If there is nothing to look at, it is not observable. If there is — an inbox, a screen, a push notification — it is. |
-| The spec has only four main steps, so I scored it 1 | Wrong reason. B1 says **5–9 steps** — ask for the missing steps first, then re-score. Four steps alone is a **2**, not a **1**. |
-| Box 5 is empty because "we resolved everything" | Then nothing was unresolvable. Anything you would not decide on your own goes in Box 5 — verbatim. **An empty Box 5 means the review was cosmetic**, and Box 5 is the agenda for the M1 client review. |
-| We are two people, there is nobody else to review | There is no second team. Peer review happens **inside** the group of four, in pairs. From W05 the client is the instructor. |
+| Symptom                                                                 | Fix                                                                                                                                                                                                    |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Everything scored 3                                                     | You did not read it. Go back to **group C** and look for the postcondition on the failure path — that is where defects hide. An all-3 review is a review nobody did.                                   |
+| I want to rewrite their spec because it is bad                          | You may not. Hand over the **sentence you would run**; the author decides the wording. A reviewer who rewrites the spec has taken the author's work and told them nothing.                             |
+| The goal itself looks wrong                                             | Never a 2. Ask a question, record it in Box 5. **Only the client may change what the system is for** — and the client is the instructor, in W07.                                                       |
+| I cannot decide whether "the system notifies the student" is observable | Ask *what would I look at afterwards?* If there is nothing to look at, it is not observable. If there is — an inbox, a screen, a push notification — it is.                                            |
+| The spec has only four main steps, so I scored it 1                     | Wrong reason. B1 says **5–9 steps** — ask for the missing steps first, then re-score. Four steps alone is a **2**, not a **1**.                                                                        |
+| Box 5 is empty because "we resolved everything"                         | Then nothing was unresolvable. Anything you would not decide on your own goes in Box 5 — verbatim. **An empty Box 5 means the review was cosmetic**, and Box 5 is the agenda for the M1 client review. |
+| We are two people, there is nobody else to review                       | There is no second team. Peer review happens **inside** the group of four, in pairs. From W05 the client is the instructor.                                                                            |
 
 ---
 
 ## 5. Task C — Close Out M1: Finalise, Tag, Verify (~25 min)
+
+> 🔴 **NOT TODAY.** This section is **parked**, not cancelled. It runs in **W08 (Oct 26 – Nov 01)**,
+> when M1 is actually due. It also depends on your **own topic**, which is still being chosen —
+> so there is nothing to finalise yet.
+>
+> **What to do instead today:** §0–§4 only. Then push the review file (§4's output) and stop.
+> Reading §5 now is still useful — it tells you what M1 will demand of you in three weeks.
 
 **Goal.** Four artefacts, one tag, one command whose output you read.
 
@@ -275,35 +303,26 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
 2. **Freeze the use case diagram.** `docs/diagrams/use-case-v1.drawio` **and** its `.puml` source, plus the PNG. A PNG on its own is not a diagram.
 3. **Freeze both specifications.** `docs/use-cases/place-order.md` and your second one. All nine fields. Postconditions for **every** exit. The second spec must be a different goal — not *Print Ticket* wearing a trench coat.
 4. **Confirm four sets of handwriting.** Two specs written by one person has cost this milestone its grade before. Check the commit history:
-
    ```bash
    git log --oneline --since="7 days ago"
    ```
-
    Four members, four contributions in the M1 window.
 5. **Push the work.**
-
    ```bash
    git add docs/requirements.md docs/diagrams/ docs/use-cases/ docs/reviews/
    git commit -m "M1: requirements list, use case diagram, two detailed specifications"
    git push
    ```
-
 6. **Tag `m1`** — Release Manager only, and only **after** step 5 succeeded.
-
    ```bash
    git tag -a m1 -m "M1: requirements, use case diagram, two detailed specs"
    git push origin m1
    ```
-
 7. **Verify. Run it. Read the output.** This is the step everyone skips, and it is the step that proves the submission:
-
    ```bash
    git ls-remote --tags origin
    ```
-
    You must see a line containing `refs/tags/m1`. No line = not submitted. Do not assume; read.
-
 8. **Update the README milestone status table** in the repo, commit, push. The tag — not your branch head — is the graded snapshot.
 
 ### Done when
@@ -317,15 +336,15 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
 
 ### Stuck?
 
-| Symptom | Fix |
-|---|---|
-| `git ls-remote --tags origin` shows nothing | The tag was never pushed. Run `git push origin m1` again. If the tag does not exist locally either, `git tag -a m1 -m "M1"` first — and make sure the commit it points at is already on the remote, or the tag points at nothing the reviewer can fetch. |
-| `fatal: tag 'm1' already exists` | Someone tagged already. Check `git tag -l` and `git ls-remote --tags origin`. If the remote already has `m1` from today, **do not** force-move it — verify what it points at and move on. |
-| Pushed, tagged, and the tag is on the wrong commit | `git tag -f -a m1 -m "M1 corrected"` then `git push origin m1 --force` — legal **only before Sun Oct 4 23:59**, per the Deadline Schedule. After the deadline nothing counts. |
-| Our second spec is just Place Order with different wording | That is one use case written twice. Pick a different goal from your own diagram — `Track Order`, `Cancel Order`, `Rate Restaurant`. One primary actor, one goal, one ending. |
-| A postcondition only describes success | The single most common defect in student specifications. For each exception, write the end state explicitly: *"the order exists in Pending Payment and no kitchen ticket was printed."* |
-| The client review is next week and we have no open questions | An empty Box 5 means the review was cosmetic. Naming an open question is what the client is actually paying for — go find one. |
-| GitHub is unreachable from this network | Deadline Schedule §4.5: use the zip fallback channel **and** tell the instructor today. A sync failure is not an excuse; an unannounced one is a zero. |
+| Symptom                                                      | Fix                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `git ls-remote --tags origin` shows nothing                  | The tag was never pushed. Run `git push origin m1` again. If the tag does not exist locally either, `git tag -a m1 -m "M1"` first — and make sure the commit it points at is already on the remote, or the tag points at nothing the reviewer can fetch. |
+| `fatal: tag 'm1' already exists`                             | Someone tagged already. Check `git tag -l` and `git ls-remote --tags origin`. If the remote already has `m1`, **do not** force-move it — verify what it points at and move on.                                                                |
+| Pushed, tagged, and the tag is on the wrong commit           | `git tag -f -a m1 -m "M1 corrected"` then `git push origin m1 --force` — legal **only before Sun Oct 25 23:59**, per the Deadline Schedule. After the deadline nothing counts.                                                                            |
+| Our second spec is just Place Order with different wording   | That is one use case written twice. Pick a different goal from your own diagram — `Track Order`, `Cancel Order`, `Rate Restaurant`. One primary actor, one goal, one ending.                                                                             |
+| A postcondition only describes success                       | The single most common defect in student specifications. For each exception, write the end state explicitly: *"the order exists in Pending Payment and no kitchen ticket was printed."*                                                                  |
+| The client review is next week and we have no open questions | An empty Box 5 means the review was cosmetic. Naming an open question is what the client is actually paying for — go find one.                                                                                                                           |
+| GitHub is unreachable from this network                      | Deadline Schedule §4.5: use the zip fallback channel **and** tell the instructor today. A sync failure is not an excuse; an unannounced one is a zero.                                                                                                   |
 
 ---
 
@@ -333,12 +352,13 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
 
 Each of you signs **one** row. This is individual evidence — four signatures, not one team tick.
 
-| # | Person | Signs off on | Signature |
-|---|---|---|---|
-| 1 | **Lead** | Time was kept: Demo 25 · Ex 5.1 30 · Ex 5.2 30 · M1 close 25 · sign-off 5. Nobody left with an empty section. | ____________ |
-| 2 | **Recorder** | The five defects, the corrected sentences, and all DISAGREE rows are on one committed page — written from four voices, not one. | ____________ |
-| 3 | **Reviewer** | Both review directions are filed, Box 5 is non-empty, and I played the client against my own team's spec. | ____________ |
-| 4 | **Release Manager** | `refs/tags/m1` appears in `git ls-remote --tags origin`. I read the output. | ____________ |
+| # | Person              | Signs off on                                                                                                                    | Signature     |
+| - | ------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| 1 | **Lead**            | Time was kept: Demo 25 · Ex 5.1 30 · Ex 5.2 30 · M1 close 25 · sign-off 5. Nobody left with an empty section.                   | \____________ |
+| 2 | **Recorder**        | The five defects, the corrected sentences, and all DISAGREE rows are on one committed page — written from four voices, not one. | \____________ |
+| 3 | **Reviewer**        | Both review directions are filed, Box 5 is non-empty, and I played the client against my own team's spec.                       | \____________ |
+| 4 | **Release Manager** | `refs/tags/m1` appears in `git ls-remote --tags origin`. I read the output.                                                     | \____________ |
+
 
 **And one last thing before the door** — the client review is **next week's class (Oct 12–13)**, the instructor plays the client, 30 minutes: 10 min present, 20 min interrogation. Have one answer ready for each of these (slide 35):
 
@@ -350,7 +370,14 @@ Each of you signs **one** row. This is individual evidence — four signatures, 
 
 ---
 
-## 7. Homework (before Week 06)
+## 7. Homework (before Week 06 / next class)
+
+1. **Finish §4's output and push it.** `docs/reviews/m1-spec-review.md` — it is M1 evidence
+   and it costs you nothing today.
+2. **Re-read your two candidates for next week's topic selection.** The silent brainstorm
+   happens in class next week, so arrive with one idea already half-formed.
+3. **Skim Larman chapter 3** (Use Cases). You will write two full specifications on *your own*
+   project in W08 — a week sooner than you would have on the old fixed case.
 
 1. **One SSD skeleton — `docs/diagrams/place-order-ssd.puml`.** Two lifelines only: `Student` and `CampusBites` treated as one box. One message per main step, dashed returns, **no internal objects**. Every message must be traceable to a numbered step in your specification — if you cannot point at the step, delete the arrow.
 2. **Read Larman** on system sequence diagrams and operation contracts. Two pages, a skim is fine — you are looking for the pre/post-condition template, not the whole argument.
@@ -369,17 +396,17 @@ git push
 
 ## 8. Reference
 
-| Document | What it answers |
-|---|---|
-| `../CampusBites-项目指导书-Project-Guidebook.md` | §5 M1 deliverables · Appendix B the use case specification template · §7 the client review format |
-| `../CampusBites-Deadline-Schedule-and-Submission-Guide.md` | §4.3 the tag protocol · §4.4 the README status table · §4.5 the GitHub-unreachable fallback |
-| `../Course-Project-Grading-Rubric.md` | How M1 is scored (milestone points) |
-| `../CampusBites-Lab-Guide-实验指导书.md` | §3 the 16-week map; §4 what "done" means |
-| `../CampusBites-项目指导书-Project-Guidebook.md` §4 | How requirements and the three planned change injections work |
-| `../../01-课件/W05-Use-Case-Specification-and-Scenarios/W05-Handout.html` | Sections D–G: the defect table, the review form, the tag drill |
-| `../../01-课件/Pseudocode-Conventions-伪代码约定.md` | How notation is written in this course (no programming needed) |
-| `Lab-03-W03-UML-Essentials-Practice.md` | PlantUML syntax and the source + PNG rule |
-| `Lab-04-W04-Finding-Actors-and-Use-Cases.md` | The actors and use cases your two specifications hang off |
+| Document                                                                | What it answers                                                                                   |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| `../CampusBites-项目指导书-Project-Guidebook.md`                             | §5 M1 deliverables · Appendix B the use case specification template · §7 the client review format |
+| `../CampusBites-Deadline-Schedule-and-Submission-Guide.md`              | §4.3 the tag protocol · §4.4 the README status table · §4.5 the GitHub-unreachable fallback       |
+| `../Course-Project-Grading-Rubric.md`                                   | How M1 is scored (milestone points)                                                               |
+| `../CampusBites-Lab-Guide-实验指导书.md`                                     | §3 the 16-week map; §4 what "done" means                                                          |
+| `../CampusBites-项目指导书-Project-Guidebook.md` §4                          | How requirements and the three planned change injections work                                     |
+| `../../01-课件/W05-Use-Case-Specification-and-Scenarios/W05-Handout.html` | Sections D–G: the defect table, the review form, the tag drill                                    |
+| `../../01-课件/Pseudocode-Conventions-伪代码约定.md`                           | How notation is written in this course (no programming needed)                                    |
+| `Lab-03-W03-UML-Essentials-Practice.md`                                 | PlantUML syntax and the source + PNG rule                                                         |
+| `Lab-04-W04-Finding-Actors-and-Use-Cases.md`                            | The actors and use cases your two specifications hang off                                         |
 
 **Submission address:** `https://github.com/<owner>/campusbites-team-01` — instructor GitHub account **`klausren`** (read access is enough).
 
