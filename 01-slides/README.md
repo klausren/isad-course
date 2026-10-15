@@ -12,9 +12,9 @@ Weekly lecture slides for **Information Systems Analysis and Design** (English o
 | W04 | Requirements & Use Case Modeling | ✅ |
 | W05 | Use Case Specification & Scenarios | ✅ |
 | W06 | Domain Modeling | ✅ |
-| W07 | Domain Relationships | 🚧 |
-| W08 | Behavior Modeling I: Sequence Diagrams | 🚧 |
-| W09 | Behavior Modeling II: State & Activity | 🚧 |
+| W07 | Domain Relationships | ✅ |
+| W08 | Behavior Modeling I: Sequence Diagrams | ✅ |
+| W09 | Behavior Modeling II: State & Activity | ✅ |
 | W10 | From Analysis to Design: Design Class Diagrams | 🚧 |
 | W11 | Design Principles I: GRASP | 🚧 |
 | W12 | Design Principles II: SOLID | 🚧 |
