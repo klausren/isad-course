@@ -1,8 +1,11 @@
 # M0 Submission Checklist — CampusBites Team __
 
-<!-- Due **Fri Sep 11** · pass / fail · Run this checklist out loud, in order, before you leave the lab -->
+<!-- Due **Sun Oct 25** · pass / fail · Run this checklist out loud, in order, before you leave the lab -->
 
-> **M0 is small on purpose.** It exists to test your pipeline — repository, commits, tags, English, file formats — before anything is graded. A failed M0 blocks nothing yet. It is your rehearsal.
+> 📌 **Updated Oct 15: two items moved out of M0.** The repository, the instructor invitation and the
+> folder skeleton were completed in **Week 06** (see `labs/Lab-07` §0), because the topic-selection
+> homework needs `origin` to exist. M0 now checks **charter, stakeholder list, vision, and the `m0`
+> tag** only. Item ④ below is marked done — do not repeat it.
 
 ---
 
@@ -13,7 +16,8 @@
 | ① | Team charter | `TEAM-CHARTER.md` | `Template-W02-01` | ☐ |
 | ② | Stakeholder list (5–8, ≥2 non-users) | `01-requirements/stakeholder-list.md` | `Template-W02-02` | ☐ |
 | ③ | Project vision (≤150 words) | `01-requirements/vision.md` (and pasted into charter §8) | `Template-W02-03` | ☐ |
-| ④ | Repository created, shared, README filled | `README.md` | `Template-W02-04` | ☐ |
+| ④ | ~~Repository created, shared, README filled~~ | **done in W06** — see `labs/Lab-07` §0 | — | ✅ |
+| ⑤ | **README milestone table** (not in the original four) | `README.md` | `Template-W02-04` | ☐ |
 
 ## 2. Content gate — every box before you commit
 
@@ -24,12 +28,14 @@
 - [ ] Stakeholder rows: 5–8, ≥2 marked ✖, every row has a "why" and a source.
 - [ ] README milestone table filled, team table filled, repo URL correct.
 
-## 3. Repository gate
+## 3. Repository gate — ✅ completed in Week 06
 
-- [ ] Repository name: `campusbites-team-01`
-- [ ] All three members have write access and have each pushed **at least one commit**
-- [ ] Instructor `klausren` invited — access confirmed, not "invitation sent"
-- [ ] One-time registration email sent (template in `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4)
+> None of these need re-doing. Check them off; if any is untrue, fix it **today**, not on M0 night.
+
+- [x] Repository name: `campusbites-team-01`
+- [x] All **four** members have write access and have each pushed **at least one commit**
+- [x] Instructor `klausren` invited — access confirmed, not "invitation sent"
+- [x] One-time registration email sent (template in `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4)
 - [ ] Commit history is small and meaningful — not one giant "final commit"
 
 ## 4. The submission itself — a tag, not a branch

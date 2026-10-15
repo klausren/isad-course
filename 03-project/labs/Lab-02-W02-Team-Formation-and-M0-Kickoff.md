@@ -1,8 +1,11 @@
 # Lab 02 · W02 — Team Formation & M0 Kickoff
 
 > **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · Week 02, Sep 07 – Sep 13
-> **Milestone**: **M0 — due Fri Sep 11, 23:59** · pass/fail
+> **Milestone**: **M0 — due Sun Oct 25, 23:59** · pass/fail
 > **Slides**: `W02-Object-Oriented-Foundations.pptx`, pages 29–37
+> 📌 **Rescheduled Oct 15.** M0 moved from Fri Sep 11 to Sun Oct 25 (National Day holiday + topic
+> selection inserted). **Task E (create repo / invite instructor) was pulled forward to Week 06** —
+> see §7. Everything else in this sheet still stands.
 
 **Purpose of this lab.** Two things, in this order: learn to see *responsibilities* instead of methods, then ship your first milestone through the real pipeline — repo, invitation, tag. M0 is small on purpose. It exists to test your pipeline before anything is graded.
 
@@ -269,6 +272,16 @@ it <the one thing that makes it better>.
 
 ## 7. Task E — Create the Repo, Invite the Instructor, Register (~20 min)
 
+> ⚠️ **This task moved to Week 06.** The repository, the instructor invitation, the folder skeleton
+> and the four `git config` calls were done in class on **Oct 15** — see
+> [`../labs/Lab-07-W06-Choosing-Your-Own-Project.md`](../labs/Lab-07-W06-Choosing-Your-Own-Project.md) **§0**.
+> The project was rescheduled on Oct 08, and the topic-selection homework needed `origin` to exist,
+> so the repository could not wait until M0.
+>
+> **M0 no longer re-runs Task E.** At M0 the team brings the charter, the stakeholder list, the
+> vision, and the `m0` tag. Item ④ is already satisfied. The steps below are kept unchanged so the
+> protocol stays on record — read them only if the repository needs repairing.
+
 **Goal.** Produce M0 deliverable ④ and send the one-time registration email.
 
 **Input.** One GitHub account (any member's), Deadline Schedule §4.2.
@@ -358,7 +371,7 @@ it <the one thing that makes it better>.
    | ① | Team charter | `TEAM-CHARTER.md` (repo root) | ☐ |
    | ② | Stakeholder list (5–8) | `01-requirements/stakeholder-list.md` | ☐ |
    | ③ | One-paragraph vision (≤150 words) | `01-requirements/vision.md` — and the same text in charter §8 | ☐ |
-   | ④ | Repository registered | `README.md` + `klausren` invited + email sent | ☐ |
+   | ④ | Repository registered | ✅ **done in W06** (`Lab-07` §0) — `klausren` invited, README present | ✅ |
 
 2. **Commit whatever is left:**
 
@@ -421,7 +434,7 @@ it <the one thing that makes it better>.
 | **Today — in the lab** | Form the team. Appoint the Lead. Draft the charter. |
 | **Wed Sep 09** | Stakeholder list. Vision paragraph, first draft. |
 | **Thu Sep 10** | Create the repo. Invite `klausren`. Push the README. |
-| **Fri Sep 11 · 23:59** | Tag `m0` and push the tag. **This is the submission.** |
+| **Sun Oct 25 · 23:59** | Tag `m0` and push the tag. **This is the submission.** |
 
 > **M0 is small on purpose.** It exists to test your pipeline before anything is graded. A failed M0 blocks nothing yet — it is your rehearsal.
 

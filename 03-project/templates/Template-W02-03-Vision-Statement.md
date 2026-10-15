@@ -1,6 +1,6 @@
 # Project Vision — CampusBites Team __
 
-<!-- M0 deliverable ③ · Due **Fri Sep 11** · pass / fail · Save as `01-requirements/vision.md` -->
+<!-- M0 deliverable ③ · Due **Sun Oct 25** · pass / fail · Save as `01-requirements/vision.md` -->
 
 > **How to use this template.** Fill the six blanks, assemble them into one paragraph of **≤150 words**, then run the checklist at the bottom. Delete this block and the hints before you tag `m0`.
 >

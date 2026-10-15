@@ -1,6 +1,6 @@
 # Team Charter — CampusBites Team __
 
-<!-- M0 deliverable ① · Due **Fri Sep 11** · pass / fail · Save as `TEAM-CHARTER.md` in your repository root -->
+<!-- M0 deliverable ① · Due **Sun Oct 25** · pass / fail · Save as `TEAM-CHARTER.md` in your repository root -->
 
 > **How to use this template.** Copy it into your team repository. Fill every blank. Delete this grey instruction block and every `> Hint:` line before you tag `m0`. Keep the headings — the instructor checks against them.
 >

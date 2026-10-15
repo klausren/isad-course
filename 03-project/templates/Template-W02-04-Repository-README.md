@@ -1,6 +1,6 @@
 # README template — campusbites-team-01
 
-<!-- M0 deliverable ④ · Due **Fri Sep 11** · pass / fail · Save as `README.md` in the repository root -->
+<!-- M0 deliverable ⑤ · Due **Sun Oct 25** · pass / fail · Save as `README.md` in the repository root -->
 
 > **How to use this template.** This *is* the README of your team repository — copy its content into `README.md` and fill the blanks. Delete this block once the repository is real.
 >
@@ -32,7 +32,7 @@ _(paste from `01-requirements/vision.md` — keep them identical)_
 
 | Milestone | Due | Deliverable | Tag | Status |
 |---|---|---|---|---|
-| M0 Kickoff | Fri Sep 11 | charter · stakeholder list · vision · repo | `m0` | ☐ in progress |
+| M0 Kickoff | Sun Oct 25 | charter · stakeholder list · vision | `m0` | ☐ in progress |
 | M1 Requirements | Sun Oct 4 | vision & requirements list · use case diagram · 2 use case specs | `m1` | ☐ not started |
 | M2 Analysis models | Sun Oct 25 | domain model · 2+ sequence diagrams · order state machine · activity diagram | `m2` | ☐ not started |
 | M3 Design models | Sun Nov 22 | design class diagram · GRASP/SOLID application notes | `m3` | ☐ not started |
@@ -106,7 +106,7 @@ Full protocol (registration email, GitHub-unreachable fallback, late policy):
 ## Done when (repository, M0)
 
 - [ ] Repository name is `campusbites-team-01` and it is **not** private to one member.
-- [ ] All three members can push; instructor `klausren` has access.
+- [ ] All four members can push; instructor `klausren` has access.
 - [ ] `README.md` follows the layout above and the milestone table is filled.
 - [ ] `TEAM-CHARTER.md` and `01-requirements/` exist.
 - [ ] One small test commit proves the pipeline works **before** the deadline.

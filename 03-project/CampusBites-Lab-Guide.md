@@ -5,6 +5,25 @@
 
 ---
 
+## ⚠️ 从 W06 起：项目案例已改为学生自主命题
+
+**CampusBites 不再是你们的项目。** 从 W06（Oct 5–11）起，4 人小组自己选题。
+
+| | |
+|---|---|
+| **新增 W06 任务** | **选题三件套** → [`labs/Lab-07-W06-Choosing-Your-Own-Project.md`](labs/Lab-07-W06-Choosing-Your-Own-Project.md) |
+| **任务说明** | [`Topic-Selection-Task-选题任务包.md`](Topic-Selection-Task-选题任务包.md) |
+| **变更详情与新时间线** | [`项目案例变更说明-CampusBites改为自主命题.md`](项目案例变更说明-CampusBites改为自主命题.md) |
+| **三份空白模板** | [`topics-templates/`](topics-templates/) — `Template-01-Candidate-List.md` · `Template-02-Scorecard.md` · `Template-03-Topic-Proposal.md` |
+
+**没变的**：课程方法、里程碑 M0–M5 的内容要求、评分口径（20 分不变）、提交协议（push + tag）、图目录、四常设角色。
+**变的**：分析哪个系统，以及**时间线比原计划紧一周**（M0 移到 W07，M1 移到 W08）。
+
+**本文件里 W04–W08 那几周的 CampusBites 具体内容（找 actor、画用例图、写规约、领域模型 v1）**
+**做法不变，只是换成你们自己的项目**——步骤、方法、判据全部照用。
+
+---
+
 ## 0. How to Read This Guide
 
 Every week you have **4 consecutive hours**, split into two blocks:
@@ -78,13 +97,13 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 
 #### Lab 2 · W2 (Sep 07–Sep 13) — Team formation & M0 kickoff
 
-📄 **Lab sheet**: [`labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md`](labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md) — Exercise 2.1 (responsibilities), team charter, stakeholders & vision, repo + `m0` tag. **M0 due Fri Sep 11.**
+📄 **Lab sheet**: [`labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md`](labs/Lab-02-W02-Team-Formation-and-M0-Kickoff.md) — Exercise 2.1 (responsibilities), team charter, stakeholders & vision, `m0` tag. **M0 due Sun Oct 25** — the repo is created earlier, in W06 (`labs/Lab-07` §0).
 
 🧩 **Templates** (fill these in, they *are* the deliverables): [`Team Charter`](templates/Template-W02-01-Team-Charter.md) · [`Stakeholder List`](templates/Template-W02-02-Stakeholder-List.md) · [`Vision Statement`](templates/Template-W02-03-Vision-Statement.md) · [`Repository README`](templates/Template-W02-04-Repository-README.md) · [`M0 Submission Checklist`](templates/Template-W02-05-M0-Submission-Checklist.md). Classwork: [`Responsibility Worksheet`](templates/Template-W02-06-Responsibility-Worksheet.md) · [`Refactoring Worksheet`](templates/Template-W02-07-Refactoring-Worksheet.md).
 
 - **Form the team**: one team of four; name the four standing roles (Lead · Recorder · Reviewer · Release Manager); agree the M1–M5 rotation.
 - **Hands-on**: ① write the team charter (Guidebook Appendix A) ② list stakeholders ③ write the one-paragraph vision ④ create the repo and invite the instructor (`klausren`).
-- **Milestone**: **M0 due Fri Sep 11** (pass/fail) — charter, stakeholder list, vision, repo registered.
+- **Milestone**: **M0 due Sun Oct 25** (pass/fail) — charter, stakeholder list, vision, tag `m0`. Repository setup was pulled forward to W06.
 
 #### Lab 3 · W3 (Sep 14–Sep 20) — UML essentials practice
 
@@ -105,18 +124,37 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 - **Deliverable today**: `docs/diagrams/use-case-v1.drawio` + PNG, pushed — **not tagged**.
 - **Feeds**: M1 (tag `m1` by Sun Oct 4).
 
-#### Lab 5 · W5 (Sep 28–Oct 04) — Use case specifications & client review
-- **Hands-on**: write 2 detailed use case specifications (template: Appendix B) — *Place Order* plus one more.
-- **Client review** (the instructor plays the client, with a guest reviewer where possible) happens on the first class on/after Oct 4 — 30 min: 10 min present, 20 min interrogation.
-- **Milestone**: **M1 due Sun Oct 4** — requirements list, use case diagram, 2 detailed specs.
+#### Lab 5 · W6 (Oct 05–Oct 11) — Choosing your own project ⚠️ **THIS WEEK**
 
-#### Lab 6 · W6 (Oct 05–Oct 11) — Domain model v1
-- **Hands-on**: from the use cases, identify conceptual classes, attributes, and associations; draw the first domain model (10+ classes target).
-- **Note**: ΔC1 (requirement change #1) is announced online this week — fold it into M2.
+📄 **In class (35 min)**: [`labs/Lab-07-W06-Choosing-Your-Own-Project.md`](labs/Lab-07-W06-Choosing-Your-Own-Project.md) — read the three criteria (S1 actors >= 5 · S2 classes >= 8 with >= 6 non-"has" relationships · S3 objects with lifecycles >= 2), watch the rejected-vs-accepted demo, then **20 minutes of silent, individual brainstorming**: two candidates each, written down before anyone speaks. Sheets are collected at minute 35.
+📄 **In class (55 min) — Domain modeling as a method**: slides `W06-Domain-Modeling.pptx` **P01–P29** — noun scan and the identity test, analysis vs. design classes, entity/boundary/control, the three rooms model, attributes vs. values, associations before multiplicities. **P30–P38 are not used this week** (they carry the CampusBites word list). Teacher's script: [`../02-教案/W06-课堂教案-领域建模方法.md`](../02-教案/W06-课堂教案-领域建模方法.md).
+📄 **Homework (≈1.9 h, due before W7)**: [`homework/Homework-01-W06-Choosing-Your-Own-Project.md`](homework/Homework-01-W06-Choosing-Your-Own-Project.md) — Step 1 merge the candidate list (keep the proposer's name, keep the rejected ones), Step 2 score against the three criteria **and write down how you counted**, Step 3 write the proposal (§3 evidence, §5 the pattern questions you have not resolved), Step 4 push. **No tag this week.**
+- **Instructor answer**: **pass / revise**, returned **before W7**. You cannot enter M0 until the topic is approved.
+- **Why 20 minutes stay in class even though the rest is homework**: if you talk first, four people collapse into one idea, and whoever's idea is dropped never owned anything. That is individual-contribution evidence, which is why it does not move to homework.
 
-#### Lab 7 · W7 (Oct 12–Oct 18) — Domain relationships
-- **Hands-on**: refine associations with multiplicities; decide aggregation vs. composition; drop attributes that are really classes.
-- **Feeds**: M2 (domain model).
+#### Lab 6 · W7 (Oct 12–Oct 18) — M0 Kickoff & the M1 client review ⚠️ **CHANGED**
+
+📄 **Lab sheet**: *to be written.* Method unchanged from `labs/Lab-04-W04-Finding-Actors-and-Use-Cases.md`; the case is now **your own topic**.
+
+- **Hands-on**: team charter (Appendix A), stakeholder list, project vision, repository created and instructor invited.
+- **Milestone**: **M0 due Sun Oct 18** — `git tag m0`, verify with `git ls-remote --tags origin`.
+- **Also this week**: the **M1 client review is now W9** (Oct 26–Nov 01), instructor as client, 30 min, formative.
+
+#### Lab 7 · W8 (Oct 19–Oct 25) — Requirements & use case specifications ⚠️ **CHANGED**
+
+📄 **Lab sheet**: *to be written.* Reuse the **method** of `labs/Lab-05-W05-Use-Case-Specification-and-Peer-Review.md` (Exercise 5.1 find the five planted defects; Exercise 5.2 the twelve-question review checklist and the 3/2/1 scale, filed as `docs/reviews/m1-spec-review.md`), but write the specs for **your own topic**.
+
+- **Hands-on**: requirements list, use case diagram, **2 fully-dressed specifications** (Appendix B) on your own use cases.
+- **Milestone**: **M1 due Sun Oct 25** — `git tag m1`, verify with `git ls-remote --tags origin`.
+- **Note**: the twelve-question review checklist from W05 is the same instrument you will be graded on at the W9 client review.
+
+#### Lab 8 · W9 (Oct 26–Nov 01) — M1 client review, then domain model v1
+
+📄 **Lab sheet**: [`labs/Lab-06-W06-Domain-Modeling-v1.md`](labs/Lab-06-W06-Domain-Modeling-v1.md) ⚠️ **needs revision first** — see its §R table. It was written for the CampusBites case and for the old M1 date.
+
+- **Hands-on**: 30 min client review (instructor as client: 10 min present, 20 min interrogation), then noun scanning on **your own** M1 specifications → the first domain model in PlantUML at `docs/diagrams/domain-model-v1.puml`.
+- **Feeds**: M2 (domain model), **due Sun Nov 15**.
+- **When you revise Lab 06**: keep its task structure, Done-when lists and Stuck? tables verbatim; replace only the material — the word list, the spec sentences, and the class count come from your own M1 work, not from the lecture example.
 
 #### Lab 8 · W8 (Oct 19–Oct 25) — Sequence diagrams
 - **Hands-on**: draw 2+ system-sequence / interaction diagrams for key operations (`placeOrder`, `pay`).

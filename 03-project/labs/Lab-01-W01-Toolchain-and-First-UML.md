@@ -1,7 +1,7 @@
 # Lab 01 · W01 — Toolchain & Your First UML Model
 
 > **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · Week 01, Aug 31 – Sep 06
-> **Milestone**: none graded this week · **Feeds**: M0 (due Fri Sep 11)
+> **Milestone**: none graded this week · **Feeds**: M0 (due Sun Oct 25 — see the Deadline Schedule)
 > **Slides**: `W01-Introduction-Systems-Analysts-and-OOAD.pptx`, pages 30–37
 
 **Purpose of this lab.** Today you do two things: get the toolchain working on your own machine, and draw—read—your first UML models. Nothing you produce today is graded. Everything you produce today is the seed of your M0 submission next week.
@@ -267,7 +267,7 @@ Three boxes. If any is empty, it is homework — and milestones do not wait for 
 ## 9. Homework (before Week 2)
 
 1. **Read the Project Guidebook in full.** Milestones, submission rules, grading, templates. It is handed out today.
-2. **Read the Deadline Schedule in full.** Every hard deadline with dates. The first is **M0 — Friday, Sep 11**.
+2. **Read the Deadline Schedule in full.** Every hard deadline with dates. The first is **M0 — Sunday, Oct 25**.
 3. **Skim Larman Ch. 1–2.** Skim, do not study. It frames Weeks 2–3.
 4. **Write 150 words:** *"One information system I use daily, and what would break if the analyst had failed."*
    - 150 words is short. The hard part is being specific — *"the app would be bad"* is not an answer. Name the breakdown, name who suffers.

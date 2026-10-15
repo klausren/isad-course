@@ -1,6 +1,6 @@
 # Stakeholder List — CampusBites Team __
 
-<!-- M0 deliverable ② · Due **Fri Sep 11** · pass / fail · Save as `01-requirements/stakeholder-list.md` -->
+<!-- M0 deliverable ② · Due **Sun Oct 25** · pass / fail · Save as `01-requirements/stakeholder-list.md` -->
 
 > **How to use this template.** Fill the main table with **5–8 curated stakeholders**, then keep your longer Week 1 brainstorm in the appendix. Delete this block and the `> Hint:` lines before you tag `m0`.
 >
