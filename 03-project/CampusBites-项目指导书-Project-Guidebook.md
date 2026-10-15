@@ -101,7 +101,7 @@ campusbites-team-01/
 ├── 03-design/             # M3: DCD + principle application notes
 ├── 04-patterns/           # M4: catalog cards + refactoring narrative
 ├── 05-report/             # M5: final report + contribution logs
-└── changes/               # instructor's requirement-change injections + your responses
+└── changes/               # instructor's requirement-change injections (ΔC2, ΔC3) + your responses
 ```
 
 4. **Commit discipline**: small, meaningful commits with clear messages (`Add state machine guards for cancel-before-pay`). Commit history is teamwork evidence — it feeds your Individual Contribution grade (§8). One giant "final commit" is a red flag.

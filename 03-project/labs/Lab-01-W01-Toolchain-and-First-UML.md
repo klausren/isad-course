@@ -89,7 +89,7 @@ What changed between the analysis model and the design model:
 
    - You want **2.30 or newer**. macOS: it comes with Xcode Command Line Tools, or install via `brew install git`. Windows: <https://git-scm.com> → accept all defaults → use "Git from the command line and also from 3rd-party software".
 
-3. **GitHub account** — create one at <https://github.com> if you do not have it. Use an email you actually read: every change injection (ΔC1–ΔC3) is announced there.
+3. **GitHub account** — create one at <https://github.com> if you do not have it. Use an email you actually read: every change injection (**ΔC2 and ΔC3** — ΔC1 was cancelled) is announced there.
 
 4. **Introduce yourself to Git** — run these two lines with your own name and email:
 

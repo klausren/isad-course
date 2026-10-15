@@ -37,18 +37,17 @@
 | **Repository setup** *(pulled forward from M0, Oct 15)* | Repository created, `klausren` invited, all four members cloned and `git config`'d | **W6 (Oct 15), in class** | done — see `labs/Lab-07` §0 |
 | **M0 Kickoff** | Team charter (Appendix A), stakeholder list, project vision, **tag `m0`** — *repository already done in W06* | **Sun Oct 25** (W8) | W8 lab — pass/fail |
 | **M1 Requirements** | Requirements list, use-case diagram, 2 detailed use-case specifications | **Sun Nov 1** (W9) | **M1 client review, W9 (Nov 2–8)** — instructor as client, formative |
-| **ΔC1 Change injection #1** | New requirement lands in your repo's `changes/` folder; your response is folded into M2 | announced **W10 (Nov 9–15)**, online | — |
 | **M2 Analysis models** | Domain model, 2+ sequence diagrams, Order state machine, activity diagram | **Sun Nov 22** (W12) | **W12 mid-term review (Nov 23–29)** — formative, every member questioned |
-| **ΔC2 Change injection #2** | Second requirement change; response folded into M3 | announced **W13 (Nov 30–Dec 6)**, online | — |
+| **ΔC2 Change injection #1** *(renumbered — there is no ΔC1)* | First requirement change; response folded into M3 | announced **W10 (Nov 9–15)**, online | — |
 | **M3 Design models** | Design class diagram, GRASP/SOLID application notes, DCD-level interaction diagrams | **Sun Dec 6** (W14) | In-class design walkthroughs, W14–W15 |
-| **ΔC3 Change injection #3** | Third requirement change; response folded into M4 | announced **W14 (Dec 7–13)** | — |
+| **ΔC3 Change injection #2** | Second requirement change; response folded into M4 | announced **W13 (Nov 30–Dec 6)** | — |
 | **M4 Patterns** | Pattern catalog (5+ GoF patterns, Appendix C), refactoring narrative, updated DCD | **Sun Dec 20** (W15) | Pattern catalog walkthrough, W16 (Dec 14–20) |
 | **M5 Defense** | Final defense — you present, you answer questions | **in class, W16 (Dec 14–20)** | Final defense, ~35 min (one team of four) |
 | **M5 Final package** | Final report (Appendix D), individual contribution logs (Appendix E), all diagram sources, tag `m5` | **Sun Dec 20, 23:59** | Graded |
 
 **Why the week numbers and dates pair up this way:**
 - Every hard deadline sits at the **end** of the working week, and the review happens at the **start** of the next week's class — you get the weekend to finish, the instructor gets a fresh submission to review.
-- Change injections (ΔC1–ΔC3) are always announced **right after** a milestone review — when you feel safest — and their response is always folded into the **next** milestone. You never submit a "response to ΔC" as a separate deliverable.
+- Change injections (**ΔC2 and ΔC3** — ΔC1 was cancelled on 2026-10-15) are always announced **right after** a milestone review — when you feel safest — and their response is always folded into the **next** milestone. You never submit a "response to ΔC" as a separate deliverable.
 - M0 is a **Friday** deadline: it is pass/fail, and the instructor needs the weekend to verify both repos and access.
 
 ---
@@ -66,11 +65,11 @@ W06   Oct 12–Oct 18   Domain modeling as a method + TOPIC SELECTION starts (no
 W07   Oct 19–Oct 25   Topic selection due + M0: charter + vision + repo → M0 due SUN OCT 25
 W08   Oct 26–Nov 01   Requirements & use cases                → M1 due SUN NOV 01
 W09   Nov 02–Nov 08   M1 CLIENT REVIEW — instructor as client (30 min, formative)
-W10   Nov 09–Nov 15   Analysis modeling; ΔC1 announced online
+W10   Nov 09–Nov 15   Analysis modeling; **ΔC2** announced online (there is no ΔC1)
 W11   Nov 16–Nov 22   Analysis models finalize              → M2 due SUN NOV 22
 W12   Nov 23–Nov 29   MID-TERM REVIEW (M1+M2, formative, not graded)
-W13   Nov 30–Dec 06   Design modeling; ΔC2 announced      → M3 due SUN DEC 06
-W14   Dec 07–Dec 13   Pattern catalog; ΔC3 announced
+W13   Nov 30–Dec 06   Design modeling                      → M3 due SUN DEC 06
+W14   Dec 07–Dec 13   Pattern catalog; **ΔC3** announced
 W15   Dec 14–Dec 20   Pattern walkthroughs; defense rehearsal → M4 due SUN DEC 20
 W16   Dec 21–Dec 27   FINAL DEFENSE in class                → M5 package due SUN DEC 27
 ```
@@ -168,7 +167,7 @@ The fallback covers **submission** only — you are still expected to restore th
 
 - **National Day week (Oct 1–8)** sits inside W5–W6. Hard deadlines are online and **do not move**; only the *in-class* client review (planned W5) moves to the **first class session of W7 (Oct 12 or 13)**. If the university's calendar gives you class sessions on Sep 28–29, the review may happen there instead — the instructor will confirm in class.
 - If the university calendar shifts any teaching week (make-up classes, weather, etc.), **hard deadlines stay where they are** unless the instructor explicitly announces a change in class and in the course repo. Silence = no change.
-- All change injections (ΔC) are announced **in the course repository and by email** — check both after every milestone week.
+- Change injections (**ΔC2, ΔC3** — ΔC1 was cancelled) are announced **in the course repository and by email** — check both after every milestone week.
 - **Answer to the question you are about to ask**: yes, the Sunday 23:59 deadline means the *last useful moment* is around 22:00, when you still have time to fix a failed push. Plan accordingly.
 
 ---

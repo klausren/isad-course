@@ -1,13 +1,49 @@
-# Lab 06 · W06 — Domain Modeling v1
+# Lab 06 · Domain Modeling v1
 
-> **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · Week 06, Oct 05 – Oct 11
-> **Milestone**: **none this week** — deliberately. M1 closed on Sun Oct 4. **ΔC1 lands online this week** and counts towards M2 (due Sun Oct 25).
+> ⚠️ **SCHEDULING NOTICE — read this first.**
+> This lab was written for the **old** timeline, where M1 closed on Oct 4 and the domain model
+> was built on the fixed **CampusBites** case. Both of those are no longer true:
+> the team now **picks its own topic** (W06) and **M1 now closes Sun Oct 25 (W08)**.
+>
+> **It is therefore NOT scheduled for W06.** W06's lab block is
+> [`Lab-07-W06-Choosing-Your-Own-Project.md`](Lab-07-W06-Choosing-Your-Own-Project.md) — topic selection.
+>
+> **Intended slot: W10 (Nov 02–08)**, two weeks after M1, so that the model is built on your
+> **own** use cases rather than the CampusBites ones.
+>
+> **Before this lab can run, the following must be re-done** — see §R Revisions Required below.
+> Do not run this sheet as written.
+
+**Original header (for the record):**
+> **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · *originally Week 06, Oct 05 – Oct 11*
+> **Milestone at the time**: none that week; ΔC1 landing online; M2 due Sun Oct 25.
+> *(ΔC1 was cancelled on 2026-10-15 — see §R R5.)*
 > **Slides**: `W06-Domain-Modeling.pptx`, pages 29–36
 > **Handout**: `W06-Handout.html`, sections D–G (page 2)
 
 **Purpose of this lab.** Last week you wrote sentences. This week the sentences pay rent: every noun you named — order, coupon, delivery window, kitchen ticket — is a candidate class, and the only question that decides it is *"can you point at that one?"* You sort eighteen words into four buckets, throw most of them away, draw the first domain model with **14 classes**, and fold in the first requirement change without restarting.
 
 **No programming today.** You write a `.puml` **text file** — that is a model, not a program. You read it, you edit it, you render it. Nothing is compiled and nothing is deployed.
+
+---
+
+## §R Revisions Required before this lab runs (W10)
+
+The **method** below is sound and needs no rewriting — noun scanning, identity, E/B/C, PlantUML.
+What must change is the **case** and the **preconditions**:
+
+| # | What is wrong now | What to change before running in W10 |
+|---|---|---|
+| R1 | The Before-You-Start check requires `refs/tags/m1` to already exist | Keep it, but note **M1 is now due Sun Oct 25 (W08)** — so by W10 it genuinely will exist. This check becomes correct as written. |
+| R2 | Every noun, spec sentence and use case comes from **CampusBites** (order, coupon, delivery window, kitchen ticket) | Replace with **your own topic's** nouns, taken from the M1 specs you wrote in W08. §4 Task A's word list must be regenerated from your own use cases. |
+| R3 | Exercise 6.1 sorts **18 fixed words** into four buckets | Rebuild the word list from your own M1 specifications. Same exercise, your material. Keep the four buckets (class / attribute / external actor / discard). |
+| R4 | The answer is "**14 classes**" | Becomes "**≥8 classes, and you must hit S2 of your own proposal**" — the number comes from your own proposal's evidence table, not from a lecture example. |
+| R5 | **ΔC1 is CANCELLED** (decided 2026-10-15). Only **ΔC2 and ΔC3** will ever be injected. | **Delete §5 Task C in full** and renumber §6→§5, §7→§6, §8→§7. The 20 minutes return to Task A / Task B — more noun-scanning practice on your own M1 specs. Also drop the ΔC1 item from the §6 sign-off table and the §7 homework list. `changes/` stays in the repo layout; it will simply stay empty until **ΔC2 lands in W10**. Do **not** invent a change to fill it. |
+| R6 | Task A pulls "one sentence from your own M1 specification" onto the board | Now genuinely possible — M1 will have closed in W08. |
+
+**When you revise:** keep the task structure, the Done-when lists, and the Stuck? tables verbatim.
+Only the **material** (which nouns, which specs, which number of classes) changes.
+Also update §9 Reference if it points at the W06 slides' CampusBits pages as the source of the word list.
 
 ---
 
@@ -18,7 +54,7 @@
 - [ ] You can push to `campusbites-team-01`.
 - [ ] PlantUML renders — VS Code extension or <https://www.plantuml.com/plantuml>. Verify it *now*, not at 40 minutes past the hour.
 - [ ] You know today's four standing roles: **Lead** (keeps time), **Recorder** (owns the `.puml` file, and only that file), **Reviewer** (checks every class against its spec sentence), **Release Manager** (pushes and confirms the file is in the repo).
-- [ ] You have checked `changes/` for **ΔC1**. It was announced online this week.
+- [ ] ~~You have checked `changes/` for **ΔC1**.~~ **ΔC1 was cancelled on 2026-10-15.** Only ΔC2 and ΔC3 will be injected. `changes/` will stay empty for now.
 
 > **Course default, restated:** *model in PlantUML, present in draw.io.* Both source files go in the repository. **A PNG on its own is not a submission.**
 
@@ -403,7 +439,7 @@ Each of you signs **one** row, and each row is a different box on the diagram. F
 
 | # | Person | Signs off on | Own class | Signature |
 |---|---|---|---|---|
-| 1 | **Lead** | Time was kept: Demo 20 · Ex 6.1 30 · Ex 6.2 40 · ΔC1 20 · sign-off 5. Nobody left with an empty section. | — | ____________ |
+| 1 | **Lead** | Time was kept: Demo 20 · Ex 6.1 30 · Ex 6.2 40 · sign-off 5. Nobody left with an empty section. *(ΔC1 removed 20′ — those 20 return to noun scanning.)* | — | ____________ |
 | 2 | **Recorder** | `domain-model-v1.puml` and its `.png` are both committed and pushed, and I can render the `.puml` from a clean clone. | `Payment` | ____________ |
 | 3 | **Reviewer** | I checked every class against its W05 sentence, and I asked question 6 out loud on the smallest box. | `DeliveryWindow` | ____________ |
 | 4 | **Release Manager** | `changes/C1-response.md` is pushed, the weekly tag is on the remote, and I read `git ls-remote --tags origin`. | `Courier` | ____________ |
@@ -419,7 +455,7 @@ Each of you signs **one** row, and each row is a different box on the diagram. F
 ## 7. Homework (before Week 07)
 
 1. **Finish the model.** Every class in `docs/diagrams/domain-model-v1.puml` has **at least one attribute and one operation**, each traceable to a W05 specification sentence. Render, export the PNG, commit **both**. Expect to reshape control classes in W10 — that is normal, not failure.
-2. **ΔC1 response.** Check `changes/` again for anything that arrived after today's session and fold it into `changes/C1-response.md`. **30 minutes, counted in M2.**
+2. ~~**ΔC1 response.**~~ **Cancelled.** The first change you will receive is **ΔC2, in W10**. Nothing to do for ΔC1.
 3. **Read Larman** on domain modeling — conceptual classes and the three rooms. Skim association and multiplicity as well, because next week is entirely about them.
 4. **Prepare for the client review.** Re-read your own two M1 specifications and your Box 5 list. Any member can be asked about any spec. "I did not write that one" is not an answer you may give.
 
