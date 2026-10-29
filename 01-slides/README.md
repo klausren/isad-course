@@ -25,6 +25,12 @@ Weekly lecture slides for **Information Systems Analysis and Design** (English o
 
 Naming convention: `WNN-Topic-Name.pptx`. Each deck is self-contained: learning objectives → concepts with original diagrams → **pseudocode examples** → in-class exercises with answers → weekly project task.
 
+> **The W06 deck (39 slides) was rewritten for this cohort.** The team chose its own topic —
+> *AI Skin Analysis* — and wrote twelve functional requirements, so the worked examples, the
+> twenty-four-word noun scan and the final task list all use their material rather than the
+> original fixed case. The final slide is the checklist they finish before leaving the room.
+> **ΔC1 was cancelled on 2026-10-15**: only ΔC2 (W10) and ΔC3 (W13) remain.
+
 ## No programming required 无需编程基础
 
 This course assumes **no programming background**. Every code-looking box in the decks is **language-neutral pseudocode** — students read it, they never write it. The five conventions used (`Class X`, `− field : Type`, `+ operation()`, `extends`, `implements`) are explained in **[`Pseudocode-Conventions.md`](Pseudocode-Conventions.md)** (10-minute read; hand it out in Week 1).
