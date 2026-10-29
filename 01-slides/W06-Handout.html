@@ -9,37 +9,37 @@
   body {
     margin: 0; padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #1A2230; font-size: 9.6pt; line-height: 1.26;
+    color: #1A2230; font-size: 9.1pt; line-height: 1.21;
   }
-  .paper { width: 188mm; height: 276mm; display: flex; flex-direction: column; }
-  .paper:first-child { page-break-after: always; }
+    .paper { width: 188mm; min-height: 276mm; display: flex; flex-direction: column; page-break-after: always; break-after: page; }
+    .paper:last-child { page-break-after: auto; break-after: auto; }
   footer { margin-top: auto; }
 
-  header { border-bottom: 2pt solid #1E4FA8; padding-bottom: 3.5mm; margin-bottom: 4mm; }
+  header { border-bottom: 2pt solid #1E4FA8; padding-bottom: 2.6mm; margin-bottom: 3mm; }
   .h-row { display: flex; justify-content: space-between; align-items: flex-end; }
-  .h-title { font-size: 14.5pt; font-weight: 700; color: #1E4FA8; letter-spacing: .2pt; }
-  .h-sub { font-size: 8.5pt; color: #555; margin-top: 1mm; }
-  .h-meta { font-size: 8.5pt; color: #333; text-align: right; }
-  .h-meta div { margin-bottom: 1.4mm; }
+  .h-title { font-size: 13.5pt; font-weight: 700; color: #1E4FA8; letter-spacing: .2pt; }
+  .h-sub { font-size: 8.2pt; color: #555; margin-top: .7mm; }
+  .h-meta { font-size: 8.2pt; color: #333; text-align: right; }
+  .h-meta div { margin-bottom: 1mm; }
 
   h2 {
     font-size: 8.6pt; text-transform: uppercase; letter-spacing: .8pt;
     color: #1E4FA8; margin: 0 0 1.6mm 0; padding-bottom: .6mm;
     border-bottom: .6pt solid #1E4FA8;
   }
-  section { margin-bottom: 3.6mm; }
+  section { margin-bottom: 2.2mm; }
   section:last-child { margin-bottom: 0; }
 
-  .two { display: flex; gap: 6mm; }
+  .two { display: flex; gap: 5mm; }
   .col { flex: 1; }
 
   /* A - key terms */
-  .term { display: flex; gap: 1.5mm; margin-bottom: 1.5mm; }
+  .term { display: flex; gap: 1.4mm; margin-bottom: 1.05mm; }
   .term b { min-width: 30mm; font-weight: 700; color: #1E4FA8; }
   .term span { flex: 1; color: #333; }
 
   /* B - skeleton notes */
-  .fill { display: flex; align-items: baseline; margin-bottom: 1.3mm; }
+  .fill { display: flex; align-items: baseline; margin-bottom: 0.95mm; }
   .fill .n { min-width: 6mm; color: #1E4FA8; font-weight: 700; }
   .fill .q { flex: 1; }
   .blank {
@@ -98,95 +98,109 @@
 </style>
 </head>
 <body>
-
-<!-- ============ PAGE 1 ============ -->
-<div class="paper">
-  <header>
-    <div class="h-row">
-      <div>
-        <div class="h-title">Week 06 · Domain Modeling</div>
-        <div class="h-sub">Information Systems Analysis &amp; Design · Fall 2026 · Ren Zheng</div>
+  <!-- ============ PAGE 1 · KEY TERMS ============ -->
+  <div class="paper">
+    <header>
+      <div class="h-row">
+        <div>
+          <div class="h-title">Week 06 · Key Terms</div>
+          <div class="h-sub">Information Systems Analysis &amp; Design · Fall 2026 · Ren Zheng</div>
+        </div>
+        <div class="h-meta">Name ______________ Team ______________ Date __________</div>
       </div>
-      <div class="h-meta">Name ______________ Team ______________ Date __________</div>
-    </div>
-  </header>
-
-  <section>
-    <h2>A · Key Terms — definitions are printed; you fill in the rest</h2>
-    <div class="two">
-      <div class="col">
-        <div class="term"><b>Domain model</b><span>A picture of the <b class="k">problem</b> the client described, drawn as classes. It answers “what does the system have to know about?” — never “how will the machine do it”.</span></div>
-        <div class="term"><b>Conceptual class</b><span>A candidate box. It becomes a real class only if it has <b class="k">identity</b> and a <b class="k">sentence in a specification</b> behind it. Otherwise it is a guess.</span></div>
-        <div class="term"><b>Analysis model</b><span>The W06–W09 model of the problem. No technology, no framework, no language. It changes when the <b class="k">requirements</b> change.</span></div>
-        <div class="term"><b>Design class diagram (DCD)</b><span>The W10 model of the solution. Its names end in <span class="mono">Service</span>, <span class="mono">Controller</span>, <span class="mono">Repository</span>, <span class="mono">DTO</span>. If your diagram would still make sense in another language, it is <b class="k">not</b> yet a DCD.</span></div>
-        <div class="term"><b>Entity class</b><span>Stores what the business keeps. Test: would the client still care about it in a year, with the whole interface switched off?</span></div>
-        <div class="term"><b>Boundary class</b><span>Sits at the edge, translates an actor's request and presents the answer. <b class="k">One per way the outside world talks in</b> — named after who uses it, never after a page.</span></div>
-        <div class="term"><b>Control class</b><span>Coordinates one use case from start to finish. It holds the <b class="k">order of the steps</b> and <b class="k">stores nothing</b>.</span></div>
-      </div>
-      <div class="col">
-        <div class="term"><b>The three rooms model</b><span>One use case, three rooms: boundary, control, entity. An actor <b class="k">never walks into the entity room</b> — something translates for them.</span></div>
-        <div class="term"><b>Attribute</b><span>A value you read <b class="k">off</b> one object. “state : String” is a value of one order, not a box. Attributes <b class="k">graduate</b> into classes when they gain identity.</span></div>
-        <div class="term"><b>Operation</b><span>One responsibility, asked of one object (<span class="mono">Order.cancel(reason)</span>) or of a whole collection (<span class="mono">Order.findOpenFor(student)</span>). <b class="k">One operation, one responsibility</b> — if the name contains “and”, split it.</span></div>
-        <div class="term"><b>Association</b><span>A line saying which class knows which, in a direction you can <b class="k">say out loud</b>: “an order has lines”. This week you draw lines; you do not count them yet.</span></div>
-        <div class="term"><b>Multiplicity</b><span>How many — 1, 0..*, 1..*. <b class="k">Next week (W07).</b> Do not guess it today, or everything ends up 1..*.</span></div>
-        <div class="term"><b>Identity</b><span>The test that separates a class from an attribute: <b class="k">can you point at one and say “that one”?</b> Point at the order — yes. Point at “Accepted” — no, you read it off an order.</span></div>
-        <div class="term"><b>Traceability</b><span>Every class names the specification sentence it came from. <b class="k">No sentence, no class.</b> A class with nothing behind it is padding — delete it.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>B · Skeleton Notes — fill these in during the lecture</h2>
-    <div class="fill"><span class="n">1</span><span class="q">Last week you wrote <span class="blank m"></span>; this week the <span class="blank s"></span> in those sentences become <span class="blank s"></span>. A noun is a <span class="blank m"></span>, not a decision.</span></div>
-    <div class="fill"><span class="n">2</span><span class="q">“System creates the order in state Accepted” holds four nouns. <span class="blank s"></span> is not a class (it is the box everything sits in); <span class="blank m"></span> is a conceptual class; <span class="blank s"></span> is an attribute; <span class="blank l"></span> is not a noun at all — it is one value of a fixed list.</span></div>
-    <div class="fill"><span class="n">3</span><span class="q">The test that settles the argument: can you point at this thing and say <span class="blank l"></span>? If yes it is a <span class="blank s"></span>; if you can only read it off something else it is an <span class="blank s"></span>.</span></div>
-    <div class="fill"><span class="n">4</span><span class="q">A class with no <span class="blank m"></span> behind it is a guess, and guesses become schema you cannot change. Every class you keep must name the <span class="blank l"></span> it came from.</span></div>
-    <div class="fill"><span class="n">5</span><span class="q">This week models the <span class="blank m"></span>; W10 models the <span class="blank m"></span>. The three wrong reasons to add a class all reduce to one sentence: <span class="blank l"></span>.</span></div>
-    <div class="fill"><span class="n">6</span><span class="q">A class name is a <span class="blank s"></span>, is <span class="blank s"></span>, is capitalised, and carries <span class="blank s"></span> suffix — no Service, no Manager, no DTO, no Entity. “Item” is too vague; <span class="blank s"></span> says which catalogue.</span></div>
-    <div class="fill"><span class="n">7</span><span class="q">Every conceptual class is exactly one of three kinds, and there is <span class="blank s"></span> fourth kind. An <span class="blank s"></span> keeps information, a <span class="blank s"></span> translates at the edge, a <span class="blank s"></span> holds the order of the steps.</span></div>
-    <div class="fill"><span class="n">8</span><span class="q">The boundary room knows actors and entities but <b class="k">never</b> the <span class="blank m"></span>. The entity room knows only entities and <b class="k">never</b> an <span class="blank s"></span>. The control room knows <span class="blank s"></span> and stores <span class="blank s"></span>.</span></div>
-    <div class="fill"><span class="n">9</span><span class="q">A use case step is <b class="k">not</b> automatically an <span class="blank s"></span>. W05 step 5 was one sentence but at least <span class="blank s"></span> operations. If an operation's name contains <span class="blank s"></span>, you have not finished deciding.</span></div>
-    <div class="fill"><span class="n">10</span><span class="q">Ten classes is a <span class="blank m"></span>, not a <span class="blank s"></span>. This week you draw <span class="blank s"></span> only; <span class="blank l"></span> wait until W07. ΔC1 lands online this week — fold it in, do <b class="k">not</b> <span class="blank s"></span>.</span></div>
-  </section>
-
-  <section>
-    <h2>C · Five Things To Take Home</h2>
-    <div class="fill"><span class="n">1</span><span class="q">If you can point at it, it is a <span class="blank m"></span>. It settles in one sentence the arguments that otherwise take ten <span class="blank s"></span>.</span></div>
-    <div class="fill"><span class="n">2</span><span class="q">A class with no <span class="blank m"></span> behind it is a <span class="blank s"></span>. Guesses become tables you cannot <span class="blank m"></span>.</span></div>
-    <div class="fill"><span class="n">3</span><span class="q">Entity, Boundary, Control — <span class="blank m"></span> kind each, no exceptions. A box you cannot classify is a box whose <span class="blank m"></span> nobody agreed on.</span></div>
-    <div class="fill"><span class="n">4</span><span class="q">The words you <span class="blank m"></span> away matter as much as the ones you keep — discarding <span class="blank m"></span>, <span class="blank s"></span> and <span class="blank s"></span> is how you know where the <span class="blank m"></span> is.</span></div>
-    <div class="fill"><span class="n">5</span><span class="q">Push, then <span class="blank s"></span>, then verify the tag — that is what makes a push count as a <span class="blank m"></span>. A push on its own is <span class="blank l"></span>.</span></div>
-    <div class="hint">One thing I still do not understand — ask it before you leave:</div>
-    <div class="line"></div>
-  </section>
-
-  <footer>
-    <span>ISAD · W06 · Fall 2026</span>
-    <span>Page 1 of 2 — keep it with your model file.</span>
-    <span>No milestone tag this week · ΔC1 response counts towards M2</span>
-  </footer>
-</div>
-
-<!-- ============ PAGE 2 ============ -->
-<div class="paper">
-  <header>
-    <div class="h-row">
-      <div>
-        <div class="h-title">Week 06 · Lab Sheet</div>
-        <div class="h-sub">Exercises 6.1 – 6.2 · Model self-check · then homework, ΔC1 &amp; the protocol</div>
-      </div>
-      <div class="h-meta"><div>Name: ______________________</div></div>
-    </div>
-  </header>
-
-  <div class="note">
-    Rule of thumb for both exercises: <b>keep the sentence, throw away the word.</b> Every class you keep must be traceable to one line of a W05 specification. Five minutes reading alone first, then merge — and keep the rows you disagreed on.
-  </div>
+    </header>
 
 <section>
-    <h2>D · Exercise 6.1 — Your Own Noun Scan</h2>
-<pre>Words from <b>your</b> requirements FR-1 … FR-12. Not sorted. Not
-labelled. Yours to sort.
+  <h2>A · Key Terms — definitions are printed; you fill in the rest</h2>
+  <div class="two">
+  <div class="col">
+  <div class="term"><b>Domain model</b><span>A picture of the <b class="k">problem</b> the client described, drawn as classes. It answers “what does the system have to know about?” — never “how will the machine do it”.</span></div>
+  <div class="term"><b>Conceptual class</b><span>A candidate box. It becomes a real class only if it has <b class="k">identity</b> and a <b class="k">sentence in a specification</b> behind it. Otherwise it is a guess.</span></div>
+  <div class="term"><b>Analysis model</b><span>The W06–W09 model of the problem. No technology, no framework, no language. It changes when the <b class="k">requirements</b> change.</span></div>
+  <div class="term"><b>Design class diagram (DCD)</b><span>The W10 model of the solution. Its names end in <span class="mono">Service</span>, <span class="mono">Controller</span>, <span class="mono">Repository</span>, <span class="mono">DTO</span>. If your diagram would still make sense in another language, it is <b class="k">not</b> yet a DCD.</span></div>
+  <div class="term"><b>Entity class</b><span>Stores what the business keeps. Test: would the client still care about it in a year, with the whole interface switched off?</span></div>
+  <div class="term"><b>Boundary class</b><span>Sits at the edge, translates an actor's request and presents the answer. <b class="k">One per way the outside world talks in</b> — named after who uses it, never after a page.</span></div>
+  <div class="term"><b>Control class</b><span>Coordinates one use case from start to finish. It holds the <b class="k">order of the steps</b> and <b class="k">stores nothing</b>.</span></div>
+  </div>
+  <div class="col">
+  <div class="term"><b>The three rooms model</b><span>One use case, three rooms: boundary, control, entity. An actor <b class="k">never walks into the entity room</b> — something translates for them.</span></div>
+  <div class="term"><b>Attribute</b><span>A value you read <b class="k">off</b> one object. “state : String” is a value of one order, not a box. Attributes <b class="k">graduate</b> into classes when they gain identity.</span></div>
+  <div class="term"><b>Operation</b><span>One responsibility, asked of one object (<span class="mono">Order.cancel(reason)</span>) or of a whole collection (<span class="mono">Order.findOpenFor(student)</span>). <b class="k">One operation, one responsibility</b> — if the name contains “and”, split it.</span></div>
+  <div class="term"><b>Association</b><span>A line saying which class knows which, in a direction you can <b class="k">say out loud</b>: “an order has lines”. This week you draw lines; you do not count them yet.</span></div>
+  <div class="term"><b>Multiplicity</b><span>How many — 1, 0..*, 1..*. <b class="k">Next week (W07).</b> Do not guess it today, or everything ends up 1..*.</span></div>
+  <div class="term"><b>Identity</b><span>The test that separates a class from an attribute: <b class="k">can you point at one and say “that one”?</b> Point at the order — yes. Point at “Accepted” — no, you read it off an order.</span></div>
+  <div class="term"><b>Traceability</b><span>Every class names the specification sentence it came from. <b class="k">No sentence, no class.</b> A class with nothing behind it is padding — delete it.</span></div>
+  </div>
+  </div>
+  </section>
+
+    <footer>
+      <span>ISAD · W06 Lab Sheet · Fall 2026</span>
+      <span>Page 1 of 5 — keep it with your model file.</span>
+      <span>Definitions are printed; you fill in the rest.</span>
+    </footer>
+  </div>
+
+  <!-- ============ PAGE 2 · NOTES ============ -->
+  <div class="paper">
+    <header>
+      <div class="h-row">
+        <div>
+          <div class="h-title">Week 06 · Skeleton Notes</div>
+          <div class="h-sub">Information Systems Analysis &amp; Design · Fall 2026 · Ren Zheng</div>
+        </div>
+        <div class="h-meta">Name ______________ Team ______________ Date __________</div>
+      </div>
+    </header>
+
+<section>
+  <h2>B · Skeleton Notes — fill these in during the lecture</h2>
+  <div class="fill"><span class="n">1</span><span class="q">Last week you wrote <span class="blank m"></span>; this week the <span class="blank s"></span> in those sentences become <span class="blank s"></span>. A noun is a <span class="blank m"></span>, not a decision.</span></div>
+  <div class="fill"><span class="n">2</span><span class="q">“System creates the order in state Accepted” holds four nouns. <span class="blank s"></span> is not a class (it is the box everything sits in); <span class="blank m"></span> is a conceptual class; <span class="blank s"></span> is an attribute; <span class="blank l"></span> is not a noun at all — it is one value of a fixed list.</span></div>
+  <div class="fill"><span class="n">3</span><span class="q">The test that settles the argument: can you point at this thing and say <span class="blank l"></span>? If yes it is a <span class="blank s"></span>; if you can only read it off something else it is an <span class="blank s"></span>.</span></div>
+  <div class="fill"><span class="n">4</span><span class="q">A class with no <span class="blank m"></span> behind it is a guess, and guesses become schema you cannot change. Every class you keep must name the <span class="blank l"></span> it came from.</span></div>
+  <div class="fill"><span class="n">5</span><span class="q">This week models the <span class="blank m"></span>; W10 models the <span class="blank m"></span>. The three wrong reasons to add a class all reduce to one sentence: <span class="blank l"></span>.</span></div>
+  <div class="fill"><span class="n">6</span><span class="q">A class name is a <span class="blank s"></span>, is <span class="blank s"></span>, is capitalised, and carries <span class="blank s"></span> suffix — no Service, no Manager, no DTO, no Entity. “Item” is too vague; <span class="blank s"></span> says which catalogue.</span></div>
+  <div class="fill"><span class="n">7</span><span class="q">Every conceptual class is exactly one of three kinds, and there is <span class="blank s"></span> fourth kind. An <span class="blank s"></span> keeps information, a <span class="blank s"></span> translates at the edge, a <span class="blank s"></span> holds the order of the steps.</span></div>
+  <div class="fill"><span class="n">8</span><span class="q">The boundary room knows actors and entities but <b class="k">never</b> the <span class="blank m"></span>. The entity room knows only entities and <b class="k">never</b> an <span class="blank s"></span>. The control room knows <span class="blank s"></span> and stores <span class="blank s"></span>.</span></div>
+  <div class="fill"><span class="n">9</span><span class="q">A use case step is <b class="k">not</b> automatically an <span class="blank s"></span>. W05 step 5 was one sentence but at least <span class="blank s"></span> operations. If an operation's name contains <span class="blank s"></span>, you have not finished deciding.</span></div>
+  <div class="fill"><span class="n">10</span><span class="q">Ten classes is a <span class="blank m"></span>, not a <span class="blank s"></span>. This week you draw <span class="blank s"></span> only; <span class="blank l"></span> wait until W07. ΔC1 lands online this week — fold it in, do <b class="k">not</b> <span class="blank s"></span>.</span></div>
+  </section>
+
+<section>
+  <h2>C · Five Things To Take Home</h2>
+  <div class="fill"><span class="n">1</span><span class="q">If you can point at it, it is a <span class="blank m"></span>. It settles in one sentence the arguments that otherwise take ten <span class="blank s"></span>.</span></div>
+  <div class="fill"><span class="n">2</span><span class="q">A class with no <span class="blank m"></span> behind it is a <span class="blank s"></span>. Guesses become tables you cannot <span class="blank m"></span>.</span></div>
+  <div class="fill"><span class="n">3</span><span class="q">Entity, Boundary, Control — <span class="blank m"></span> kind each, no exceptions. A box you cannot classify is a box whose <span class="blank m"></span> nobody agreed on.</span></div>
+  <div class="fill"><span class="n">4</span><span class="q">The words you <span class="blank m"></span> away matter as much as the ones you keep — discarding <span class="blank m"></span>, <span class="blank s"></span> and <span class="blank s"></span> is how you know where the <span class="blank m"></span> is.</span></div>
+  <div class="fill"><span class="n">5</span><span class="q">Push, then <span class="blank s"></span>, then verify the tag — that is what makes a push count as a <span class="blank m"></span>. A push on its own is <span class="blank l"></span>.</span></div>
+  <div class="hint">One thing I still do not understand — ask it before you leave:</div>
+  <div class="line"></div>
+  </section>
+
+    <footer>
+      <span>ISAD · W06 Lab Sheet · Fall 2026</span>
+      <span>Page 2 of 5</span>
+      <span>Fill these in during the lecture.</span>
+    </footer>
+  </div>
+
+  <!-- ============ PAGE 3 · EXERCISE 6.1 ============ -->
+  <div class="paper">
+    <header>
+      <div class="h-row">
+        <div>
+          <div class="h-title">Week 06 · Exercise 6.1 — Noun Scan</div>
+          <div class="h-sub">Information Systems Analysis &amp; Design · Fall 2026 · Ren Zheng</div>
+        </div>
+        <div class="h-meta">Name ______________ Team ______________ Date __________</div>
+      </div>
+    </header>
+
+<section>
+  <h2>D · Exercise 6.1 — Your Own Noun Scan</h2>
+  <pre>Words from <b>your</b> requirements FR-1 … FR-12. Not sorted. Not
+  labelled. Yours to sort.
 
   client profile   skin type       concern          allergy history
   sensitivity      image           device           lighting condition
@@ -197,89 +211,141 @@ labelled. Yours to sort.
   regimen          sequence        morning          follow-up
   re-analysis      guidance text   product claim    moderation
   severity         comparison      recommendation set  purchase</pre>
-    <div class="hint">Sort every word into four buckets — <b>conceptual class</b> / <b>attribute</b> / <b>external actor</b> / <b>discard</b> — then mark each class <b>E</b>, <b>B</b> or <b>C</b>. Every word needs a reason, and the reason must cite a requirement line or say <i>“no requirement mentions this”</i>. Two words are traps: <b>contraindication</b> (FR-1 attaches it to the <i>client</i>, not to a product) and <b>allergy history</b> (structure and a lifetime — argue it).</div>
-    <table>
-      <thead>
-        <tr><th style="width:38mm">Words from your list</th><th style="width:44mm">Your call — class / attribute / actor / discard</th><th>If a class, then mark</th><th>Write the requirement line it came from</th></tr>
-      </thead>
-      <tbody>
-        <tr><td class="h3">client profile · skin type · concern</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">allergy history · sensitivity</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">image · device · lighting condition</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">analysis request · analysis · state</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">finding · confidence value</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">review decision · disclosure</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">treatment plan · goal · step</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">review interval · product · ingredient</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">contraindication · regimen · sequence</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">follow-up · re-analysis · severity</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">guidance text · product claim · moderation</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-        <tr><td class="h3">comparison · recommendation set · purchase</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
-      </tbody>
-    </table>
-    <div class="hint">For every surviving class, one more question: <b>can you point at one and say “that one”?</b> If no, it moves to <span class="blank" style="min-width:8em"></span>. Then, in one sentence: the words you threw away were as important as the ones you kept, because they showed you where the <span class="blank" style="min-width:6em"></span> is.</div>
+  <div class="hint">Sort every word into four buckets — <b>conceptual class</b> / <b>attribute</b> / <b>external actor</b> / <b>discard</b> — then mark each class <b>E</b>, <b>B</b> or <b>C</b>. Every word needs a reason, and the reason must cite a requirement line or say <i>“no requirement mentions this”</i>. Two words are traps: <b>contraindication</b> (FR-1 attaches it to the <i>client</i>, not to a product) and <b>allergy history</b> (structure and a lifetime — argue it).</div>
+  <table>
+  <thead>
+  <tr><th style="width:38mm">Words from your list</th><th style="width:44mm">Your call — class / attribute / actor / discard</th><th>If a class, then mark</th><th>Write the requirement line it came from</th></tr>
+  </thead>
+  <tbody>
+  <tr><td class="h3">client profile · skin type · concern</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">allergy history · sensitivity</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">image · device · lighting condition</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">analysis request · analysis · state</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">finding · confidence value</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">review decision · disclosure</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">treatment plan · goal · step</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">review interval · product · ingredient</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">contraindication · regimen · sequence</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">follow-up · re-analysis · severity</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">guidance text · product claim · moderation</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  <tr><td class="h3">comparison · recommendation set · purchase</td><td class="h3"></td><td class="h3" style="text-align:center"><span class="circle"></span>E<span class="circle"></span>B<span class="circle"></span>C</td><td class="h3"></td></tr>
+  </tbody>
+  </table>
+  <div class="hint">For every surviving class, one more question: <b>can you point at one and say “that one”?</b> If no, it moves to <span class="blank" style="min-width:8em"></span>. Then, in one sentence: the words you threw away were as important as the ones you kept, because they showed you where the <span class="blank" style="min-width:6em"></span> is.</div>
   </section>
 
-  <section>
-    <h2>E · Exercise 6.2 — Draw Your First Domain Model</h2>
-    <div class="hint" style="margin-top:0">Draw <b>your</b> domain model in PlantUML — entities, boundaries and controls, plus the associations between them. <b>No multiplicities, no aggregation diamonds, no attributes, no methods</b> — those come later. The AI analysis engine is <b>outside</b> your boundary: it is an external actor, not one of your classes. Source file: <span class="mono">docs/diagrams/domain-model-v1.puml</span>.</div>
-    <div class="two">
-      <div class="col">
-        <div class="hint" style="margin-top:0"><b>Four roles, four jobs.</b> Lead keeps the clock and calls the disagreements · Recorder owns the <b>.puml file, and only that file</b> · Reviewer checks every class against a requirement line · Release Manager pushes and confirms the file is in the repo.</div>
-        <div class="hint">Target: <b>eight classes or more</b>, every one traceable to a requirement. A model of five has missed the domain; a model of thirty has drawn the database.</div>
-        <div class="hint"><b>Name every association with a verb.</b> If they are all <span class="mono">has</span>, your model says nothing. The AI engine <i>detects</i> lesions; the practitioner <i>reviews</i> findings; a plan <i>derives from</i> findings; a regimen <i>sequences</i> products.</div>
+    <footer>
+      <span>ISAD · W06 Lab Sheet · Fall 2026</span>
+      <span>Page 3 of 5</span>
+      <span>Every word needs a reason and a requirement line.</span>
+    </footer>
+  </div>
+
+  <!-- ============ PAGE 4 · EXERCISE 6.2 & DECISION ============ -->
+  <div class="paper">
+    <header>
+      <div class="h-row">
+        <div>
+          <div class="h-title">Week 06 · Exercise 6.2 & the Open Decision</div>
+          <div class="h-sub">Information Systems Analysis &amp; Design · Fall 2026 · Ren Zheng</div>
+        </div>
+        <div class="h-meta">Name ______________ Team ______________ Date __________</div>
       </div>
-      <div class="col">
-        <div class="hint" style="margin-top:0">Mark every class, then count:</div>
-        <div class="ex"><span class="n">E</span><span class="body">entity classes = <span class="blank s"></span> · boundary = <span class="blank s"></span> · control = <span class="blank s"></span></span></div>
-        <div class="ex"><span class="n">→</span><span class="body">total classes = <span class="blank m"></span> · associations drawn = <span class="blank s"></span></span></div>
-        <div class="ex"><span class="n">✓</span><span class="body">A PNG alone is not a diagram. Commit the PlantUML <b>source</b> — the PNG is what you look at, the source is what you can change.</span></div>
-        <div class="hint"><b>Two arguments you must write down:</b> <span class="mono">Contraindication</span> — class of the client, or attribute of the profile? <span class="mono">AllergyHistory</span> — class or attribute?</div>
+    </header>
+
+<section>
+  <h2>E · Exercise 6.2 — Draw Your First Domain Model</h2>
+  <div class="hint" style="margin-top:0">Draw <b>your</b> domain model in PlantUML — entities, boundaries and controls, plus the associations between them. <b>No multiplicities, no aggregation diamonds, no attributes, no methods</b> — those come later. The AI analysis engine is <b>outside</b> your boundary: it is an external actor, not one of your classes. Source file: <span class="mono">docs/diagrams/domain-model-v1.puml</span>.</div>
+  <div class="two">
+  <div class="col">
+  <div class="hint" style="margin-top:0"><b>Four roles, four jobs.</b> Lead keeps the clock and calls the disagreements · Recorder owns the <b>.puml file, and only that file</b> · Reviewer checks every class against a requirement line · Release Manager pushes and confirms the file is in the repo.</div>
+  <div class="hint">Target: <b>eight classes or more</b>, every one traceable to a requirement. A model of five has missed the domain; a model of thirty has drawn the database.</div>
+  <div class="hint"><b>Name every association with a verb.</b> If they are all <span class="mono">has</span>, your model says nothing. The AI engine <i>detects</i> lesions; the practitioner <i>reviews</i> findings; a plan <i>derives from</i> findings; a regimen <i>sequences</i> products.</div>
+  </div>
+  <div class="col">
+  <div class="hint" style="margin-top:0">Mark every class, then count:</div>
+  <div class="ex"><span class="n">E</span><span class="body">entity classes = <span class="blank s"></span> · boundary = <span class="blank s"></span> · control = <span class="blank s"></span></span></div>
+  <div class="ex"><span class="n">→</span><span class="body">total classes = <span class="blank m"></span> · associations drawn = <span class="blank s"></span></span></div>
+  <div class="ex"><span class="n">✓</span><span class="body">A PNG alone is not a diagram. Commit the PlantUML <b>source</b> — the PNG is what you look at, the source is what you can change.</span></div>
+  <div class="hint"><b>Two arguments you must write down:</b> <span class="mono">Contraindication</span> — class of the client, or attribute of the profile? <span class="mono">AllergyHistory</span> — class or attribute?</div>
+  </div>
+  </div>
+  </section>
+
+<section>
+  <h2>F · Make One Open Decision</h2>
+  <div class="hint" style="margin-top:0">Your requirements deliberately left six things unspecified. Pick <b>one</b>, decide it, <b>model it</b>, and say why. <b>“We haven't decided” is not a model.</b></div>
+  <div class="chk"><span class="box"></span><span class="t">Does the client see findings <b>before</b> review? <em>Your Topic Proposal §5 asked this. Pick one.</em></span></div>
+  <div class="chk"><span class="box"></span><span class="t">What happens on a <b>low-confidence</b> finding? <em>Threshold? Routed to review? Image rejected?</em></span></div>
+  <div class="chk"><span class="box"></span><span class="t">Who may correct a <b>client's self-declared</b> concern? <em>The trust boundary between client input and practitioner input.</em></span></div>
+  <div class="chk"><span class="box"></span><span class="t">Do recommendations differ by <b>client segment</b>? <em>This is where your Strategy candidates live, in M3 and M4.</em></span></div>
+  <div class="chk"><span class="box"></span><span class="t">How long are client photographs <b>retained</b>? <em>A real obligation with a real model consequence.</em></span></div>
+  <div class="chk"><span class="box"></span><span class="t">What does the client see on a <b>rejected</b> analysis? <em>Silence? A retake prompt? Who tells them, and how?</em></span></div>
+  <div class="hint">Your decision, in one sentence — the <b>rule</b>, not the topic:</div>
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="hint">How you modelled it in the diagram (a state? an association? a constraint?):</div>
+  <div class="line"></div>
+  <div class="hint">Why this way and not the other — one sentence:</div>
+  <div class="line"></div>
+  </section>
+
+    <footer>
+      <span>ISAD · W06 Lab Sheet · Fall 2026</span>
+      <span>Page 4 of 5</span>
+      <span>We haven't decided is not a model.</span>
+    </footer>
+  </div>
+
+  <!-- ============ PAGE 5 · SUBMITTING TODAY ============ -->
+  <div class="paper">
+    <header>
+      <div class="h-row">
+        <div>
+          <div class="h-title">Week 06 · Submitting Today</div>
+          <div class="h-sub">Information Systems Analysis &amp; Design · Fall 2026 · Ren Zheng</div>
+        </div>
+        <div class="h-meta">Name ______________ Team ______________ Date __________</div>
       </div>
-    </div>
+    </header>
+
+<section>
+  <h2>H · The One Rule</h2>
+  <div class="hint" style="margin-top:0">A milestone is submitted when its <b>tag</b> is pushed. A <span class="mono">git push</span> without the tag is <b>not</b> a submission. For M0 you need all three: your files pushed, the tag <span class="mono">m0</span> pushed, and <span class="mono">refs/tags/m0</span> visible in the verification output. <b>Read the output</b> — a command that fails quietly looks exactly like one that worked.</div>
+
+  <div class="chk"><span class="box"></span><span class="t"><b>YOUR REPOSITORY</b> — <span class="mono">github.com/Kasper282/WorkspaceProject</span>. <b>It still holds only the first README.</b> The folder skeleton is not in the remote yet: run <span class="mono">init-team-repo.sh</span> (Release Manager, once) from the init pack. If you lost the zip, ask in class — do not build it by hand.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>SET YOUR NAME FIRST</b> — <span class="mono">git config user.name "Your Full Name"</span> and <span class="mono">git config user.email "your@university.edu"</span>. Four distinct names, or the teamwork evidence at M5 is gone.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>M0 DUE TODAY</b> — <span class="mono">TEAM-CHARTER.md</span> · <span class="mono">01-requirements/stakeholder-list.md</span> · <span class="mono">01-requirements/vision.md</span>. Four names, four roles. The vision must be <b>word-for-word identical</b> in the charter §8 and in the vision file. It must carry the <b>safety boundary</b>: the system recommends, it never prescribes.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>COMMIT, THEN TAG, THEN VERIFY</b> — Release Manager only, in that order, every single time:</span></div>
+  <pre>git add TEAM-CHARTER.md 01-requirements/ docs/analysis/ docs/diagrams/
+  git status                    # READ the file list before you commit
+  git commit -m "M0: charter, stakeholders, vision; domain model v1"
+  git push origin main
+  git tag -a m0 -m "M0: charter, stakeholders, vision"
+  git push origin m0
+  git ls-remote --tags origin</pre>
+  <div class="hint">You must see a line containing <span class="mono">refs/tags/m0</span>. No line = not submitted. Read the output — do not assume. A push without the tag is <b>not</b> a submission.</div>
+  <div class="chk"><span class="box"></span><span class="t"><b>ALL FOUR NAMES IN THE HISTORY</b> — <span class="mono">git log --oneline --format="%an"</span> must show four distinct people before you leave. One giant final commit from one person is a red flag.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>UPDATE THE README TABLE</b> — fill the M0 row in the milestone status table, then commit and push that too. The tag froze the snapshot; the README row is how it is recorded.</span></div>
+
+  <div class="hint" style="margin-top:2mm"><b>Where the files go</b> — working copies in <span class="mono">docs/</span>; the milestone snapshot in <span class="mono">01-requirements/</span>. Mixing the two is the most common mistake.</div>
   </section>
 
-  <section>
-    <h2>F · Make One Open Decision</h2>
-    <div class="hint" style="margin-top:0">Your requirements deliberately left six things unspecified. Pick <b>one</b>, decide it, <b>model it</b>, and say why. <b>“We haven't decided” is not a model.</b></div>
-    <div class="chk"><span class="box"></span><span class="t">Does the client see findings <b>before</b> review? <em>Your Topic Proposal §5 asked this. Pick one.</em></span></div>
-    <div class="chk"><span class="box"></span><span class="t">What happens on a <b>low-confidence</b> finding? <em>Threshold? Routed to review? Image rejected?</em></span></div>
-    <div class="chk"><span class="box"></span><span class="t">Who may correct a <b>client's self-declared</b> concern? <em>The trust boundary between client input and practitioner input.</em></span></div>
-    <div class="chk"><span class="box"></span><span class="t">Do recommendations differ by <b>client segment</b>? <em>This is where your Strategy candidates live, in M3 and M4.</em></span></div>
-    <div class="chk"><span class="box"></span><span class="t">How long are client photographs <b>retained</b>? <em>A real obligation with a real model consequence.</em></span></div>
-    <div class="chk"><span class="box"></span><span class="t">What does the client see on a <b>rejected</b> analysis? <em>Silence? A retake prompt? Who tells them, and how?</em></span></div>
-    <div class="hint">Your decision, in one sentence — the <b>rule</b>, not the topic:</div>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="hint">How you modelled it in the diagram (a state? an association? a constraint?):</div>
-    <div class="line"></div>
-    <div class="hint">Why this way and not the other — one sentence:</div>
-    <div class="line"></div>
+<section>
+  <h2>G · Before the Next Class</h2>
+  <div class="chk"><span class="box"></span><span class="t"><b>THE OTHER FIVE DECISIONS</b> — one line each, not decided yet is fine, but each must name what you would need in order to decide. You will say them aloud at the M1 review.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>M1 DUE SUN NOV 01</b> — requirements list (extend FR-1…FR-12), use case diagram, <b>2 detailed use case specifications</b>. Your §5 suggests the two: <i>submit photo for analysis</i> and <i>practitioner reviews findings and authorises disclosure</i>. Decide this week.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>READING</b> — Larman, <i>Applying UML and Patterns</i>, ch. 4: the nine-field use case template. Skim association and multiplicity too, because next week is entirely about them.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>BRING YOUR M1 QUESTIONS</b> — the client review is next week, and the instructor plays the client. Bring the questions you could not decide yourself.</span></div>
+  <div class="chk"><span class="box"></span><span class="t"><b>PERSONAL WORK</b> — the <span class="mono">.puml</span> is owned by the Recorder, but every member explains and defends one class. <em>Four people, four signatures of understanding.</em></span></div>
   </section>
 
-  <section>
-    <h2>G · This Week — Before the Next Class</h2>
-    <div class="chk"><span class="box"></span><span class="t"><b>M0 DUE TODAY</b> — <span class="mono">docs/m0/team-charter.md</span> · <span class="mono">docs/m0/stakeholders.md</span> · <span class="mono">docs/m0/vision.md</span>. Four names, four roles. The vision must carry the <b>safety boundary</b>: the system recommends, it never prescribes.</span></div>
-    <div class="chk"><span class="box"></span><span class="t"><b>TAG M0</b> — Release Manager only, after everything is pushed. Push, then tag, then verify — in that order, every single time:</span></div>
-<pre>git add docs/m0/ docs/analysis/ docs/diagrams/
-git commit -m "M0: charter, stakeholders, vision; domain model v1"
-git tag -a m0 -m "M0: charter, stakeholders, vision"
-git push origin m0
-git ls-remote --tags origin</pre>
-    <div class="hint">You must see a line containing <span class="mono">refs/tags/m0</span>. No line = not submitted. Read the output — do not assume.</div>
-    <div class="chk"><span class="box"></span><span class="t"><b>THE OTHER FIVE DECISIONS</b> — one line each, not decided yet is fine, but each must name what you would need in order to decide. You will say them aloud at the M1 review.</span></div>
-    <div class="chk"><span class="box"></span><span class="t"><b>M1 DUE SUN NOV 01</b> — requirements list (extend FR-1…FR-12), use case diagram, <b>2 detailed use case specifications</b>. Your §5 suggests the two: <i>submit photo for analysis</i> and <i>practitioner reviews findings and authorises disclosure</i>. Decide this week.</span></div>
-    <div class="chk"><span class="box"></span><span class="t"><b>READING</b> — Larman, <i>Applying UML and Patterns</i>, ch. 4: the nine-field use case template. Skim association and multiplicity too, because next week is entirely about them.</span></div>
-    <div class="chk"><span class="box"></span><span class="t"><b>BRING YOUR M1 QUESTIONS</b> — the client review is next week, and the instructor plays the client. Bring the questions you could not decide yourself.</span></div>
-    <div class="chk"><span class="box"></span><span class="t"><b>PERSONAL WORK</b> — the <span class="mono">.puml</span> is owned by the Recorder, but every member explains and defends one class. <em>Four people, four signatures of understanding.</em></span></div>
-  </section>
-
-  <footer>
-    <span>ISAD · W06 Lab Sheet · Fall 2026</span>
-    <span>Page 2 of 2</span>
-    <span>Push + tag = submission. Source files, not PNGs alone.</span>
-  </footer>
-</div>
+    <footer>
+      <span>ISAD · W06 Lab Sheet · Fall 2026</span>
+      <span>Page 5 of 5</span>
+      <span>M0 is due today · tagged <b>m0</b>.</span>
+    </footer>
+  </div>
 
 </body>
 </html>

@@ -13,6 +13,7 @@
 |---|---|
 | **新增 W06 任务** | **选题三件套** → [`labs/Lab-07-W06-Choosing-Your-Own-Project.md`](labs/Lab-07-W06-Choosing-Your-Own-Project.md) |
 | **W06 补课（10-29）** | **领域建模 v1** → [`labs/Lab-06-W06-Domain-Modeling-v1.md`](labs/Lab-06-W06-Domain-Modeling-v1.md) — 已按 **AI Skin Analysis** 的 FR-1…FR-12 重写；**M0 当堂收** |
+| **提交协议** | [`SUBMIT-INSTRUCTIONS-W06-EN.md`](SUBMIT-INSTRUCTIONS-W06-EN.md) — M0 的 push → tag → verify 全流程（学生用）|
 | **任务说明** | [`Topic-Selection-Task-选题任务包.md`](Topic-Selection-Task-选题任务包.md) |
 | **变更详情与新时间线** | [`项目案例变更说明-CampusBites改为自主命题.md`](项目案例变更说明-CampusBites改为自主命题.md) |
 | **三份空白模板** | [`topics-templates/`](topics-templates/) — `Template-01-Candidate-List.md` · `Template-02-Scorecard.md` · `Template-03-Topic-Proposal.md` |

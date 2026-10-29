@@ -32,7 +32,7 @@
 
 > None of these need re-doing. Check them off; if any is untrue, fix it **today**, not on M0 night.
 
-- [x] Repository name: `campusbites-team-01`
+- [x] Repository: `Kasper282/WorkspaceProject` — **the folder skeleton is still missing from the remote; run `init-team-repo.sh` before M0**
 - [x] All **four** members have write access and have each pushed **at least one commit**
 - [x] Instructor `klausren` invited — access confirmed, not "invitation sent"
 - [x] One-time registration email sent (template in `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4)

@@ -96,11 +96,13 @@ W16   Dec 21–Dec 27   FINAL DEFENSE in class                → M5 package due
 **One Git repository per team** (this is the only submission address):
 
 ```
-https://github.com/<your-team-account>/campusbites-team-01
+https://github.com/Kasper282/WorkspaceProject
 ```
 
-- Created under **any one member's GitHub account** in Week 2.
-- The instructor's GitHub account **`klausren`** is invited as a collaborator (**read** access is enough) — do this in W2, it is part of M0.
+- Created under **any one member's GitHub account**; for this cohort the repository already exists as
+  **`Kasper282/WorkspaceProject`** and the instructor (`klausren`) has read access.
+- **The folder skeleton is not in the remote yet** — it is pushed by `init-team-repo.sh` from the
+  Repo-Init-Pack (Release Manager, once). See [`SUBMIT-INSTRUCTIONS-W06-EN.md`](SUBMIT-INSTRUCTIONS-W06-EN.md).
 - Repository layout: exactly as Guidebook §6.
 
 ### 4.2 One-time registration — done in Week 06, Oct 15
@@ -112,7 +114,7 @@ Subject: [ISAD] Repo registration — Team 01
 
 Team name:    Team 01
 Members:      Full Name 1 (leader), Full Name 2, Full Name 3
-Repo URL:     https://github.com/xxx/campusbites-team-01
+Repo URL:     https://github.com/Kasper282/WorkspaceProject
 Access:       klausren invited as collaborator (done / pending)
 ```
 
@@ -155,7 +157,7 @@ This table is the first thing the instructor reads. Keep it true.
 
 If GitHub is unreachable from your network at deadline time:
 
-1. Create a zip of the **entire repository folder** (including `.git/`): `campusbites-team-01-m1.zip`
+1. Create a zip of the **entire repository folder** (including `.git/`): `workspaceproject-m1.zip`
 2. Email it to the instructor **before the deadline** with subject `[ISAD] M1 fallback — Team 01`.
 3. Push to GitHub as soon as access returns; the emailed zip's timestamp is your proof of timeliness.
 

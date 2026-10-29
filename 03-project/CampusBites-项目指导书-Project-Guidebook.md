@@ -89,12 +89,13 @@ Every deliverable is **in English**. Every diagram needs a **source file** (.dra
 
 ## 6. Submission Rules — Your Git Repository
 
-1. **One repository per team**, created in Week 2, named `campusbites-team-01`, shared with the instructor (read access). The instructor's GitHub account is **`klausren`**.
+1. **One repository per team**, shared with the instructor (read access). For this cohort it is
+   **`Kasper282/WorkspaceProject`**. The instructor's GitHub account is **`klausren`**.
 2. **A milestone submission = a pushed tag.** At every deadline, create an annotated tag (`m0` … `m5`) and push it: `git tag -a m1 -m "M1 submission" && git push origin m1`. The tag — not your branch head — is the graded snapshot, and the README.md milestone status table must be updated with it. Full protocol, one-time registration email, and the GitHub-unreachable fallback: `CampusBites-Deadline-Schedule-and-Submission-Guide.md` §4.
 3. **Repository layout** (keep it clean — this itself is graded under documentation quality):
 
 ```
-campusbites-team-01/
+workspaceproject/
 ├── README.md              # team, members, milestone status table
 ├── 01-requirements/        # M1 deliverables
 ├── 02-analysis/           # M2: domain, sequence, state, activity

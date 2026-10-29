@@ -2,6 +2,7 @@
 
 > **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · **Thursday Oct 29**
 > **Milestone**: **M0 due today** — tag `m0`, push it, read the output.
+> **Submission**: [`../SUBMIT-INSTRUCTIONS-W06-EN.md`](../SUBMIT-INSTRUCTIONS-W06-EN.md) — the full push/tag/verify protocol for M0.
 > **Your material**: `AI-Skin-Analysis-Core-Functional-Requirements.md` (yours, v1.0, issued 2026-10-15)
 > **Slides**: `W06-Domain-Modeling.pptx`, **pages 1–29** (the lecture part)
 > **Handout**: `W06-Handout.html`, sections D–G (page 2)
@@ -267,19 +268,19 @@ done at home on Sunday night.
 
 ### Steps
 
-1. **Freeze the team charter.** `docs/m0/team-charter.md` (Appendix A). Four names, four roles, the
+1. **Freeze the team charter.** `TEAM-CHARTER.md` (Appendix A). Four names, four roles, the
    submission protocol every member agrees to.
-2. **Freeze the stakeholder list.** `docs/m0/stakeholders.md`. Start from the seven actors in §2 of
+2. **Freeze the stakeholder list.** `01-requirements/stakeholder-list.md`. Start from the seven actors in §2 of
    your requirements, and mark each **inside** or **outside**. Add anyone the requirements imply but
    never named.
-3. **Freeze the project vision.** `docs/m0/vision.md`. One paragraph: who has this problem, what
+3. **Freeze the project vision.** `01-requirements/vision.md`. One paragraph: who has this problem, what
    the system does about it, and what "good enough" looks like. Add the **safety boundary** from
    §0 — a system that recommends but never prescribes is a different system from one that does not.
 4. **Commit the model with the M0 work.** The domain model from Task B is **not** M2, but it should
    not be lost either:
 
    ```bash
-   git add docs/m0/ docs/analysis/ docs/diagrams/
+   git add TEAM-CHARTER.md 01-requirements/ docs/analysis/ docs/diagrams/
    git commit -m "M0: charter, stakeholders, vision; domain model v1 from the W06 lab"
    ```
 
@@ -300,7 +301,7 @@ done at home on Sunday night.
 
 ### Done when
 
-- [ ] `docs/m0/team-charter.md`, `docs/m0/stakeholders.md`, `docs/m0/vision.md` committed
+- [ ] `TEAM-CHARTER.md`, `01-requirements/stakeholder-list.md`, `01-requirements/vision.md` committed
 - [ ] `docs/diagrams/domain-model-v1.puml` committed **and** its PNG
 - [ ] `docs/analysis/noun-scan.md` committed
 - [ ] `git ls-remote --tags origin` shows `refs/tags/m0`. You have read the line, not assumed it.
