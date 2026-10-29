@@ -12,6 +12,7 @@
 | | |
 |---|---|
 | **新增 W06 任务** | **选题三件套** → [`labs/Lab-07-W06-Choosing-Your-Own-Project.md`](labs/Lab-07-W06-Choosing-Your-Own-Project.md) |
+| **W06 补课（10-29）** | **领域建模 v1** → [`labs/Lab-06-W06-Domain-Modeling-v1.md`](labs/Lab-06-W06-Domain-Modeling-v1.md) — 已按 **AI Skin Analysis** 的 FR-1…FR-12 重写；**M0 当堂收** |
 | **任务说明** | [`Topic-Selection-Task-选题任务包.md`](Topic-Selection-Task-选题任务包.md) |
 | **变更详情与新时间线** | [`项目案例变更说明-CampusBites改为自主命题.md`](项目案例变更说明-CampusBites改为自主命题.md) |
 | **三份空白模板** | [`topics-templates/`](topics-templates/) — `Template-01-Candidate-List.md` · `Template-02-Scorecard.md` · `Template-03-Topic-Proposal.md` |
@@ -124,7 +125,17 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 - **Deliverable today**: `docs/diagrams/use-case-v1.drawio` + PNG, pushed — **not tagged**.
 - **Feeds**: M1 (tag `m1` by Sun Oct 4).
 
-#### Lab 5 · W6 (Oct 05–Oct 11) — Choosing your own project ⚠️ **THIS WEEK**
+#### Lab 5 · W5 (delivered Thu Oct 08, and Thu Oct 29) — Use case specifications, then domain modeling v1
+
+📄 **W05 sheet**: [`labs/Lab-05-W05-Use-Case-Specification-and-Peer-Review.md`](labs/Lab-05-W05-Use-Case-Specification-and-Peer-Review.md) — Exercise 5.1 (find the five planted defects), Exercise 5.2 (the twelve-question review checklist and the 3/2/1 scale, filed as `docs/reviews/m1-spec-review.md`). §5 (Close Out M1 / tag `m1`) is **parked** — M1 is now due Sun Nov 01.
+
+📄 **W06 sheet (today, Oct 29)**: [`labs/Lab-06-W06-Domain-Modeling-v1.md`](labs/Lab-06-W06-Domain-Modeling-v1.md) — rewritten for **AI Skin Analysis**: noun scan on your own FR-1…FR-12, E/B/C classification, the first domain model in PlantUML, and **one open decision modelled and argued**.
+
+- **Milestone**: **M0 due today** — charter, stakeholders, vision, then `git tag m0` and verify with `git ls-remote --tags origin`.
+- **Feeds**: M1 (requirements list, use case diagram, 2 detailed specifications), **due Sun Nov 01**.
+
+
+#### Lab 6 · W6 (Oct 05–11) — Choosing your own project
 
 📄 **In class (35 min)**: [`labs/Lab-07-W06-Choosing-Your-Own-Project.md`](labs/Lab-07-W06-Choosing-Your-Own-Project.md) — read the three criteria (S1 actors >= 5 · S2 classes >= 8 with >= 6 non-"has" relationships · S3 objects with lifecycles >= 2), watch the rejected-vs-accepted demo, then **20 minutes of silent, individual brainstorming**: two candidates each, written down before anyone speaks. Sheets are collected at minute 35.
 📄 **In class (55 min) — Domain modeling as a method**: slides `W06-Domain-Modeling.pptx` **P01–P29** — noun scan and the identity test, analysis vs. design classes, entity/boundary/control, the three rooms model, attributes vs. values, associations before multiplicities. **P30–P38 are not used this week** (they carry the CampusBites word list). Teacher's script: [`../02-教案/W06-课堂教案-领域建模方法.md`](../02-教案/W06-课堂教案-领域建模方法.md).
@@ -132,7 +143,7 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 - **Instructor answer**: **pass / revise**, returned **before W7**. You cannot enter M0 until the topic is approved.
 - **Why 20 minutes stay in class even though the rest is homework**: if you talk first, four people collapse into one idea, and whoever's idea is dropped never owned anything. That is individual-contribution evidence, which is why it does not move to homework.
 
-#### Lab 6 · W7 (Oct 12–Oct 18) — M0 Kickoff & the M1 client review ⚠️ **CHANGED**
+#### Lab 7 · W7 (Oct 12–18) — M0 Kickoff
 
 📄 **Lab sheet**: *to be written.* Method unchanged from `labs/Lab-04-W04-Finding-Actors-and-Use-Cases.md`; the case is now **your own topic**.
 
@@ -140,7 +151,7 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 - **Milestone**: **M0 due Sun Oct 18** — `git tag m0`, verify with `git ls-remote --tags origin`.
 - **Also this week**: the **M1 client review is now W9** (Oct 26–Nov 01), instructor as client, 30 min, formative.
 
-#### Lab 7 · W8 (Oct 19–Oct 25) — Requirements & use case specifications ⚠️ **CHANGED**
+#### Lab 8 · W8 (Oct 19–25) — Requirements & use case specifications
 
 📄 **Lab sheet**: *to be written.* Reuse the **method** of `labs/Lab-05-W05-Use-Case-Specification-and-Peer-Review.md` (Exercise 5.1 find the five planted defects; Exercise 5.2 the twelve-question review checklist and the 3/2/1 scale, filed as `docs/reviews/m1-spec-review.md`), but write the specs for **your own topic**.
 
@@ -148,49 +159,46 @@ Each entry gives: **what the lecture covered**, **what you do in the lab**, and 
 - **Milestone**: **M1 due Sun Oct 25** — `git tag m1`, verify with `git ls-remote --tags origin`.
 - **Note**: the twelve-question review checklist from W05 is the same instrument you will be graded on at the W9 client review.
 
-#### Lab 8 · W9 (Oct 26–Nov 01) — M1 client review, then domain model v1
+#### Lab 9 · W9 (Oct 26–Nov 01) — M1 client review & sequence diagrams
 
-📄 **Lab sheet**: [`labs/Lab-06-W06-Domain-Modeling-v1.md`](labs/Lab-06-W06-Domain-Modeling-v1.md) ⚠️ **needs revision first** — see its §R table. It was written for the CampusBites case and for the old M1 date.
+📄 **Lab sheet**: *to be written.* Method unchanged from the sequence-diagram lab of the same name; the case is now **your own**.
 
-- **Hands-on**: 30 min client review (instructor as client: 10 min present, 20 min interrogation), then noun scanning on **your own** M1 specifications → the first domain model in PlantUML at `docs/diagrams/domain-model-v1.puml`.
-- **Feeds**: M2 (domain model), **due Sun Nov 15**.
-- **When you revise Lab 06**: keep its task structure, Done-when lists and Stuck? tables verbatim; replace only the material — the word list, the spec sentences, and the class count come from your own M1 work, not from the lecture example.
+- **Hands-on**: draw 2+ system-sequence / interaction diagrams for your own key operations.
+- **Also this week**: the **M1 client review** — instructor as client, 30 min (10 min present, 20 min interrogation), formative.
+- **Milestone**: **M1 due Sun Nov 01** — requirements list, use case diagram, 2 detailed specifications. Tag `m1`, verify with `git ls-remote --tags origin`.
+- **Feeds**: M2 (domain model), **due Sun Nov 22**.
 
-#### Lab 8 · W8 (Oct 19–Oct 25) — Sequence diagrams
-- **Hands-on**: draw 2+ system-sequence / interaction diagrams for key operations (`placeOrder`, `pay`).
-- **Milestone**: **M2 due Sun Oct 25** — domain model, 2+ sequence diagrams, Order state machine, 1 activity diagram.
-
-#### Lab 9 · W9 (Oct 26–Nov 01) — State & activity diagrams + mid-term review
+#### Lab 10 · W9 (Oct 26–Nov 01) — State & activity diagrams, and the mid-term review
 - **Hands-on**: complete the Order state machine (guards/actions/events) and one activity diagram.
-- **Mid-term review** (formative): 8 min team walkthrough + 10 min individual Q&A — every member questioned.
+- **Mid-term review** (formative): 8 min team walkthrough + 10 min individual Q&A — every member questioned. It shares the week with the M1 client review, so expect both in the same session.
 
 ### Module C — Design (W10–W15)
 
-#### Lab 10 · W10 (Nov 02–Nov 08) — From analysis to design (DCD)
+#### Lab 11 · W10 (Nov 02–Nov 08) — From analysis to design (DCD)
 - **Hands-on**: turn the domain model into a first design class diagram (DCD); add operations and navigability.
 - **Note**: ΔC2 announced this week.
 
-#### Lab 11 · W11 (Nov 09–Nov 15) — GRASP
+#### Lab 12 · W11 (Nov 09–15) — GRASP
 - **Hands-on**: for every major responsibility decision, name the GRASP principle and argue the alternative (Information Expert, Creator, Controller, Low Coupling, High Cohesion).
 
-#### Lab 12 · W12 (Nov 16–Nov 22) — SOLID
+#### Lab 13 · W12 (Nov 16–22) — SOLID
 - **Hands-on**: audit the DCD against SRP/OCP/LSP/ISP/DIP; refactor; write before/after notes.
 - **Milestone**: **M3 due Sun Nov 22** — DCD, GRASP/SOLID application notes, DCD-level interaction diagrams.
 
-#### Lab 13 · W13 (Nov 23–Nov 29) — Creational patterns
+#### Lab 14 · W13 (Nov 23–29) — Creational patterns
 - **Hands-on**: apply Factory/Builder/etc. to CampusBites (payment creation, order assembly); write pattern catalog cards (Appendix C).
 - **Note**: ΔC3 announced this week.
 
-#### Lab 14 · W14 (Nov 30–Dec 06) — Structural patterns
+#### Lab 15 · W14 (Nov 30–Dec 06) — Structural patterns
 - **Hands-on**: apply Adapter (campus-card API), Decorator (meal customization), Facade (notification stack); update DCD.
 - **Milestone**: **M4 due Sun Dec 6** — pattern catalog (5+), refactoring narrative, updated DCD.
 
-#### Lab 15 · W15 (Dec 07–Dec 13) — Behavioural patterns & defense rehearsal
+#### Lab 16 · W15 (Dec 07–Dec 13) — Behavioural patterns & defense rehearsal
 - **Hands-on**: apply State (order lifecycle), Strategy (pricing), Observer (order tracking); rehearse the 30-min defense **out loud, in English, with a timer**.
 
 ### Module D — Wrap-up (W16)
 
-#### Lab 16 · W16 (Dec 14–Dec 20) — Final defense & final package
+#### Lab 17 · W16 (Dec 14–Dec 20) — Final defense & final package
 - **Defense in class** (Dec 14–18): 10 min portfolio walkthrough + 15 min individual Q&A — each member questioned on *any* part.
 - **Milestone**: **M5 final package due Sun Dec 20** — final report (Appendix D), individual contribution logs (Appendix E), all diagram sources, tag `m5`.
 
