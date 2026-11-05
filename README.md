@@ -23,7 +23,7 @@ A complete, **English-only** open course for **Information Systems Analysis and 
 
 面向国际学生的《信息系统分析与设计》全英文开源课程：16 周 / 64 学时。以面向对象为主线——UML 分析建模（用例、领域、顺序、状态图）→ 职责分配设计原则（GRASP、SOLID）→ GoF 设计模式与架构模式——并以原创贯穿项目 **CampusBites**（校园订餐配送平台）全程实践。
 
-> **Course status 课程状态**：Course in preparation for its first delivery. Slides are built weekly and published progressively — **W01–W16 in production.**
+> **Course status 课程状态**：Course in preparation for its first delivery. Slides are built weekly and published progressively — **W01–W11 released; W12–W16 in production.**
 > 课程首开建设期。课件按周制作、陆续发布——**W01–W16 制作中。**
 
 > 📚 **Companion courses & textbook 配套课程与教材**：this course is the "deep water zone" companion to [klausren/software-engineering-course](https://github.com/klausren/software-engineering-course) (bilingual SE I) and the open textbook [klausren/oose-textbook](https://github.com/klausren/oose-textbook) (CareLink case, full lifecycle).
@@ -53,22 +53,54 @@ A complete, **English-only** open course for **Information Systems Analysis and 
 
 | Week 周 | Topic 主题 | Slides 课件 |
 |:---:|---|---|
-| 01 | Introduction: Systems, Analysts & the OOAD Roadmap 导论 | ✅ released 已发布 |
-| 02 | Object-Oriented Foundations 面向对象基础 | ✅ released 已发布 |
-| 03 | UML Essentials & Modeling Workflow UML 精要 | 🚧 in production 制作中 |
-| 04 | Requirements & Use Case Modeling 用例建模 | 🚧 in production 制作中 |
-| 05 | Use Case Specification & Scenarios 用例规约 | 🚧 in production 制作中 |
-| 06 | Domain Modeling 领域建模 | 🚧 in production 制作中 |
-| 07 | Domain Relationships 领域关系 | 🚧 in production 制作中 |
-| 08 | Behavior Modeling I: Sequence Diagrams 顺序图 | 🚧 in production 制作中 |
-| 09 | Behavior Modeling II: State & Activity + Mid-term Review 状态图与活动图 | 🚧 in production 制作中 |
-| 10 | From Analysis to Design: Design Class Diagrams 设计类图 | 🚧 in production 制作中 |
-| 11 | Design Principles I: GRASP 职责分配原则 | 🚧 in production 制作中 |
+| 01 | Introduction: Systems, Analysts & the OOAD Roadmap 导论 | ✅ [W01-Introduction-Systems-Analysts-and-OOAD](01-slides/W01-Introduction-Systems-Analysts-and-OOAD.pptx) |
+| 02 | Object-Oriented Foundations 面向对象基础 | ✅ [W02-Object-Oriented-Foundations](01-slides/W02-Object-Oriented-Foundations.pptx) |
+| 03 | UML Essentials & Modeling Workflow UML 精要 | ✅ [W03-UML-Essentials-and-Modeling-Workflow](01-slides/W03-UML-Essentials-and-Modeling-Workflow.pptx) |
+| 04 | Requirements & Use Case Modeling 用例建模 | ✅ [W04-Requirements-and-Use-Case-Modeling](01-slides/W04-Requirements-and-Use-Case-Modeling.pptx) |
+| 05 | Use Case Specification & Scenarios 用例规约 | ✅ [W05-Use-Case-Specification-and-Scenarios](01-slides/W05-Use-Case-Specification-and-Scenarios.pptx) |
+| 06 | Domain Modeling 领域建模 | ✅ [W06-Domain-Modeling](01-slides/W06-Domain-Modeling.pptx) |
+| 07 | Domain Relationships 领域关系 | ✅ [W07-Domain-Relationships](01-slides/W07-Domain-Relationships.pptx) |
+| 08 | Behavior Modeling I: Sequence Diagrams 顺序图 | ✅ [W08-Sequence-Diagrams](01-slides/W08-Sequence-Diagrams.pptx) |
+| 09 | Behavior Modeling II: State & Activity + Mid-term Review 状态图与活动图 | ✅ [W09-State-and-Activity](01-slides/W09-State-and-Activity.pptx) |
+| 10 | From Analysis to Design: Design Class Diagrams 设计类图 | ✅ [W10-Design-Class-Diagrams](01-slides/W10-Design-Class-Diagrams.pptx) |
+| 11 | Design Principles I: GRASP 职责分配原则 | ✅ [W11-GRASP-Principles](01-slides/W11-GRASP-Principles.pptx) |
 | 12 | Design Principles II: SOLID SOLID 原则 | 🚧 in production 制作中 |
 | 13 | Design Patterns I: Creational 创建型模式 | 🚧 in production 制作中 |
 | 14 | Design Patterns II: Structural 结构型模式 | 🚧 in production 制作中 |
 | 15 | Design Patterns III: Behavioral 行为型模式 | 🚧 in production 制作中 |
 | 16 | Architectural Patterns & Final Defense 架构模式与答辩 | 🚧 in production 制作中 |
+
+## 🆕 2026-11-05 update — W10 and W11 released
+
+Two more weeks, both built to the same standard (38 pages each, English-only, original vector
+figures — no image assets, nothing to go missing):
+
+| Week | Topic | Pages | Figures | What it covers |
+|:---:|---|:---:|:---:|---|
+| 10 | From Analysis to Design: Design Class Diagrams | 38 | 14 | analysis class vs design class · **every message arrow becomes an operation** · visibility & navigability · contracts (pre/post) · the M3 milestone gate |
+| 11 | Design Principles I: GRASP | 38 | 11 | the central question · Information Expert · Creator · Controller · Low Coupling & High Cohesion · the other four principles · **the Principle → Decision → Consequence format** |
+
+**Two design decisions worth knowing about**
+
+1. **W10 and W11 are deliberately chained.** W11 opens with the *same* `Order` class students
+   met in Exercise 2.1 (week two) — the one that does everything. The teaching plan says it comes
+   back in W11 as the GRASP exhibit, and now it does. Students list its responsibilities first,
+   then learn the vocabulary for deciding where each one goes.
+2. **Every principle gets a countable example and a one-line criterion**, not a definition. And
+   the week ends on the format M3 actually wants: five columns, of which the *Consequence* column
+   is what turns a decision into an argument.
+
+**Class names are teaching examples.** The decks use `Order` / `OrderLine` / `Customer` /
+`Payment` throughout, and every figure says so — apply the criterion to your own project's
+classes. The running case in the repository is CampusBites; the cohort's own project is separate
+and is not distributed here.
+
+### 🛠 Two systemic fixes (they affected every week)
+
+| Problem | Symptom | Root cause | Fix |
+|---|---|---|---|
+| `svghero()` template had a missing `$` | every figure carried an invalid `viewBox="0 0 1180 $h"` | a typo in the layout library | fixed in the library, plus a one-off script that repaired **32 already-published figures** in W07–W09 without re-rendering them |
+| Generic types broke SVG parsing | `List<Order>` → `mismatched tag`, the page silently failed | the renderer turns `&lt;` back into `<`, so XML escaping alone is not enough | use the Unicode angle brackets `⟨⟩` instead — visually identical, and not XML-reserved |
 
 ## 🍜 CampusBites Project 项目实践
 
