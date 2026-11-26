@@ -91,10 +91,7 @@ Course grade = Formative 40 × 100%  +  Summative 100 × 60%      (capped at 100
 
 **Deductions**: late milestone (incl. M5) −10% per calendar day, max 3 days, then 0 · plagiarized models = 0 for that milestone + academic misconduct procedure · undisclosed AI-generated bulk content treated as plagiarism (disclosure = no penalty) · non-English deliverable returned once for translation (−20% on that item), second time not accepted
 
-**Grade bands**: A 90–100 · B 80–89 · C 70–79 · D 60–69 · F < 60
+**Grade bands**: A 90–100 · B 80–89 · C 70–79 · D 60–69 · F < 60 — *caliber unified 2026-11-26; point values match the official Course Assessment Outline and Grading Rubric*
 
 **Deferral / make-up / disputes**: absent for a valid reason? Defend individually in the make-up window (Q&A unchanged) · if the course total is < 60, deliver a full round of individual Q&A; the formative part is not re-done · contribution disputes settled by Git history + contribution logs; appeals in writing within 3 working days of publication
 
----
-
-*Caliber unified 2026-11-26 · point values match the official Course Assessment Outline and Grading Rubric.*
