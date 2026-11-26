@@ -1,7 +1,7 @@
 # Lab 05 · W05 — Use Case Specification & Peer Review
 
-> **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · **Week 05, delivered Thu Oct 08** (National Day holiday pushed it)
-> **Milestone**: ⚠️ **No tag today.** The two exercises below are done in class as practice. **M1 itself is now due Sun Oct 25 (W08)** — that is when you tag `m1`. See the notice below.
+> **ISAD · Fall 2026** · Lab block (last 2 h of the weekly 4 h) · **Week 05, delivered Thu Oct 08** (National Day holiday pushed it)  
+> **Milestone**: ⚠️ **No tag today.** The two exercises below are done in class as practice. **M1 itself is now due Sun Oct 25 (W08)** — that is when you tag `m1`. See the notice below.  
 > **Slides**: `W05-Use-Case-Specification-and-Scenarios.pptx`, pages 28–37  
 > **Handout**: `W05-Handout.html`, sections D–G (page 2)
 
@@ -11,27 +11,26 @@
 
 > ⚠️ **READ FIRST — this lab was rescheduled.**
 >
-> W05 was originally delivered Sep 28 – Oct 04, with **M1 due at the end of that week**.
-> The National Day holiday (Oct 1–8) pushed the delivery to **Thu Oct 08**, so the milestone
+> W05 was originally delivered Sep 28 – Oct 04, with **M1 due at the end of that week**.  
+> The National Day holiday (Oct 1–8) pushed the delivery to **Thu Oct 08**, so the milestone  
 > had to move with it. **M1 is now due Sun Oct 25 (W08)**, one week after this class.
 >
 > **What this means for you today:**
 >
-> | | |
-> |---|---|
-> | **Do today** | Exercise 5.1 (find the five planted defects) and Exercise 5.2 (the twelve-question review, both directions). Treat them as **rehearsal for M1**. |
-> | **File today** | `docs/reviews/m1-spec-review.md` — you may still push it, it is useful evidence of individual contribution. Just **do not tag**. |
-> | **Do NOT do today** | Do not tag `m1`. Do not push a tag. M1 is three weeks away and depends on **your own topic**, which is still being chosen. |
+> |                     |                                                                                                                                                  |
+> | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+> | **Do today**        | Exercise 5.1 (find the five planted defects) and Exercise 5.2 (the twelve-question review, both directions). Treat them as **rehearsal for M1**. |
+> | **File today**      | `docs/reviews/m1-spec-review.md` — you may still push it, it is useful evidence of individual contribution. Just **do not tag**.                 |
+> | **Do NOT do today** | Do not tag `m1`. Do not push a tag. M1 is three weeks away and depends on **your own topic**, which is still being chosen.                       |
 >
-> **Why M1 moved:** the team now selects its **own project** rather than analysing the fixed
-> CampusBites case. You cannot write a use case specification before the topic is approved, so
+> **Why M1 moved:** the team now selects its **own project** rather than analysing the fixed  
+> CampusBites case. You cannot write a use case specification before the topic is approved, so  
 > M1 sits after topic selection, not before it.
 >
-> The exercises are unchanged in substance — same slides, same five defects, same checklist.
+> The exercises are unchanged in substance — same slides, same five defects, same checklist.  
 > Only the tagging step moves.
 
 ---
-
 
 **No programming today.** Prose, tables, and a Markdown review form. The only code you read is the PlantUML homework you commit tonight.
 
@@ -153,6 +152,7 @@ Postconditions:
 - [ ] Your fixes name at least **two new states** that the broken draft never mentioned (for example *Scheduled*, *Pending Payment*).
 - [ ] Every DISAGREE row is still visible on the page.
 
+
 ### Stuck?
 
 | Symptom                                                    | Fix                                                                                                                                                                                                                           |
@@ -190,7 +190,6 @@ Postconditions:
 |                                                             | C2 | Is there a postcondition **per exit**?        |
 |                                                             | C3 | Is the exception **end state** written?       |
 |                                                             | C4 | Can I trace a step to a test?                 |
-
 
 Every box takes one of exactly two legal answers: **a tick**, or **the sentence you would run as a test**. *"Looks fine"* is not an answer.
 
@@ -282,71 +281,6 @@ Every box takes one of exactly two legal answers: **a tick**, or **the sentence 
 | Box 5 is empty because "we resolved everything"                         | Then nothing was unresolvable. Anything you would not decide on your own goes in Box 5 — verbatim. **An empty Box 5 means the review was cosmetic**, and Box 5 is the agenda for the M1 client review. |
 | We are two people, there is nobody else to review                       | There is no second team. Peer review happens **inside** the group of four, in pairs. From W05 the client is the instructor.                                                                            |
 
----
-
-## 5. Task C — Close Out M1: Finalise, Tag, Verify (~25 min)
-
-> 🔴 **NOT TODAY.** This section is **parked**, not cancelled. It runs in **W08 (Oct 26 – Nov 01)**,
-> when M1 is actually due. It also depends on your **own topic**, which is still being chosen —
-> so there is nothing to finalise yet.
->
-> **What to do instead today:** §0–§4 only. Then push the review file (§4's output) and stop.
-> Reading §5 now is still useful — it tells you what M1 will demand of you in three weeks.
-
-**Goal.** Four artefacts, one tag, one command whose output you read.
-
-**Roles.** Lead calls the time and the go/no-go. Recorder owns the files. Reviewer confirms group A–C pass on **both** specs. **Release Manager pushes and tags** — this cannot be done at home on Sunday night.
-
-### Steps
-
-1. **Freeze the requirements list.** `docs/requirements.md`, one row per requirement, functional and non-functional marked separately, with a test column you can fill in later. An empty test column is a bad sign, not a formatting note.
-2. **Freeze the use case diagram.** `docs/diagrams/use-case-v1.drawio` **and** its `.puml` source, plus the PNG. A PNG on its own is not a diagram.
-3. **Freeze both specifications.** `docs/use-cases/place-order.md` and your second one. All nine fields. Postconditions for **every** exit. The second spec must be a different goal — not *Print Ticket* wearing a trench coat.
-4. **Confirm four sets of handwriting.** Two specs written by one person has cost this milestone its grade before. Check the commit history:
-   ```bash
-   git log --oneline --since="7 days ago"
-   ```
-   Four members, four contributions in the M1 window.
-5. **Push the work.**
-   ```bash
-   git add docs/requirements.md docs/diagrams/ docs/use-cases/ docs/reviews/
-   git commit -m "M1: requirements list, use case diagram, two detailed specifications"
-   git push
-   ```
-6. **Tag `m1`** — Release Manager only, and only **after** step 5 succeeded.
-   ```bash
-   git tag -a m1 -m "M1: requirements, use case diagram, two detailed specs"
-   git push origin m1
-   ```
-7. **Verify. Run it. Read the output.** This is the step everyone skips, and it is the step that proves the submission:
-   ```bash
-   git ls-remote --tags origin
-   ```
-   You must see a line containing `refs/tags/m1`. No line = not submitted. Do not assume; read.
-8. **Update the README milestone status table** in the repo, commit, push. The tag — not your branch head — is the graded snapshot.
-
-### Done when
-
-- [ ] `docs/requirements.md` — every requirement testable, functional and non-functional marked separately.
-- [ ] `docs/diagrams/` — **both** source files (`.drawio` and `.puml`) plus the PNG.
-- [ ] `docs/use-cases/` — **two** specs, nine fields each, postconditions on every exit.
-- [ ] `docs/reviews/m1-spec-review.md` — both directions, four authors.
-- [ ] `git ls-remote --tags origin` shows `refs/tags/m1`. You have read the line, not assumed it.
-- [ ] README milestone table updated, committed, pushed.
-
-### Stuck?
-
-| Symptom                                                      | Fix                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `git ls-remote --tags origin` shows nothing                  | The tag was never pushed. Run `git push origin m1` again. If the tag does not exist locally either, `git tag -a m1 -m "M1"` first — and make sure the commit it points at is already on the remote, or the tag points at nothing the reviewer can fetch. |
-| `fatal: tag 'm1' already exists`                             | Someone tagged already. Check `git tag -l` and `git ls-remote --tags origin`. If the remote already has `m1`, **do not** force-move it — verify what it points at and move on.                                                                |
-| Pushed, tagged, and the tag is on the wrong commit           | `git tag -f -a m1 -m "M1 corrected"` then `git push origin m1 --force` — legal **only before Sun Oct 25 23:59**, per the Deadline Schedule. After the deadline nothing counts.                                                                            |
-| Our second spec is just Place Order with different wording   | That is one use case written twice. Pick a different goal from your own diagram — `Track Order`, `Cancel Order`, `Rate Restaurant`. One primary actor, one goal, one ending.                                                                             |
-| A postcondition only describes success                       | The single most common defect in student specifications. For each exception, write the end state explicitly: *"the order exists in Pending Payment and no kitchen ticket was printed."*                                                                  |
-| The client review is next week and we have no open questions | An empty Box 5 means the review was cosmetic. Naming an open question is what the client is actually paying for — go find one.                                                                                                                           |
-| GitHub is unreachable from this network                      | Deadline Schedule §4.5: use the zip fallback channel **and** tell the instructor today. A sync failure is not an excuse; an unannounced one is a zero.                                                                                                   |
-
----
 
 ## 6. Before You Leave (~5 min)
 
@@ -358,7 +292,6 @@ Each of you signs **one** row. This is individual evidence — four signatures, 
 | 2 | **Recorder**        | The five defects, the corrected sentences, and all DISAGREE rows are on one committed page — written from four voices, not one. | \____________ |
 | 3 | **Reviewer**        | Both review directions are filed, Box 5 is non-empty, and I played the client against my own team's spec.                       | \____________ |
 | 4 | **Release Manager** | `refs/tags/m1` appears in `git ls-remote --tags origin`. I read the output.                                                     | \____________ |
-
 
 **And one last thing before the door** — the client review is **next week's class (Oct 12–13)**, the instructor plays the client, 30 minutes: 10 min present, 20 min interrogation. Have one answer ready for each of these (slide 35):
 
@@ -372,17 +305,16 @@ Each of you signs **one** row. This is individual evidence — four signatures, 
 
 ## 7. Homework (before Week 06 / next class)
 
-1. **Finish §4's output and push it.** `docs/reviews/m1-spec-review.md` — it is M1 evidence
+1. **Finish §4's output and push it.** `docs/reviews/m1-spec-review.md` — it is M1 evidence  
    and it costs you nothing today.
-2. **Re-read your two candidates for next week's topic selection.** The silent brainstorm
+2. **Re-read your two candidates for next week's topic selection.** The silent brainstorm  
    happens in class next week, so arrive with one idea already half-formed.
-3. **Skim Larman chapter 3** (Use Cases). You will write two full specifications on *your own*
+3. **Skim Larman chapter 3** (Use Cases). You will write two full specifications on *your own*  
    project in W08 — a week sooner than you would have on the old fixed case.
-
-1. **One SSD skeleton — `docs/diagrams/place-order-ssd.puml`.** Two lifelines only: `Student` and `CampusBites` treated as one box. One message per main step, dashed returns, **no internal objects**. Every message must be traceable to a numbered step in your specification — if you cannot point at the step, delete the arrow.
-2. **Read Larman** on system sequence diagrams and operation contracts. Two pages, a skim is fine — you are looking for the pre/post-condition template, not the whole argument.
-3. **Bring Box 5.** Next week the instructor works through your client questions **first**. Empty box = the review was cosmetic.
-4. **Count your nouns.** Next week every noun you wrote — order, cart, coupon, delivery window, kitchen ticket — becomes a candidate class. Count them before you arrive.
+4. **One SSD skeleton — `docs/diagrams/place-order-ssd.puml`.** Two lifelines only: `Student` and `CampusBites` treated as one box. One message per main step, dashed returns, **no internal objects**. Every message must be traceable to a numbered step in your specification — if you cannot point at the step, delete the arrow.
+5. **Read Larman** on system sequence diagrams and operation contracts. Two pages, a skim is fine — you are looking for the pre/post-condition template, not the whole argument.
+6. **Bring Box 5.** Next week the instructor works through your client questions **first**. Empty box = the review was cosmetic.
+7. **Count your nouns.** Next week every noun you wrote — order, cart, coupon, delivery window, kitchen ticket — becomes a candidate class. Count them before you arrive.
 
 ```bash
 git add docs/diagrams/place-order-ssd.puml docs/diagrams/place-order-ssd.png

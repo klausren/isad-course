@@ -63,8 +63,8 @@ Every design pattern you learn in class maps onto a natural CampusBites feature:
 ## 4. How Requirements Work
 
 1. **The requirements pack** (issued in Week 4): the instructor provides the standard CampusBites requirements — vision, stakeholder list, ~20 functional requirements, non-functional requirements, and constraints.
-2. **Three planned requirement changes** will be injected during the semester (e.g., a new payment method, a new promotion mechanic, a change to courier dispatch rules). This simulates a real client: expect your models to be *changed*, not frozen. How gracefully your models absorb change is part of the design grade — this is exactly what good OO design is for.
-3. **Client review (Week 5):** the team presents its use case model in English; the **instructor plays the client** and interrogates it from the client's perspective ("What happens if the courier picks up late? Can I cancel after payment?"), with a guest reviewer where available. Because there is only one team, you also review each other: every member must be able to answer for the parts they did not author. Sharp, well-argued critique of your own model earns Bonus credit (see §8).
+2. **Two planned requirement changes** (ΔC2 and ΔC3) will be injected during the semester — e.g., a new payment method, a new promotion mechanic, a change to courier dispatch rules. This simulates a real client: expect your models to be *changed*, not frozen. How gracefully your models absorb change is part of the design grade — this is exactly what good OO design is for.
+3. **Client review (Week 9):** the team presents its use case model in English; the **instructor plays the client** and interrogates it from the client's perspective ("What happens if the courier picks up late? Can I cancel after payment?"), with a guest reviewer where available. Because there is only one team, you also review each other: every member must be able to answer for the parts they did not author. Sharp, well-argued critique of your own model earns Bonus credit (see §8).
 
 ---
 
@@ -76,12 +76,12 @@ Every deliverable is **in English**. Every diagram needs a **source file** (.dra
 
 | Milestone | Due (lab of) | Deliverables checklist | Checked |
 |---|---|---|---|
-| **M0 Kickoff** | W8 — **Sun Oct 25** | ① Team charter (template: Appendix A) ② Stakeholder list ③ One-paragraph project vision ④ Git repository created & shared with instructor | pass/fail |
-| **M1 Requirements** | W5 — **Sun Oct 4** | ① Vision & requirements list (mapped from the requirements pack + your elaboration) ② Use case diagram (all actors) ③ **2 detailed use case specifications** (template: Appendix B) — choose *Place Order* and one more | W05 cross-team client review |
-| **M2 Analysis models** | W8 — **Sun Oct 25** | ① Domain model: conceptual classes, attributes, associations with multiplicities (10+ classes) ② **2+ sequence diagrams** (system operations, e.g. `placeOrder`, `pay`) ③ **Order state machine** complete with guards/actions/events ④ 1 activity diagram (e.g. order fulfillment) | W09 mid-term review |
-| **M3 Design models** | W12 — **Sun Nov 22** | ① Design class diagram: traceable to sequence messages, visibility & navigability shown ② GRASP/SOLID application notes: for **every** major responsibility decision, name the principle and argue the alternative ③ Interaction diagram updated to DCD level | in-class, W10–12 |
-| **M4 Patterns** | W14 — **Sun Dec 6** | ① Pattern catalog: **5+ GoF patterns** applied to CampusBites (template: Appendix C) ② Before/after refactoring narrative for at least one design smell ③ Updated DCD reflecting pattern applications | in-class, W13–15 |
-| **M5 Defense** | W16 — **defense in class Dec 14–18; final package Sun Dec 20** | ① Final report (structure: Appendix D) ② Individual contribution logs (template: Appendix E) ③ All diagram source files ④ Pattern catalog cards | final defense |
+| **M0 Kickoff** | W7 — **Sun Oct 25** | ① Team charter (template: Appendix A) ② Stakeholder list ③ One-paragraph project vision ④ Git repository created & shared with instructor | pass/fail |
+| **M1 Requirements** | W8 — **Sun Nov 1** | ① Vision & requirements list (mapped from the requirements pack + your elaboration) ② Use case diagram (all actors) ③ **2 detailed use case specifications** (template: Appendix B) — choose *Place Order* and one more | W9 client review (instructor as client) |
+| **M2 Analysis models** | W11 — **Sun Nov 22** | ① Domain model: conceptual classes, attributes, associations with multiplicities (10+ classes) ② **2+ sequence diagrams** (system operations, e.g. `placeOrder`, `pay`) ③ **Order state machine** complete with guards/actions/events ④ 1 activity diagram (e.g. order fulfillment) | W12 mid-term review |
+| **M3 Design models** | W13 — **Sun Dec 6** | ① Design class diagram: traceable to sequence messages, visibility & navigability shown ② GRASP/SOLID application notes: for **every** major responsibility decision, name the principle and argue the alternative ③ Interaction diagram updated to DCD level | in-class, W13–14 |
+| **M4 Patterns** | W15 — **Sun Dec 20** | ① Pattern catalog: **5+ GoF patterns** applied to CampusBites (template: Appendix C) ② Before/after refactoring narrative for at least one design smell ③ Updated DCD reflecting pattern applications | W16 pattern walkthrough |
+| **M5 Defense** | W16 — **defense in class Dec 21–25; final package Sun Dec 27** | ① Final report (structure: Appendix D) ② Individual contribution logs (template: Appendix E) ③ All diagram source files ④ Pattern catalog cards | final defense |
 
 **Late policy:** −10% per calendar day on that milestone, max 3 days, then 0 for the milestone. Plan ahead; OneDrive sync failure is not an excuse — push early, push often.
 
@@ -115,8 +115,8 @@ workspaceproject/
 
 | Event | Week | Format |
 |---|---|---|
-| **Client review** | W5 | 30 min: 10 min present the use case model in English, 20 min interrogation by the instructor as client (plus guest questions) |
-| **Mid-term review** | W9 | 30 min: 10 min walkthrough of M1+M2, **16 min individual Q&A (every member questioned, 4 min each)**, 4 min feedback. Formative — this is where you find out what to fix |
+| **Client review** | W9 | 30 min: 10 min present the use case model in English, 20 min interrogation by the instructor as client (plus guest questions) |
+| **Mid-term review** | W12 | 30 min: 10 min walkthrough of M1+M2, **15 min individual Q&A (every member questioned, ~4 min each)**, 5 min feedback. Formative — this is where you find out what to fix |
 | **Final defense** | W16 | 35 min: 10 min design portfolio walkthrough, **20 min individual Q&A — each member questioned on ANY part of the work (5 min each)**, 5 min feedback. Summative |
 
 **Defense question style** (from the question bank — samples):
@@ -139,7 +139,7 @@ With four students in the room, there is no back row. Everyone speaks, everyone 
 | # | Item | Points | What is graded |
 |---|---|---|---|
 | F1 | Attendance | 0 | Recorded every session, not scored; absences handled per school regulations |
-| F2 | Class participation | 10 | Weekly in-class exercises (4) · client-review questions in W05 (2) · peer critique & discussion (2) · engagement & English (2) |
+| F2 | Class participation | 10 | Weekly in-class exercises (4) · client-review questions in W09 (2) · peer critique & discussion (2) · engagement & English (2) |
 | F3 | **Level-3 project — CampusBites** | 20 | Milestone deliverables **14** (M0 setup 1 · M1 requirements 3 · M2 analysis 4 · M3 design 3 · M4 patterns 3) + **individual contribution & Git 6** |
 | F4 | Assignments | 10 | 5 homework sets × 2 points: W02 refactoring · W04 use case specification · W07 behavior modeling · W11 design class diagram · W13 pattern card |
 

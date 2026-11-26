@@ -1,6 +1,6 @@
 # CampusBites — Deadline Schedule & Submission Guide (Fall 2026)
 
-> **Course**: Information Systems Analysis and Design · 16 weeks · Aug 31 – Dec 20, 2026
+> **Course**: Information Systems Analysis and Design · 16 weeks · Aug 31 – Dec 27, 2026
 > **Companion to**: *CampusBites Project Guidebook* (§5 Milestones, §6 Submission Rules)
 > All times are **23:59 (GMT+8)** on the day stated. The server clock that matters is the one on your **last `git push`** — not your laptop.
 
@@ -35,15 +35,15 @@
 |---|---|---|---|
 | — **Topic selection** | Candidate list, three-criteria scorecard, topic proposal (see `topics-templates/`) | **W6 (Oct 12–18)**, in class + homework | **Instructor pass / revise** — no tag, not a milestone |
 | **Repository setup** *(pulled forward from M0, Oct 15)* | Repository created, `klausren` invited, all four members cloned and `git config`'d | **W6 (Oct 15), in class** | done — see `labs/Lab-07` §0 |
-| **M0 Kickoff** | Team charter (Appendix A), stakeholder list, project vision, **tag `m0`** — *repository already done in W06* | **Sun Oct 25** (W8) | W8 lab — pass/fail |
-| **M1 Requirements** | Requirements list, use-case diagram, 2 detailed use-case specifications | **Sun Nov 1** (W9) | **M1 client review, W9 (Nov 2–8)** — instructor as client, formative |
-| **M2 Analysis models** | Domain model, 2+ sequence diagrams, Order state machine, activity diagram | **Sun Nov 22** (W12) | **W12 mid-term review (Nov 23–29)** — formative, every member questioned |
+| **M0 Kickoff** | Team charter (Appendix A), stakeholder list, project vision, **tag `m0`** — *repository already done in W06* | **Sun Oct 25** (W7) | W7 lab — pass/fail |
+| **M1 Requirements** | Requirements list, use-case diagram, 2 detailed use-case specifications | **Sun Nov 1** (W8) | **M1 client review, W9 (Nov 2–8)** — instructor as client, formative |
+| **M2 Analysis models** | Domain model, 2+ sequence diagrams, Order state machine, activity diagram | **Sun Nov 22** (W11) | **W12 mid-term review (Nov 23–29)** — formative, every member questioned |
 | **ΔC2 Change injection #1** *(renumbered — there is no ΔC1)* | First requirement change; response folded into M3 | announced **W10 (Nov 9–15)**, online | — |
-| **M3 Design models** | Design class diagram, GRASP/SOLID application notes, DCD-level interaction diagrams | **Sun Dec 6** (W14) | In-class design walkthroughs, W14–W15 |
+| **M3 Design models** | Design class diagram, GRASP/SOLID application notes, DCD-level interaction diagrams | **Sun Dec 6** (W13) | In-class design walkthroughs, W14–W15 |
 | **ΔC3 Change injection #2** | Second requirement change; response folded into M4 | announced **W13 (Nov 30–Dec 6)** | — |
 | **M4 Patterns** | Pattern catalog (5+ GoF patterns, Appendix C), refactoring narrative, updated DCD | **Sun Dec 20** (W15) | Pattern catalog walkthrough, W16 (Dec 14–20) |
-| **M5 Defense** | Final defense — you present, you answer questions | **in class, W16 (Dec 14–20)** | Final defense, ~35 min (one team of four) |
-| **M5 Final package** | Final report (Appendix D), individual contribution logs (Appendix E), all diagram sources, tag `m5` | **Sun Dec 20, 23:59** | Graded |
+| **M5 Defense** | Final defense — you present, you answer questions | **in class, W16 (Dec 21–25)** | Final defense, ~35 min (one team of four) |
+| **M5 Final package** | Final report (Appendix D), individual contribution logs (Appendix E), all diagram sources, tag `m5` | **Sun Dec 27, 23:59** | Graded |
 
 **Why the week numbers and dates pair up this way:**
 - Every hard deadline sits at the **end** of the working week, and the review happens at the **start** of the next week's class — you get the weekend to finish, the instructor gets a fresh submission to review.

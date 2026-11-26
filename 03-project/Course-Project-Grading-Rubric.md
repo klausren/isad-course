@@ -1,4 +1,4 @@
-# Course Project Grading Rubric — CampusBites
+# Course Project Grading Rubric — Student-Selected Topic
 
 > *Information Systems Analysis and Design* · Small cohort (4 students, one team) · **Official formula: Course grade = Formative assessment (40 pts × 100%) + Summative assessment (100 pts × 60%)** — project + oral defense, no written exam
 
@@ -7,18 +7,18 @@
 | # | Item | Points | Evidence |
 |---|---|---|---|
 | F1 | Attendance | 0 | Recorded every session; not scored. Absences handled per school regulations |
-| F2 | Class participation | 10 | Weekly in-class exercises (4) · W05 client-review questions (2) · peer critique & discussion (2) · engagement & English (2) |
-| F3 | Level-3 project — CampusBites | 20 | Milestone deliverables 14 + individual contribution & Git 6 (see 1.1 / 1.2) |
-| F4 | Assignments | 10 | 5 homework sets × 2: W02 refactoring · W04 use case specification · W07 behavior modeling · W11 design class diagram · W13 pattern card |
+| F2 | Class participation | 10 | Weekly in-class exercises (4) · W09 client-review questions (2) · peer critique & discussion (2) · engagement & English (2) |
+| F3 | Level-3 project — student-selected topic | 20 | Milestone deliverables 14 + individual contribution & Git 6 (see 1.1 / 1.2) |
+| F4 | Assignments | 10 | 5 homework sets × 2: W02 refactoring · W04 use case specification · W07 behavior modeling · W11 design class diagram · W13 pattern card (exact week per the lab sheet) |
 
 ### 1.1 F3a — Milestone deliverables (14 points, shared by the team)
 
 | Milestone | Due | Points | Excellent (A) | Adequate (C) |
 |---|---|---|---|---|
-| M0 Project setup | W2 | 1 | Charter, stakeholders, vision, repo & tag pipeline all working on time | Missing pieces or late |
-| M1 Requirements | W5 | 3 | Complete, correct include/extend usage, well-formed specs | Core cases present, minor notation defects |
-| M2 Analysis models | W9 | 4 | Domain / sequence / state / activity consistent across views; guards & actions complete | Models present but with gaps/inconsistencies |
-| M3 Design models | W12 | 3 | DCD traceable to sequence messages; every GRASP/SOLID decision argued | Mostly complete, weak argumentation |
+| M0 Project setup | W07 | 1 | Charter, stakeholders, vision, repo & tag pipeline all working on time | Missing pieces or late |
+| M1 Requirements | W08 | 3 | Complete, correct include/extend usage, well-formed specs | Core cases present, minor notation defects |
+| M2 Analysis models | W11 | 4 | Domain / sequence / state / activity consistent across views; guards & actions complete | Models present but with gaps/inconsistencies |
+| M3 Design models | W13 | 3 | DCD traceable to sequence messages; every GRASP/SOLID decision argued | Mostly complete, weak argumentation |
 | M4 Pattern catalog | W15 | 3 | 5+ patterns, right pattern for the problem, consequences honestly stated | Patterns applied, some forced/misfit |
 
 *English documentation quality is graded inside every milestone item, not as a separate line.*
@@ -39,7 +39,7 @@ Each homework: **2** = complete and correct · **1** = submitted with gaps · **
 
 | # | Component | Points | Excellent (A) | Adequate (C) |
 |---|---|---|---|---|
-| S1 | Portfolio walkthrough (team) | 30 | Coherent narrative, models traceable, the three requirement changes absorbed gracefully | Covered but disjointed; weak links between views |
+| S1 | Portfolio walkthrough (team) | 30 | Coherent narrative, models traceable, the two requirement changes (ΔC2, ΔC3) absorbed gracefully | Covered but disjointed; weak links between views |
 | S2 | Individual Q&A (5 min per member) | 55 | Answers any question on **any part** of the work with reasoning (principles/patterns) | Answers own slice only; hesitant outside it |
 | S3 | English communication | 10 | Precise terminology, clear delivery | Understandable but error-prone |
 | S4 | Reflection & contribution report | 5 | Honest, specific, evidence-linked | Generic |
