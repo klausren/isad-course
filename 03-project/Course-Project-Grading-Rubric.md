@@ -17,8 +17,8 @@
 |---|---|---|---|---|
 | M0 Project setup | W07 | 1 | Charter, stakeholders, vision, repo & tag pipeline all working on time | Missing pieces or late |
 | M1 Requirements | W08 | 3 | Complete, correct include/extend usage, well-formed specs | Core cases present, minor notation defects |
-| M2 Analysis models | W11 | 4 | Domain / sequence / state / activity consistent across views; guards & actions complete | Models present but with gaps/inconsistencies |
-| M3 Design models | W13 | 3 | DCD traceable to sequence messages; every GRASP/SOLID decision argued | Mostly complete, weak argumentation |
+| M2 Analysis models | W11 | 4 | Use case diagram, specs, activity and sequence diagrams consistent; guards & actions complete | Models present but with gaps/inconsistencies |
+| M3 Design models | W13 | 3 | UI prototype covers the main success and error paths of key use cases; DCD traceable to sequence messages; every GRASP/SOLID decision argued | Mostly complete, weak argumentation |
 | M4 Pattern catalog | W15 | 3 | 5+ patterns, right pattern for the problem, consequences honestly stated | Patterns applied, some forced/misfit |
 
 *English documentation quality is graded inside every milestone item, not as a separate line.*
@@ -39,8 +39,8 @@ Each homework: **2** = complete and correct · **1** = submitted with gaps · **
 
 | # | Component | Points | Excellent (A) | Adequate (C) |
 |---|---|---|---|---|
-| S1 | Portfolio walkthrough (team) | 30 | Coherent narrative, models traceable, the two requirement changes (ΔC2, ΔC3) absorbed gracefully | Covered but disjointed; weak links between views |
-| S2 | Individual Q&A (5 min per member) | 55 | Answers any question on **any part** of the work with reasoning (principles/patterns) | Answers own slice only; hesitant outside it |
+| S1 | Walkthrough of the five final artifacts (team) | 30 | Use case diagram, specs, activity & sequence diagrams and UI prototype tell one coherent story; models mutually traceable; the two requirement changes (ΔC2, ΔC3) absorbed gracefully | Covered but disjointed; weak links between views |
+| S2 | Individual Q&A (5 min per member) | 55 | Answers questions on **any of the five artifacts** — including ones built by others — with reasoning (which principle, which requirement ID, which constraint) | Answers own slice only; hesitant outside it |
 | S3 | English communication | 10 | Precise terminology, clear delivery | Understandable but error-prone |
 | S4 | Reflection & contribution report | 5 | Honest, specific, evidence-linked | Generic |
 

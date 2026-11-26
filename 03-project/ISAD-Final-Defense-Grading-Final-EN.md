@@ -1,132 +1,100 @@
 # ISAD — Final Defense Grading (Final)
 
-> **Information Systems Analysis and Design** · 64 hours / 16 weeks · English-medium · Fall 2026
+> **Information Systems Analysis and Design** · Fall 2026 · English-medium
 > This document covers **the summative assessment only (W16 final defense)**.
-> Formative assessment (attendance, class participation, project milestones, assignments) is out of scope here.
+> Formative assessment (attendance, class participation, milestones, assignments) is out of scope here.
+
+## 1. The Five Artifacts You Are Examined On
+
+| # | Artifact | What you submit in the final package |
+|---|---|---|
+| ① | **Use case diagram** | All actors, all use cases, include/extend relationships |
+| ② | **Use case specification** | 2–3 detailed specs (main success scenario + extensions + pre/post-conditions + NFR references) |
+| ③ | **Activity diagram** | One core business process (order fulfillment or equivalent), with branches, merges and swimlanes |
+| ④ | **Sequence diagram** | 2+ sequence diagrams for system operations (lifelines, messages, alt/loop/opt fragments) |
+| ⑤ | **UI prototype** | Wireframes of the key screens (≥ 4: list / detail / form / result-or-error), with navigation annotated |
 
 ---
 
-## 1. How It Counts
+## 2. How It Counts & How the Defense Runs
 
 ```
 Course grade = Formative 40 × 100%  +  Summative 100 × 60%      (capped at 100)
-                        ↑
-                  this document
 ```
-
-**Summative 100 points × 60% = 60 points of the course grade** — the single heaviest component.
 
 | # | Component | Points |
 |---|---|---|
-| S1 | Design portfolio walkthrough (team) | **30** |
-| S2 | Individual Q&A (5 min per member) | **55** |
+| S1 | **Walkthrough of the five artifacts** (team) | **30** |
+| S2 | **Individual Q&A** (5 min per member) | **55** |
 | S3 | English communication | **10** |
 | S4 | Reflection & contribution report | **5** |
 | | **Total** | **100** |
 
----
-
-## 2. Format
-
 | Segment | Length | Content |
 |---|---|---|
-| Team walkthrough | 10 min | The whole team presents the analysis & design work |
-| **Individual Q&A** | **20 min** | **5 minutes per member; you may be asked about any part of the team's work** |
+| Walkthrough | 10 min | Present the five artifacts in the order ①→⑤ |
+| **Individual Q&A** | **20 min** | **5 minutes per member; every question comes from the five artifacts above, and you may be asked about one you did not build** |
 | Feedback | 5 min | Instructor's feedback |
-
-> ### ⚠️ Three hard rules for the individual Q&A
-> 1. **Any part may be asked.** Models your teammate designed, pattern cards someone else wrote — all fair game.
-> 2. **You must give the reason.** A conclusion without naming the principle or the pattern does not count as a complete answer.
-> 3. **English.** S3 is scored separately, and the quality of your English counts inside S2 too.
-
-**When**: in class, W16 (Dec 21–25). 35 minutes for the one team.
 
 ---
 
-## 3. What You Must Submit Before the Defense — M5 Final Package
+## 3. S1 — Walkthrough Scoring (30 points)
 
-**Due Sun Dec 27, 23:59 (GMT+8)** · submit with `git tag -a m5 -m "M5 final submission" && git push origin m5`
+| Artifact | Pts | Excellent (A) | Adequate (C) |
+|---|---|---|---|
+| ① Use case diagram | 5 | Actors complete (external systems included), system boundary clear, include/extend used correctly and sparingly, use cases named as verb phrases | Use cases present, boundary broadly right, relationships misused or missing |
+| ② Use case specification | 6 | Main success scenario executable step by step, extensions cover real failure branches, pre/post-conditions traceable to NFR numbers | Main success scenario present, extensions incomplete, pre/post-conditions vague |
+| ③ Activity diagram | 5 | Branch conditions mutually exclusive and exhaustive, merge semantics correct, swimlanes match actors, consistent with the spec's extensions | Main flow correct, some branch conditions overlap or missing |
+| ④ Sequence diagram | 8 | Messages map one-to-one to spec steps, fragment semantics correct (alt guards exclusive, loop bounds stated), boundary and control objects placed sensibly | Main message chain complete, fragments missing or semantically vague |
+| ⑤ UI prototype | 6 | Screens map one-to-one to use cases, navigation covers the main success scenario, error / empty / loading states included, widgets consistent with the domain model | Screens present, navigation has gaps, only the happy path |
+
+---
+
+## 4. S2 — Individual Q&A (55 points)
+
+**How questions are drawn**: 2–3 questions are prepared per artifact. Each member is asked 3–4, **including artifacts they did not build**.
+**How answers are judged**: correct answer **plus the reason** (which principle, which requirement ID, which constraint) = top band. Answering only your own slice, or hesitating outside it = adequate band.
+
+| Artifact | Sample questions |
+|---|---|
+| ① Use case diagram | Why is this an actor? What breaks if you move X outside the system boundary?<br>How do you tell include from extend here — and why not the other way round? |
+| ② Use case specification | What happens if step 4 succeeds and step 5 fails? Which extension covers it?<br>Where does this pre-condition come from? Which requirement ID is it? |
+| ③ Activity diagram | Are these branch conditions mutually exclusive? Is there a third case that falls through?<br>Why is a merge needed here? Which segment of the graph is the exception path? |
+| ④ Sequence diagram | Which step of the spec does this message correspond to? What breaks if the order changes?<br>Are these alt guards mutually exclusive? Why is X created here rather than earlier? |
+| ⑤ UI prototype | What can the user do on this screen? Which use case does it belong to?<br>What does it show when the list is empty? Which extension does this error message come from? |
+
+---
+
+## 5. What You Must Submit Before the Defense — M5 Final Package
+
+**Due Sun Dec 27, 23:59 (GMT+8)** · `git tag -a m5 -m "M5 final submission" && git push origin m5`
 
 | # | Deliverable | Requirement |
 |---|---|---|
-| 1 | **Final report** | ① Vision & stakeholders ② Requirements (incl. your responses to ΔC2 and ΔC3) ③ Analysis models (domain / sequence / state / activity) ④ Design: DCD + GRASP/SOLID application notes ⑤ Pattern catalog ⑥ Architecture view ⑦ **Retrospection: what changed since M1 and why — this section is graded** ⑧ Individual contribution logs |
-| 2 | **Individual contribution log** | Per week: what you did + evidence (commit / file / review); plus the parts you can explain best and the parts owned mainly by others that you have studied for the defense |
-| 3 | **All diagram source files** | `.drawio` or `.puml` committed to the repo, exported image alongside; **PNG-only is not accepted** |
-| 4 | **Pattern catalog cards** | Each with Problem / Solution / Consequences / Where / Why-not |
+| 1 | **The five artifacts** | All of ①–⑤ above, with **diagram sources (`.drawio` / `.puml`) committed** and exported images alongside |
+| 2 | **Final report** | A narrative through the five artifacts: requirement source → use cases → business process → interaction flow → screens; including your responses to the ΔC2 and ΔC3 requirement changes |
+| 3 | **Individual contribution log** | Per week: what you did + evidence (commit / file / review); plus the parts you can explain best and the parts owned mainly by others that you have studied for the defense |
 
-> **Submission area**: `01-requirements/` `02-analysis/` `03-design/` `04-patterns/` `05-report/` `changes/`
-> **Scratch area**: `docs/`
-> The tag is the graded snapshot, not your branch head. If GitHub is unreachable, zip the whole repo folder including `.git/`, email it before the deadline (the email timestamp is your proof of timeliness), and restore the repo state — tags included — within 3 days.
+> **Submission area**: `01-requirements/` `02-analysis/` `03-design/` `04-patterns/` `05-report/` `changes/` · **scratch area**: `docs/`
+> The tag is the graded snapshot. If GitHub is unreachable, zip the whole repo folder including `.git/`, email it before the deadline (the email timestamp is your proof of timeliness), and restore the repo state — tags included — within 3 days.
 
 ---
 
-## 4. Grading Criteria
+## 6. Remaining Components
 
 | # | Component | Pts | Excellent (A) | Adequate (C) |
 |---|---|---|---|---|
-| **S1** | **Portfolio walkthrough** | **30** | Coherent narrative, models traceable, both requirement changes absorbed gracefully | Covered but disjointed; weak links between views |
-| **S2** | **Individual Q&A** | **55** | Answers any question on **any part** of the work with reasoning (principles/patterns) | Answers own slice only; hesitant outside it |
-| **S3** | **English communication** | **10** | Precise terminology, clear delivery | Understandable but error-prone |
-| **S4** | **Reflection & contribution report** | **5** | Honest, specific, evidence-linked | Generic |
+| S3 | English communication | 10 | Precise terminology, clear delivery | Understandable but error-prone |
+| S4 | Reflection & contribution report | 5 | Honest, specific, evidence-linked | Generic |
 
-**What S1 looks at**: whether the four analysis views (domain / sequence / state / activity) and the design view are mutually consistent; whether every message in your sequence diagrams has a matching operation in the DCD; and whether the ΔC2 / ΔC3 injections were *absorbed* by your models or merely patched around.
+**Bonus (≤5, course total capped at 100)**: extra design patterns +2 · exceptional refactoring narrative +2 · outstanding documentation +1
 
-**What S2 looks at**: the *reasoning* behind each principle and pattern, the *alternatives you rejected*, and the *questions you have not resolved*. Acknowledging the edge of your understanding is worth more than a polished but invented answer.
+**Deductions**: late milestone (incl. M5) −10% per calendar day, max 3 days, then 0 · plagiarized models = 0 for that milestone + academic misconduct procedure · undisclosed AI-generated bulk content treated as plagiarism (disclosure = no penalty) · non-English deliverable returned once for translation (−20% on that item), second time not accepted
 
-**What S4 looks at**: whether it matches the Git record, and whether it honestly reflects how the work was distributed.
+**Grade bands**: A 90–100 · B 80–89 · C 70–79 · D 60–69 · F < 60
 
----
-
-## 5. Bonus — up to +5 (course total capped at 100)
-
-| # | Bonus item | Cap |
-|---|---|---|
-| C1 | Extra patterns beyond 5, correctly applied | +2 |
-| C2 | Exceptional refactoring narrative (before/after with metrics or clear argument) | +2 |
-| C3 | Outstanding documentation | +1 |
+**Deferral / make-up / disputes**: absent for a valid reason? Defend individually in the make-up window (Q&A unchanged) · if the course total is < 60, deliver a full round of individual Q&A; the formative part is not re-done · contribution disputes settled by Git history + contribution logs; appeals in writing within 3 working days of publication
 
 ---
 
-## 6. Deductions
-
-| Situation | Rule |
-|---|---|
-| Late milestone (including the M5 final package) | −10% per calendar day, max 3 days, then 0 for that milestone |
-| Plagiarized models | 0 for that milestone + academic misconduct procedure |
-| Undisclosed AI-generated bulk content | Treated as plagiarism; **disclosure = no penalty** |
-| Non-English deliverable | Returned once for translation (−20% on that item); second time not accepted |
-
-**AI use**: allowed for polishing English and brainstorming, provided you disclose what you used and how in the report. Undisclosed bulk generation is treated as plagiarism.
-
----
-
-## 7. Grade Bands
-
-| Band | Course total | Band | Course total |
-|---|---|---|---|
-| A Excellent | 90–100 | D Pass | 60–69 |
-| B Good | 80–89 | F Fail | < 60 |
-
----
-
-## 8. Sample Defense Questions
-
-1. Why does `orderTotal()` live in `Order` and not in `OrderController`? (GRASP)
-2. Your `Order` has a giant switch for `status`. Show me how the State pattern would change this code. (State)
-3. A new payment method "ApplePay" must be added next semester. Which files change, and why is that acceptable (or not)? (OCP / Factory)
-4. Who may observe an order's status changes? How does the customer's app get updated without polling? (Observer)
-5. The campus-card system is an Adapter and the notification stack is a Facade — they look the same to me. (Adapter vs. Facade)
-6. Point to any bidirectional association in your DCD and defend or remove it. (navigability / coupling)
-7. Your teammate designed the domain model you just presented. Walk me through why `Courier` is associated with `Order` and not with `OrderLine`. (individual mastery)
-
----
-
-## 9. Deferral, Make-up & Disputes
-
-- **Deferred defense**: absent for a valid reason (e.g. illness)? Apply with evidence and defend **individually** in the make-up window after the semester; the individual Q&A is unchanged.
-- **Make-up**: if the course total is < 60, you must deliver an individual defense — a full round of individual Q&A on the team's work, plus a corrected or extended contribution section. The formative part is not normally re-done; the defense is re-assessed (100-point scale, × 60%).
-- **Disputes**: contribution disputes within the team are settled by **Git history + contribution logs**, arbitrated by the instructor. A grade appeal must be filed **in writing within 3 working days** of publication.
-
----
-
-*Caliber unified 2026-11-26 · every point value here matches the official Course Assessment Outline and Grading Rubric.*
+*Caliber unified 2026-11-26 · point values match the official Course Assessment Outline and Grading Rubric.*
